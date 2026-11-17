@@ -27,8 +27,11 @@ class RuntimePolicy:
         overlap_allgather_reduction: Use separate all-gather and reduction streams.
             Disable to reduce peak transient memory. See
             https://github.com/NVIDIA/Megatron-LM/issues/6471.
-        overlap_outer_communication: Run the last-microbatch DP-outer reduction on
-            a separate stream, independently of overlap_allgather_reduction.
+        overlap_outer_communication: Run DP-outer communication on separate streams,
+            independently of overlap_allgather_reduction: the last-microbatch DP-outer
+            reduction, and the first-microbatch DP-outer all-gather that refreshes
+            compute weights after an optimizer step, so it overlaps DP-inner
+            all-gathers.
         caller_managed_grad_sync: Leave gradient synchronization to the caller
             while retaining automatic weight cleanup. The caller must call
             finish_grad_sync() after all backward work, including delayed weight
