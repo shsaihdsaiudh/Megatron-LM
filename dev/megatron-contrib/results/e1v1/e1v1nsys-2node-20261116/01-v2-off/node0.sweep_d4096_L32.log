@@ -1,0 +1,8 @@
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[e1] world=16 mesh=(2,8) d=4096 layers=32 block=256MB bf16 total=8.0GB overlap_outer_communication=False CUDA_DEVICE_MAX_CONNECTIONS=None
+[e1] train  T= 4096 GA=4 fwd_mb0= 287.17 E=  18.58 fwd_rest= 268.88 step= 3252.76 opt=  2.82 mem= 13.0GB finite=True (38s)
+[e1] nostep T= 4096 GA=4 fwd_mb0= 272.62 E=   3.74 fwd_rest= 268.96 step= 3235.06 opt=  0.00 mem= 13.0GB finite=True (36s)
+[e1] wrote /planning-users/yangyeyuan/megatron-contrib/results/e1v1/e1v1nsys-2node-20261116/01-v2-off/e1_d4096_L32.json

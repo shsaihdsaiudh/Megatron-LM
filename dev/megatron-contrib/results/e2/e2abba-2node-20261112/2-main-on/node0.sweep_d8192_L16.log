@@ -1,0 +1,15 @@
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[e1] world=16 mesh=(2,8) d=8192 layers=16 block=1024MB bf16 total=16.0GB overlap_outer_communication=True CUDA_DEVICE_MAX_CONNECTIONS=None
+[e1] train  T=  256 GA=1 fwd_mb0= 105.48                                  step=  237.60 opt=  5.26 mem= 10.6GB finite=True (5s)
+[e1] train  T=  256 GA=4 fwd_mb0= 106.13 E=  43.78 fwd_rest=  62.45 step=  783.77 opt=  5.26 mem= 10.6GB finite=True (9s)
+[e1] train  T= 1024 GA=1 fwd_mb0= 184.71                                  step=  508.94 opt=  5.26 mem= 12.2GB finite=True (6s)
+[e1] train  T= 1024 GA=4 fwd_mb0= 183.02 E=  34.83 fwd_rest= 148.25 step= 1845.94 opt=  5.26 mem= 12.3GB finite=True (20s)
+[e1] train  T= 4096 GA=1 fwd_mb0= 575.67                                  step= 1673.45 opt=  5.26 mem= 18.7GB finite=True (18s)
+[e1] train  T= 4096 GA=4 fwd_mb0= 562.12 E=  28.90 fwd_rest= 534.07 step= 6450.47 opt=  5.26 mem= 18.9GB finite=True (71s)
+[e1] nostep T=  256 GA=4 fwd_mb0=  63.65 E=   1.25 fwd_rest=  62.39 step=  734.83 opt=  0.00 mem= 10.6GB finite=True (8s)
+[e1] nostep T= 1024 GA=4 fwd_mb0= 150.02 E=   2.69 fwd_rest= 147.44 step= 1797.73 opt=  0.00 mem= 12.3GB finite=True (20s)
+[e1] nostep T= 4096 GA=4 fwd_mb0= 536.32 E=   6.49 fwd_rest= 529.80 step= 6389.26 opt=  0.00 mem= 18.9GB finite=True (70s)
+[e1] wrote /planning-users/yangyeyuan/megatron-contrib/results/e2/e2abba-2node-20261112/2-main-on/e1_d8192_L16.json

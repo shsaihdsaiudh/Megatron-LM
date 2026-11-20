@@ -1,0 +1,14 @@
+diff -ru /planning-users/yangyeyuan/megatron-contrib/snapshots/p1-20261112/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/parameter_group.py /planning-users/yangyeyuan/megatron-contrib/snapshots/f5-p1-serialized-20261113/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/parameter_group.py
+--- /planning-users/yangyeyuan/megatron-contrib/snapshots/p1-20261112/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/parameter_group.py	2026-11-12 17:12:56.000000002 +0800
++++ /planning-users/yangyeyuan/megatron-contrib/snapshots/f5-p1-serialized-20261113/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/parameter_group.py	2026-11-13 15:01:40.000000004 +0800
+@@ -528,6 +528,10 @@
+                 )
+             else:
+                 allgather_stream = torch.cuda.current_stream()
++                # DIAGNOSTIC F5 (#6714 E2-diag3): serialize with the all-gather stream
++                # in both directions, so the DP-outer all-gather runs on its own stream
++                # but never concurrently with DP-inner all-gathers.
++                outer_allgather_stream.wait_stream(allgather_stream)
+                 with torch.cuda.stream(outer_allgather_stream):
+                     # Writes the persistent model_weight in place; no allocation.
+                     self.post_optimizer_model_weight.redistribute(

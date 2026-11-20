@@ -1,0 +1,52 @@
+host=<host> node_rank=0/1 master=127.0.0.1:29500
+pr_snap=/planning-users/yangyeyuan/megatron-contrib/snapshots/e4-pr-29824b2df main_snap=/planning-users/yangyeyuan/megatron-contrib/snapshots/e4-main-d2b0e35cc
+python 3.12.16 torch 2.14.1+cu130 nccl (2, 30, 7)
+te 2.20.2
+Thu Nov 19 17:05:11 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.105.08             Driver Version: 580.105.08     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H20                     On  |   00000000:69:02.0 Off |                    0 |
+| N/A   29C    P0             71W /  500W |       0MiB /  97871MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+	[4mGPU0	NIC0	NIC1	NIC2	NIC3	NIC4	NIC5	CPU Affinity	NUMA Affinity	GPU NUMA ID[0m
+GPU0	 X 	SYS	SYS	SYS	PIX	NODE	SYS	90-179	1		N/A
+NIC0	SYS	 X 	SYS	SYS	SYS	SYS	PHB				
+NIC1	SYS	SYS	 X 	NODE	SYS	SYS	SYS				
+NIC2	SYS	SYS	NODE	 X 	SYS	SYS	SYS				
+NIC3	PIX	SYS	SYS	SYS	 X 	NODE	SYS				
+NIC4	NODE	SYS	SYS	SYS	NODE	 X 	SYS				
+NIC5	SYS	PHB	SYS	SYS	SYS	SYS	 X 				
+
+Legend:
+
+  X    = Self
+  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)
+  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node
+  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)
+  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)
+  PIX  = Connection traversing at most a single PCIe bridge
+  NV#  = Connection traversing a bonded set of # NVLinks
+
+NIC Legend:
+
+  NIC0: mlx5_0
+  NIC1: mlx5_1
+  NIC2: mlx5_2
+  NIC3: mlx5_3
+  NIC4: mlx5_4
+  NIC5: mlx5_5
+

@@ -1,0 +1,60 @@
+jobName: 261106-orig-exact-2node-rdma-yangyeyuan
+description: 'exact copy of t-20261028193057-2nctr on 2 nodes x 8 GPU, rdma on: same image, command, env, mounts, retry; only WORK_DIR (planning-users), node count and alert receiver changed; code path in the command fixed to the original job''s directory'
+accessType: PUBLIC
+imageConfig:
+    imageUrl: <redacted-image>
+    imageCommand: if [ -d "/high_perf_store3/ad_algo_localization/task_code_date_back/hanyunhui/20261028192959" ] && [ ! -d "/high_perf_store3/ad_algo_localization/task_code_date_back/hanyunhui/t-20261028193057-2nctr" ]; then mv -T "/high_perf_store3/ad_algo_localization/task_code_date_back/hanyunhui/20261028192959" "/high_perf_store3/ad_algo_localization/task_code_date_back/hanyunhui/t-20261028193057-2nctr" 2>/dev/null || true; fi; repo_src="/high_perf_store3/ad_algo_localization/task_code_date_back/hanyunhui/t-20261028193057-2nctr/code"; [ -d "$repo_src" ] || repo_src="/high_perf_store3/ad_algo_localization/task_code_date_back/hanyunhui/20261028192959/code"; cp -r "$repo_src" /root/repo && cd /root/repo && bash scripts/dist_train_cml_avp.sh config/avp/2.6.6_lat_lon/train_v2_traj.py auto
+modelUri: ""
+juiceFsMountConfigs:
+    - volume: <redacted>
+      juiceFsCluster: <redacted>
+      subPath: /
+      mountPath: /high_perf_store3/ad_algo_localization/
+      readOnly: true
+    - volume: <redacted>
+      juiceFsCluster: <redacted>
+      subPath: /
+      mountPath: /e2e-cache
+      readOnly: true
+    - volume: <redacted>
+      juiceFsCluster: <redacted>
+      subPath: /
+      mountPath: /planning-users
+      readOnly: false
+envConfigs:
+    - key: TASK_NAME
+      value: 261028-pdp-26622_odld-avp_parkingod_wobevfeat_wopilotfeat
+    - key: WORK_DIR
+      value: /planning-users/yangyeyuan/fsd_ckpts/work_dirs/261106-orig-exact-2node-rdma-yangyeyuan
+queueId: "<redacted>"
+priority: 8
+preemptible: false
+framework: pytorch
+resourceConfigs:
+    - nodeRole: worker
+      nodeNumber: 2
+      perNodeResourceSpec:
+        resourcePriority: GUARANTEED
+        resourceName: <redacted>
+        resourceNumber: 8
+      elastic: false
+      preemptible: false
+enableTensorboard: true
+enableMetrics: false
+retryConfig:
+    enableRetry: true
+    maxRetryTimes: 20
+    policySets:
+        - JobFailed
+rdma: true
+diagOptions:
+    - name: HangDetection
+      enable: false
+    - name: SanityCheck
+      enable: false
+      config:
+        preSanityCheck: false
+        postSanityCheck: false
+alertConfig:
+    enableAlert: false
+    alertItems: []

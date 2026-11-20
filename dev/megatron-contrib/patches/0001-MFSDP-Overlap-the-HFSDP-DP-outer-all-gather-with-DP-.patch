@@ -1,0 +1,390 @@
+From 29824b2df6ec0f49c396904b0f4bf7516498a3fa Mon Sep 17 00:00:00 2001
+From: yangyeyuan <yangyeyuan@<redacted-host>>
+Date: Wed, 18 Nov 2026 10:27:27 +0800
+Subject: [PATCH] [MFSDP] Overlap the HFSDP DP-outer all-gather with DP-inner
+ all-gathers
+
+With HFSDP and optimizer state sharded across DP-outer, every parameter
+group's compute weights are stale after an optimizer step. The first
+microbatch's pre-forward unshard then runs the DP-outer all-gather and the
+DP-inner all-gather back to back on the all-gather stream, so the DP-outer
+all-gather is fully exposed.
+
+When overlap_outer_communication is set, run that DP-outer all-gather on its
+own stream. The stream forks from the all-gather stream once per weight sync,
+at the first stale unshard, and each group's DP-inner all-gather waits only
+for its own DP-outer all-gather. DP-outer gathers of later groups therefore
+overlap DP-inner gathers of earlier ones. Without the flag the new stream
+aliases the all-gather stream and behavior is unchanged.
+
+Losses are bit-identical to the flag-off path and peak memory is unchanged.
+The overlap helps when the first microbatch is communication bound (small
+tokens per microbatch). With large microbatches and gradient accumulation,
+later microbatches' forward can get slower; see issue #6714 for
+measurements.
+
+Add a CUDA-graph test that captures a full HFSDP iteration with the separate
+DP-outer all-gather stream and checks it against eager training, and update
+the flag's documentation.
+
+Signed-off-by: yangyeyuan <yangyeyuan@<redacted-host>>
+---
+ .../distributed_data_parallel_config.py       |  6 +-
+ .../src/megatron_fsdp/experimental/context.py | 14 +++-
+ .../src/megatron_fsdp/experimental/module.py  | 25 ++++++-
+ .../experimental/parameter_group.py           | 52 ++++++++++++-
+ .../experimental/runtime_policy.py            |  7 +-
+ megatron/training/arguments.py                |  5 +-
+ .../distributed/mfsdp_v2/test_cuda_graph.py   | 74 +++++++++++++++++++
+ .../distributed/mfsdp_v2/test_fully_shard.py  |  7 +-
+ 8 files changed, 173 insertions(+), 17 deletions(-)
+
+diff --git a/megatron/core/distributed/distributed_data_parallel_config.py b/megatron/core/distributed/distributed_data_parallel_config.py
+index ffd15967f..102377352 100644
+--- a/megatron/core/distributed/distributed_data_parallel_config.py
++++ b/megatron/core/distributed/distributed_data_parallel_config.py
+@@ -102,8 +102,10 @@ class DistributedDataParallelConfig:
+     """Megatron-FSDP implementation version. Valid values are 1 and 2."""
+ 
+     overlap_outer_communication: bool = False
+-    """Overlap MFSDP v2's last-microbatch outer-DP gradient reduction with inner-DP
+-    reductions on a separate CUDA stream."""
++    """Run MFSDP v2's outer-DP communication on separate CUDA streams: the last-microbatch
++    outer-DP gradient reduction overlaps inner-DP reductions, and the first-microbatch
++    outer-DP all-gather that refreshes compute weights after an optimizer step overlaps
++    inner-DP all-gathers."""
+ 
+     use_custom_fsdp: bool = False
+     """
+diff --git a/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/context.py b/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/context.py
+index 48c35b54c..fbcdbce66 100644
+--- a/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/context.py
++++ b/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/context.py
+@@ -40,6 +40,12 @@ class FsdpContext:
+     inner_reduction_stream: torch.cuda.Stream
+     # Aliases inner_reduction_stream unless DP-outer overlap is enabled.
+     outer_reduction_stream: torch.cuda.Stream
++    # Runs the post-optimizer DP-outer all-gather that refreshes model_weight.
++    # Aliases allgather_stream unless DP-outer overlap is enabled.
++    outer_allgather_stream: torch.cuda.Stream
++    # Weight-sync generation at which outer_allgather_stream last forked from
++    # allgather_stream; see FsdpModule._unshard_parameter_groups.
++    outer_allgather_fork_generation: int
+     # Whether backward should finalize accumulated gradients, including DP-outer
+     # reduction for HSDP/HFSDP. Scoped by finalize_gradients().
+     finalize_gradients: bool
+@@ -112,8 +118,8 @@ class FsdpContext:
+         #   (False, True):  all-gather and inner reduction share; outer is separate.
+         #   (True, True):   all-gather, inner reduction, and outer reduction each
+         #                  have a separate stream.
+-        # Outer all-gather separation is not implemented yet; the outer option
+-        # currently affects only reduction.
++        # overlap_outer_communication also gives the post-optimizer DP-outer
++        # all-gather its own stream; otherwise it shares the all-gather stream.
+         self.inner_reduction_stream = torch.cuda.Stream(device)
+         self.allgather_stream = (
+             torch.cuda.Stream(device)
+@@ -125,6 +131,10 @@ class FsdpContext:
+             if overlap_outer_communication
+             else self.inner_reduction_stream
+         )
++        self.outer_allgather_stream = (
++            torch.cuda.Stream(device) if overlap_outer_communication else self.allgather_stream
++        )
++        self.outer_allgather_fork_generation = 0
+ 
+     @property
+     def is_finalized(self) -> bool:
+diff --git a/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/module.py b/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/module.py
+index 75bfb824c..c05e921ee 100644
+--- a/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/module.py
++++ b/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/module.py
+@@ -38,6 +38,7 @@ from .parameter_group import (
+     FsdpParameterGroup,
+     effective_dtype,
+     get_containing_parameter_group,
++    latest_model_weight_sync_generation,
+ )
+ from .phase import Phase
+ from .placement import BlockAtomic, RowAtomic, ShardLayout
+@@ -356,9 +357,29 @@ class FsdpModule:
+         # weights serve both phases already.
+         if phase is Phase.BACKWARD and self._schedule_policy.unshard_all_planes_in_backward:
+             phase = None
+-        with torch.cuda.stream(self.context.allgather_stream):
++        context = self.context
++        allgather_stream = context.allgather_stream
++        outer_allgather_stream = None
++        if context.outer_allgather_stream is not allgather_stream:
++            stale_generations = [
++                group.model_weight_sync_generation
++                for group in self._parameter_groups
++                if group.model_weight_is_stale
++            ]
++            if stale_generations:
++                outer_allgather_stream = context.outer_allgather_stream
++                # Fork once per weight sync, at its first stale unshard. The all-gather
++                # stream already waits for the stream that synced the weights (the root
++                # sync before unsharding), and nothing that the DP-outer gathers depend
++                # on is queued on it later, so forking again from it would only
++                # serialize them behind DP-inner gathers. The edge also joins any
++                # active CUDA-graph capture.
++                if max(stale_generations) > context.outer_allgather_fork_generation:
++                    outer_allgather_stream.wait_stream(allgather_stream)
++                    context.outer_allgather_fork_generation = latest_model_weight_sync_generation()
++        with torch.cuda.stream(allgather_stream):
+             for group in self._parameter_groups:
+-                group.unshard_parameters(phase)
++                group.unshard_parameters(phase, outer_allgather_stream=outer_allgather_stream)
+ 
+     def post_forward(self) -> None:
+         """Return parameters to their sharded resting state after forward compute."""
+diff --git a/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/parameter_group.py b/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/parameter_group.py
+index d8ae4ea39..fa5ca7c71 100644
+--- a/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/parameter_group.py
++++ b/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/parameter_group.py
+@@ -51,6 +51,22 @@ else:
+ 
+ _CONTAINING_PARAMETER_GROUP_ATTR = "_mfsdp_parameter_group"
+ 
++# Bumped whenever a sync leaves compute weights stale. Unshard callers that run
++# the DP-outer all-gather on a separate stream compare it to decide when that
++# stream must fork again from the all-gather stream.
++_model_weight_sync_generation = 0
++
++
++def latest_model_weight_sync_generation() -> int:
++    """Generation of the most recent sync that left compute weights stale."""
++    return _model_weight_sync_generation
++
++
++def _next_model_weight_sync_generation() -> int:
++    global _model_weight_sync_generation
++    _model_weight_sync_generation += 1
++    return _model_weight_sync_generation
++
+ 
+ def _contains_any_placement_type(
+     *placement_groups: tuple[Placement, ...], placement_types: type | tuple[type, ...]
+@@ -107,6 +123,8 @@ class FsdpParameterGroup:
+     # sync_model_weight_from_main_weight() updates only this rank's optimizer-layout
+     # view; the remaining model_weight slices must be all-gathered before compute.
+     _model_weight_is_stale: bool
++    # Generation of the sync that last left model_weight stale; 0 if never stale.
++    model_weight_sync_generation: int
+     main_grad: DBuffer | None
+     # Optimizer-layout view into main_grad storage, avoiding a second allocation.
+     # This is None exactly when main_grad is None.
+@@ -348,6 +366,7 @@ class FsdpParameterGroup:
+                         device=self.main_weight.device,
+                     )
+         self.post_optimizer_model_weight = self.model_weight.view(main_weight_placements)
++        self.model_weight_sync_generation = 0
+         self.sync_model_weight_from_main_weight()
+         unsharded_placements = (Replicate(),) * self.mesh.ndim
+         if self.model_weight.placements == unsharded_placements:
+@@ -460,6 +479,15 @@ class FsdpParameterGroup:
+         self._model_weight_is_stale = (
+             self.post_optimizer_model_weight.placements != self.model_weight.placements
+         )
++        if self._model_weight_is_stale:
++            # Tells unshard callers that a new stream fork is needed; see
++            # FsdpModule._unshard_parameter_groups.
++            self.model_weight_sync_generation = _next_model_weight_sync_generation()
++
++    @property
++    def model_weight_is_stale(self) -> bool:
++        """Whether compute weights need the post-optimizer DP-outer all-gather."""
++        return self._model_weight_is_stale
+ 
+     @property
+     def is_rowwise_unsharded(self) -> bool:
+@@ -472,7 +500,9 @@ class FsdpParameterGroup:
+             return False
+         return buffer.is_rowwise_allocated
+ 
+-    def unshard_parameters(self, phase: Phase | None = None) -> None:
++    def unshard_parameters(
++        self, phase: Phase | None = None, *, outer_allgather_stream: torch.cuda.Stream | None = None
++    ) -> None:
+         """Prepare this group's Parameters for the requested compute phase.
+ 
+         On the caller-selected all-gather stream, refresh compute weights, gather
+@@ -480,6 +510,11 @@ class FsdpParameterGroup:
+         Parameters to their unsharded representations, and record readiness.
+         Reuse existing events so compute never waits for a later prefetch when its
+         weights are already available.
++
++        With ``outer_allgather_stream``, the post-optimizer DP-outer all-gather that
++        refreshes stale compute weights runs on that stream instead, so it overlaps
++        DP-inner all-gathers of earlier groups. The caller must have made that stream
++        wait for the stream where the weights were last synced from main weights.
+         """
+         requested_phases = (Phase.FORWARD, Phase.BACKWARD) if phase is None else (phase,)
+         missing_phases = tuple(p for p in requested_phases if p not in self._unshard_events)
+@@ -487,9 +522,18 @@ class FsdpParameterGroup:
+             return
+ 
+         if self._model_weight_is_stale:
+-            self.post_optimizer_model_weight.redistribute(
+-                self.model_weight.placements, out=self.model_weight
+-            )
++            if outer_allgather_stream is None:
++                self.post_optimizer_model_weight.redistribute(
++                    self.model_weight.placements, out=self.model_weight
++                )
++            else:
++                allgather_stream = torch.cuda.current_stream()
++                with torch.cuda.stream(outer_allgather_stream):
++                    # Writes the persistent model_weight in place; no allocation.
++                    self.post_optimizer_model_weight.redistribute(
++                        self.model_weight.placements, out=self.model_weight
++                    )
++                allgather_stream.wait_stream(outer_allgather_stream)
+             self._model_weight_is_stale = False
+ 
+         if self._unsharded_model_weight is self.model_weight:
+diff --git a/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/runtime_policy.py b/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/runtime_policy.py
+index 5dc51044b..3044037f9 100644
+--- a/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/runtime_policy.py
++++ b/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/runtime_policy.py
+@@ -27,8 +27,11 @@ class RuntimePolicy:
+         overlap_allgather_reduction: Use separate all-gather and reduction streams.
+             Disable to reduce peak transient memory. See
+             https://github.com/NVIDIA/Megatron-LM/issues/6471.
+-        overlap_outer_communication: Run the last-microbatch DP-outer reduction on
+-            a separate stream, independently of overlap_allgather_reduction.
++        overlap_outer_communication: Run DP-outer communication on separate streams,
++            independently of overlap_allgather_reduction: the last-microbatch DP-outer
++            reduction, and the first-microbatch DP-outer all-gather that refreshes
++            compute weights after an optimizer step, so it overlaps DP-inner
++            all-gathers.
+         caller_managed_grad_sync: Leave gradient synchronization to the caller
+             while retaining automatic weight cleanup. The caller must call
+             finish_grad_sync() after all backward work, including delayed weight
+diff --git a/megatron/training/arguments.py b/megatron/training/arguments.py
+index c20083b8b..9f071ef95 100644
+--- a/megatron/training/arguments.py
++++ b/megatron/training/arguments.py
+@@ -2971,8 +2971,9 @@ def _add_distributed_args(parser):
+     group.add_argument('--megatron-fsdp-version', type=int, default=1, choices=[1, 2],
+                        help='Megatron-FSDP implementation version. Defaults to 1.')
+     group.add_argument('--overlap-outer-communication', action='store_true',
+-                       help="Overlap outer-DP and inner-DP gradient reductions "
+-                            "with Megatron-FSDP v2.")
++                       help="Overlap outer-DP with inner-DP communication in "
++                            "Megatron-FSDP v2: gradient reductions, and the "
++                            "post-optimizer parameter all-gathers.")
+     group.add_argument('--no-use-layer-wise-param-layout',
+                        action='store_false',
+                        dest='use_layer_wise_param_layout',
+diff --git a/tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py b/tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py
+index 8fe3e563a..365b92943 100644
+--- a/tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py
++++ b/tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py
+@@ -17,6 +17,7 @@ from megatron.core.distributed.fsdp.src.megatron_fsdp.experimental import (
+     RuntimePolicy,
+     fully_shard,
+     fully_shard_context,
++    fully_shard_optimizer,
+ )
+ 
+ logger = logging.getLogger(__name__)
+@@ -206,3 +207,76 @@ def test_local_accumulation_captures_full_iteration(distributed_setup):
+     torch.testing.assert_close(torch.stack(losses), torch.stack(reference_losses))
+     for parameter, reference_parameter in zip(model.parameters(), reference_model.parameters()):
+         torch.testing.assert_close(parameter.to_local(), reference_parameter.to_local())
++
++
++def test_hfsdp_outer_allgather_overlap_captures_full_iteration(distributed_setup):
++    """Graph replay matches eager HFSDP training with the DP-outer all-gather on its own stream.
++
++    The optimizer shards weights across DP-outer, so every iteration's first forward refreshes
++    compute weights with a DP-outer all-gather. With overlap_outer_communication that gather
++    runs on a separate stream, which must join the capture and rejoin the all-gather stream.
++    """
++    device = distributed_setup.device
++    world_size = distributed_setup.world_size
++    if world_size < 4 or world_size % 2 != 0:
++        pytest.skip("Requires an even number of at least 4 ranks for a 2-D DP mesh.")
++    mesh = init_device_mesh(device.type, (2, world_size // 2))
++    placements = Placements(
++        dp_axes=[0, 1],
++        parameter=[Replicate(), Shard(0)],
++        gradient=[Partial("avg"), Shard(0)],
++        optimizer=[Shard(0), Shard(0)],
++    )
++    torch.manual_seed(1234)
++    model = NestedModel(dim=_HIDDEN, num_children=2).to(device)
++    reference_model = NestedModel(dim=_HIDDEN, num_children=2).to(device)
++    reference_model.load_state_dict(model.state_dict())
++    optimizers = []
++    for candidate in (model, reference_model):
++        with fully_shard_context(
++            FsdpContext(
++                device=device, runtime_policy=RuntimePolicy(overlap_outer_communication=True)
++            )
++        ):
++            for layer in candidate.layers:
++                fully_shard(layer, mesh=mesh, placements=placements)
++            fully_shard(candidate, mesh=mesh, placements=placements)
++        optimizer = torch.optim.SGD(candidate.parameters(), lr=0.25, foreach=False)
++        fully_shard_optimizer(optimizer)
++        optimizers.append(optimizer)
++    optimizer, reference_optimizer = optimizers
++    static_input = torch.eye(_HIDDEN, device=device)
++    static_target = torch.zeros_like(static_input)
++
++    def train_iteration(model, optimizer) -> torch.Tensor:
++        optimizer.zero_grad(set_to_none=False)
++        loss = torch.nn.functional.mse_loss(model(static_input), static_target)
++        loss.backward()
++        optimizer.step()
++        return loss.detach()
++
++    capture_stream = torch.cuda.Stream()
++    capture_stream.wait_stream(torch.cuda.current_stream())
++    with torch.cuda.stream(capture_stream):
++        for _ in range(3):
++            train_iteration(model, optimizer)
++
++    graph = torch.cuda.CUDAGraph()
++    with torch.cuda.graph(graph, stream=capture_stream):
++        static_loss = train_iteration(model, optimizer)
++    torch.cuda.current_stream().wait_stream(capture_stream)
++
++    for _ in range(3):
++        train_iteration(reference_model, reference_optimizer)
++
++    losses = []
++    reference_losses = []
++    for _ in range(5):
++        graph.replay()
++        losses.append(static_loss.clone())
++        reference_losses.append(train_iteration(reference_model, reference_optimizer))
++    torch.testing.assert_close(torch.stack(losses), torch.stack(reference_losses), rtol=0, atol=0)
++    for parameter, reference_parameter in zip(model.parameters(), reference_model.parameters()):
++        torch.testing.assert_close(
++            parameter.to_local(), reference_parameter.to_local(), rtol=0, atol=0
++        )
+diff --git a/tests/unit_tests/distributed/mfsdp_v2/test_fully_shard.py b/tests/unit_tests/distributed/mfsdp_v2/test_fully_shard.py
+index e901403ac..f49e0a3a8 100644
+--- a/tests/unit_tests/distributed/mfsdp_v2/test_fully_shard.py
++++ b/tests/unit_tests/distributed/mfsdp_v2/test_fully_shard.py
+@@ -392,9 +392,10 @@ def test_losses_match_baseline(
+ 
+     Gradients reduce-scatter within DP-inner every backward and accumulate into main_grad;
+     the DP-outer reduction (all-reduce for HSDP, reduce-scatter for HFSDP) runs only on the
+-    last microbatch. overlap_outer_communication moves that reduction to its own stream,
+-    which changes where it executes, not what it computes -- so losses stay bit-identical to
+-    the serialized path. Both zero_grad modes are covered.
++    last microbatch. overlap_outer_communication moves that reduction, and the HFSDP
++    first-microbatch DP-outer all-gather that refreshes compute weights, to their own
++    streams, which changes where they execute, not what they compute -- so losses stay
++    bit-identical to the serialized path. Both zero_grad modes are covered.
+     """
+     world_size = distributed_setup.world_size
+     device = distributed_setup.device
+-- 
+2.34.1
+

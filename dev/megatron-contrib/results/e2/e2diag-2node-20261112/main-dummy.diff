@@ -1,0 +1,15 @@
+diff -ru /planning-users/yangyeyuan/megatron-contrib/snapshots/main-d2b0e35cc/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/context.py /planning-users/yangyeyuan/megatron-contrib/snapshots/main-dummystream-d2b0e35cc/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/context.py
+--- /planning-users/yangyeyuan/megatron-contrib/snapshots/main-d2b0e35cc/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/context.py	2026-11-12 17:12:56.000000002 +0800
++++ /planning-users/yangyeyuan/megatron-contrib/snapshots/main-dummystream-d2b0e35cc/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/context.py	2026-11-12 18:50:26.000000004 +0800
+@@ -125,6 +125,11 @@
+             if overlap_outer_communication
+             else self.inner_reduction_stream
+         )
++        # DIAGNOSTIC (#6714 E2-diag, not for upstream): create one extra, never-used
++        # stream at the point where P1 creates outer_allgather_stream.
++        self._diag_unused_stream = (
++            torch.cuda.Stream(device) if overlap_outer_communication else None
++        )
+ 
+     @property
+     def is_finalized(self) -> bool:

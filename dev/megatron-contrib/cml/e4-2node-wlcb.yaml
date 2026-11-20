@@ -1,0 +1,52 @@
+jobName: 261119-mfsdp-e4real-2node-wlcb-yangyeyuan
+description: '#6714 / #9539 E4 real model: Llama3-8B-shaped GPT, pretrain_gpt.py, MFSDP v2 HFSDP mesh (2,8), off / main-on / pr-on ABBA at GA 4 and 8 + nsys, 2x8 H20e (wlcb)'
+accessType: PRIVATE
+imageConfig:
+    # Image only provides the driver/nsys/IB stack; Python comes from the venv on /planning-users.
+    imageUrl: <redacted-image>
+    imageCommand: bash /planning-users/yangyeyuan/megatron-contrib/cml/e4_entry.sh
+modelUri: ""
+juiceFsMountConfigs:
+    - volume: <redacted>
+      juiceFsCluster: <redacted>
+      subPath: /planning-users
+      mountPath: /planning-users
+      readOnly: false
+envConfigs:
+    - key: RUN_NAME
+      value: e4real-2node-wlcb-20261119
+    - key: EXPECT_NODES
+      value: "2"
+    - key: GPUS_PER_NODE
+      value: "8"
+queueId: "<redacted>"
+priority: 5
+preemptible: false
+framework: pytorch
+resourceConfigs:
+    - nodeRole: worker
+      nodeNumber: 2
+      perNodeResourceSpec:
+        resourcePriority: GUARANTEED
+        resourceName: <redacted>
+        resourceNumber: 8
+      elastic: false
+      preemptible: false
+enableTensorboard: false
+enableMetrics: false
+retryConfig:
+    enableRetry: false
+    maxRetryTimes: 0
+    policySets: []
+rdma: true
+diagOptions:
+    - name: HangDetection
+      enable: false
+    - name: SanityCheck
+      enable: false
+      config:
+        preSanityCheck: false
+        postSanityCheck: false
+alertConfig:
+    enableAlert: false
+    alertItems: []

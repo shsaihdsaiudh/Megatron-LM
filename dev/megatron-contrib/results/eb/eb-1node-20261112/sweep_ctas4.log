@@ -1,0 +1,50 @@
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[rank4]:[W1112 11:11:21.187702362 Context.cpp:720] Warning: Setting the SM carveout for matmuls is a temporary experimental mitigation for performance issues, while more robust solutions are developed. It may be removed at any moment without notice. (function operator())
+[rank6]:[W1112 11:11:21.187702219 Context.cpp:720] Warning: Setting the SM carveout for matmuls is a temporary experimental mitigation for performance issues, while more robust solutions are developed. It may be removed at any moment without notice. (function operator())
+[rank5]:[W1112 11:11:21.187701293 Context.cpp:720] Warning: Setting the SM carveout for matmuls is a temporary experimental mitigation for performance issues, while more robust solutions are developed. It may be removed at any moment without notice. (function operator())
+[rank7]:[W1112 11:11:21.187773054 Context.cpp:720] Warning: Setting the SM carveout for matmuls is a temporary experimental mitigation for performance issues, while more robust solutions are developed. It may be removed at any moment without notice. (function operator())
+[rank3]:[W1112 11:11:21.187875339 Context.cpp:720] Warning: Setting the SM carveout for matmuls is a temporary experimental mitigation for performance issues, while more robust solutions are developed. It may be removed at any moment without notice. (function operator())
+[rank1]:[W1112 11:11:21.188258877 Context.cpp:720] Warning: Setting the SM carveout for matmuls is a temporary experimental mitigation for performance issues, while more robust solutions are developed. It may be removed at any moment without notice. (function operator())
+[rank2]:[W1112 11:11:21.193984478 Context.cpp:720] Warning: Setting the SM carveout for matmuls is a temporary experimental mitigation for performance issues, while more robust solutions are developed. It may be removed at any moment without notice. (function operator())
+[eb] world=8 d=4096 L=16 tag=ctas4 NCCL_MAX_CTAS=4 CUDA_DEVICE_MAX_CONNECTIONS=None stream priority range=(0, -3)
+[rank0]:[W1112 11:11:21.194115651 Context.cpp:720] Warning: Setting the SM carveout for matmuls is a temporary experimental mitigation for performance issues, while more robust solutions are developed. It may be removed at any moment without notice. (function operator())
+[eb] independent T=  256 carveout= 0 prio=normal ag_alone=2.732 ag_delay med=0.005 p90=0.538 gemm_chain=8.54 chain=15.22 overhead=6.70
+[eb] fsdp_like   T=  256 carveout= 0 prio=normal ag_alone=2.732 ag_delay med=0.097 p90=0.112 gemm_chain=8.54 chain=45.79 overhead=37.29
+[eb] independent T= 1024 carveout= 0 prio=normal ag_alone=2.732 ag_delay med=1.245 p90=1.387 gemm_chain=32.78 chain=44.36 overhead=11.66
+[eb] fsdp_like   T= 1024 carveout= 0 prio=normal ag_alone=2.732 ag_delay med=0.319 p90=0.340 gemm_chain=32.78 chain=50.62 overhead=18.06
+[eb] independent T= 4096 carveout= 0 prio=normal ag_alone=2.732 ag_delay med=4.432 p90=4.731 gemm_chain=132.24 chain=135.86 overhead=4.63
+[eb] fsdp_like   T= 4096 carveout= 0 prio=normal ag_alone=2.732 ag_delay med=4.424 p90=4.792 gemm_chain=132.24 chain=138.41 overhead=7.15
+[eb] independent T=  256 carveout= 0 prio=high   ag_alone=2.730 ag_delay med=0.005 p90=0.532 gemm_chain=8.58 chain=15.24 overhead=6.67
+[eb] fsdp_like   T=  256 carveout= 0 prio=high   ag_alone=2.730 ag_delay med=0.101 p90=0.113 gemm_chain=8.58 chain=45.83 overhead=37.32
+[eb] independent T= 1024 carveout= 0 prio=high   ag_alone=2.730 ag_delay med=1.246 p90=1.383 gemm_chain=32.78 chain=44.34 overhead=11.80
+[eb] fsdp_like   T= 1024 carveout= 0 prio=high   ag_alone=2.730 ag_delay med=0.322 p90=0.342 gemm_chain=32.78 chain=50.65 overhead=18.11
+[eb] independent T= 4096 carveout= 0 prio=high   ag_alone=2.730 ag_delay med=4.411 p90=4.787 gemm_chain=132.24 chain=135.79 overhead=4.43
+[eb] fsdp_like   T= 4096 carveout= 0 prio=high   ag_alone=2.730 ag_delay med=4.483 p90=4.753 gemm_chain=132.24 chain=138.05 overhead=6.69
+[eb] independent T=  256 carveout= 8 prio=normal ag_alone=2.732 ag_delay med=0.002 p90=0.111 gemm_chain=10.02 chain=10.22 overhead=0.21
+[eb] fsdp_like   T=  256 carveout= 8 prio=normal ag_alone=2.732 ag_delay med=0.080 p90=0.086 gemm_chain=10.02 chain=45.66 overhead=35.71
+[eb] independent T= 1024 carveout= 8 prio=normal ag_alone=2.732 ag_delay med=0.342 p90=0.357 gemm_chain=37.45 chain=37.71 overhead=0.28
+[eb] fsdp_like   T= 1024 carveout= 8 prio=normal ag_alone=2.732 ag_delay med=0.265 p90=0.271 gemm_chain=37.45 chain=50.13 overhead=12.86
+[eb] independent T= 4096 carveout= 8 prio=normal ag_alone=2.732 ag_delay med=0.923 p90=1.403 gemm_chain=144.62 chain=144.96 overhead=0.33
+[eb] fsdp_like   T= 4096 carveout= 8 prio=normal ag_alone=2.732 ag_delay med=0.876 p90=1.318 gemm_chain=144.62 chain=147.59 overhead=2.96
+[eb] independent T=  256 carveout= 8 prio=high   ag_alone=2.730 ag_delay med=0.002 p90=0.112 gemm_chain=10.01 chain=10.21 overhead=0.23
+[eb] fsdp_like   T=  256 carveout= 8 prio=high   ag_alone=2.730 ag_delay med=0.081 p90=0.085 gemm_chain=10.01 chain=45.62 overhead=35.67
+[eb] independent T= 1024 carveout= 8 prio=high   ag_alone=2.730 ag_delay med=0.348 p90=0.364 gemm_chain=37.45 chain=37.71 overhead=0.27
+[eb] fsdp_like   T= 1024 carveout= 8 prio=high   ag_alone=2.730 ag_delay med=0.273 p90=0.281 gemm_chain=37.45 chain=50.24 overhead=13.03
+[eb] independent T= 4096 carveout= 8 prio=high   ag_alone=2.730 ag_delay med=0.973 p90=1.409 gemm_chain=144.67 chain=144.89 overhead=0.29
+[eb] fsdp_like   T= 4096 carveout= 8 prio=high   ag_alone=2.730 ag_delay med=0.953 p90=1.451 gemm_chain=144.67 chain=147.53 overhead=2.91
+[eb] independent T=  256 carveout=16 prio=normal ag_alone=2.731 ag_delay med=0.007 p90=0.409 gemm_chain=11.08 chain=19.99 overhead=8.93
+[eb] fsdp_like   T=  256 carveout=16 prio=normal ag_alone=2.731 ag_delay med=0.102 p90=0.116 gemm_chain=11.08 chain=46.06 overhead=35.05
+[eb] independent T= 1024 carveout=16 prio=normal ag_alone=2.731 ag_delay med=0.831 p90=1.280 gemm_chain=42.91 chain=56.69 overhead=14.02
+[eb] fsdp_like   T= 1024 carveout=16 prio=normal ag_alone=2.731 ag_delay med=0.351 p90=1.407 gemm_chain=42.91 chain=65.23 overhead=22.61
+[eb] independent T= 4096 carveout=16 prio=normal ag_alone=2.731 ag_delay med=1.016 p90=1.512 gemm_chain=165.40 chain=165.86 overhead=0.64
+[eb] fsdp_like   T= 4096 carveout=16 prio=normal ag_alone=2.731 ag_delay med=0.976 p90=1.507 gemm_chain=165.40 chain=168.33 overhead=3.03
+[eb] independent T=  256 carveout=16 prio=high   ag_alone=2.729 ag_delay med=0.009 p90=0.375 gemm_chain=11.08 chain=19.99 overhead=8.94
+[eb] fsdp_like   T=  256 carveout=16 prio=high   ag_alone=2.729 ag_delay med=0.102 p90=0.115 gemm_chain=11.08 chain=46.02 overhead=35.02
+[eb] independent T= 1024 carveout=16 prio=high   ag_alone=2.729 ag_delay med=0.830 p90=1.293 gemm_chain=42.91 chain=56.74 overhead=14.13
+[eb] fsdp_like   T= 1024 carveout=16 prio=high   ag_alone=2.729 ag_delay med=0.343 p90=1.392 gemm_chain=42.91 chain=65.17 overhead=22.55
+[eb] independent T= 4096 carveout=16 prio=high   ag_alone=2.729 ag_delay med=1.050 p90=1.589 gemm_chain=165.44 chain=165.80 overhead=0.38
+[eb] fsdp_like   T= 4096 carveout=16 prio=high   ag_alone=2.729 ag_delay med=1.065 p90=1.674 gemm_chain=165.44 chain=168.32 overhead=2.88
+[eb] wrote /planning-users/yangyeyuan/megatron-contrib/results/eb/eb-1node-20261112/eb_ctas4.json

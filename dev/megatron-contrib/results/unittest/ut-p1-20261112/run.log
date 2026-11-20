@@ -1,0 +1,1328 @@
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[default4]:INFO:tests.test_utils.python_scripts.download_unit_tests_dataset:  Downloading datasets.zip...
+[default3]:Test data not found at /opt/data. Downloading...
+[default3]:INFO:tests.test_utils.python_scripts.download_unit_tests_dataset:  Downloading datasets.zip...
+[default7]:Test data not found at /opt/data. Downloading...
+[default4]:Test data not found at /opt/data. Downloading...
+[default6]:Test data not found at /opt/data. Downloading...
+[default5]:Test data not found at /opt/data. Downloading...
+[default5]:INFO:tests.test_utils.python_scripts.download_unit_tests_dataset:  Downloading datasets.zip...
+[default6]:INFO:tests.test_utils.python_scripts.download_unit_tests_dataset:  Downloading datasets.zip...
+[default7]:INFO:tests.test_utils.python_scripts.download_unit_tests_dataset:  Downloading datasets.zip...
+[default1]:Test data not found at /opt/data. Downloading...
+[default1]:INFO:tests.test_utils.python_scripts.download_unit_tests_dataset:  Downloading datasets.zip...
+[default2]:Test data not found at /opt/data. Downloading...
+[default0]:INFO:tests.test_utils.python_scripts.download_unit_tests_dataset:  Downloading datasets.zip...
+[default0]:Test data not found at /opt/data. Downloading...
+[default2]:INFO:tests.test_utils.python_scripts.download_unit_tests_dataset:  Downloading datasets.zip...
+[default3]:Test data downloaded successfully.
+[default7]:Test data downloaded successfully.
+[default6]:Test data downloaded successfully.
+[default4]:Test data downloaded successfully.
+[default4]:ERROR:tests.test_utils.python_scripts.download_unit_tests_dataset:  Error downloading/extracting datasets.zip: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /NVIDIA/Megatron-LM/releases/download/v2.5/datasets.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7fac9fb8b290>, 'Connection to github.com timed out. (connect timeout=60)'))
+[default6]:ERROR:tests.test_utils.python_scripts.download_unit_tests_dataset:  Error downloading/extracting datasets.zip: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /NVIDIA/Megatron-LM/releases/download/v2.5/datasets.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7f1151a31730>, 'Connection to github.com timed out. (connect timeout=60)'))
+[default7]:ERROR:tests.test_utils.python_scripts.download_unit_tests_dataset:  Error downloading/extracting datasets.zip: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /NVIDIA/Megatron-LM/releases/download/v2.5/datasets.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7f9e9436fec0>, 'Connection to github.com timed out. (connect timeout=60)'))
+[default3]:ERROR:tests.test_utils.python_scripts.download_unit_tests_dataset:  Error downloading/extracting datasets.zip: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /NVIDIA/Megatron-LM/releases/download/v2.5/datasets.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7f2119617d40>, 'Connection to github.com timed out. (connect timeout=60)'))
+[default5]:Test data downloaded successfully.
+[default5]:ERROR:tests.test_utils.python_scripts.download_unit_tests_dataset:  Error downloading/extracting datasets.zip: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /NVIDIA/Megatron-LM/releases/download/v2.5/datasets.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7fc05ad4f470>, 'Connection to github.com timed out. (connect timeout=60)'))
+[default2]:Test data downloaded successfully.
+[default0]:Test data downloaded successfully.
+[default1]:Test data downloaded successfully.
+[default0]:ERROR:tests.test_utils.python_scripts.download_unit_tests_dataset:  Error downloading/extracting datasets.zip: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /NVIDIA/Megatron-LM/releases/download/v2.5/datasets.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7f7cca4cf590>, 'Connection to github.com timed out. (connect timeout=60)'))
+[default1]:ERROR:tests.test_utils.python_scripts.download_unit_tests_dataset:  Error downloading/extracting datasets.zip: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /NVIDIA/Megatron-LM/releases/download/v2.5/datasets.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7fc270eea060>, 'Connection to github.com timed out. (connect timeout=60)'))
+[default2]:ERROR:tests.test_utils.python_scripts.download_unit_tests_dataset:  Error downloading/extracting datasets.zip: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /NVIDIA/Megatron-LM/releases/download/v2.5/datasets.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7f86524ca2a0>, 'Connection to github.com timed out. (connect timeout=60)'))
+[default3]:INFO:test_cuda_graph:CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default2]:.[default0]:.[default3]:.[default7]:.[default1]:.[default5]:.[default0]:INFO:test_cuda_graph:CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default1]:INFO:test_cuda_graph:CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default6]:.[default4]:.[default4]:INFO:test_cuda_graph:CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default6]:INFO:test_cuda_graph:CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default2]:INFO:test_cuda_graph:CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default5]:INFO:test_cuda_graph:CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default7]:INFO:test_cuda_graph:CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default2]:.[default0]:.[default3]:.[default7]:.[default5]:.[default1]:.[default0]:INFO:test_cuda_graph:CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default1]:INFO:test_cuda_graph:CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default6]:.[default4]:.[default4]:INFO:test_cuda_graph:CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default6]:INFO:test_cuda_graph:CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default2]:INFO:test_cuda_graph:CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default5]:INFO:test_cuda_graph:CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default7]:INFO:test_cuda_graph:CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default3]:INFO:test_cuda_graph:CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default6]:.[default4]:.[default2]:.[default0]:.[default3]:.[default7]:.[default5]:.[default1]:.[default2]:.[default0]:.[default3]:.[default7]:.[default1]:.[default5]:.[default6]:.[default4]:.[default0]:USDT:2026-11-12 13:18:05 166:166 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default1]:USDT:2026-11-12 13:18:05 167:167 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default4]:USDT:2026-11-12 13:18:05 170:170 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default6]:USDT:2026-11-12 13:18:05 172:172 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default2]:USDT:2026-11-12 13:18:05 168:168 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default5]:USDT:2026-11-12 13:18:05 171:171 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default7]:USDT:2026-11-12 13:18:05 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default3]:USDT:2026-11-12 13:18:05 169:169 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default2]:.[default7]:.[default5]:.[default1]:.[default1]:USDT:2026-11-12 13:18:06 167:167 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default0]:USDT:2026-11-12 13:18:06 166:166 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:.[default6]:USDT:2026-11-12 13:18:06 172:172 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default4]:USDT:2026-11-12 13:18:06 170:170 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default2]:USDT:2026-11-12 13:18:06 168:168 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default5]:USDT:2026-11-12 13:18:06 171:171 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default7]:USDT:2026-11-12 13:18:06 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default3]:USDT:2026-11-12 13:18:06 169:169 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default3]:.[default0]:.[default4]:F[default4]:
+[default4]:[rank 4] tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1] (call)
+[default4]:distributed_setup = DistributedSetup(rank=4, world_size=8, device=device(type='cuda', index=4))
+[default4]:placements_factory = <function _zero1_placements at 0x7fac9f869e40>
+[default4]:use_symmetric_memory = False, overlap_allgather_reduction = True
+[default4]:
+[default4]:    @pytest.mark.parametrize(
+[default4]:        "placements_factory",
+[default4]:        [
+[default4]:            pytest.param(_zero1_placements, id="zero1"),
+[default4]:            pytest.param(_zero2_placements, id="zero2"),
+[default4]:            pytest.param(_default_placements, id="zero3"),
+[default4]:        ],
+[default4]:    )
+[default4]:    @pytest.mark.parametrize(
+[default4]:        "use_symmetric_memory",
+[default4]:        [
+[default4]:            # Both variants' all-gathers are launch-timing sensitive, but default-CTA
+[default4]:            # kernels occupy more compute CTAs, making the profiler overlap count less
+[default4]:            # stable across ranks (see
+[default4]:            # https://github.com/NVIDIA/Megatron-LM/actions/runs/31615942188).
+[default4]:            # The symmetric-memory variant uses zero-CTA all-gather kernels, so its overlap
+[default4]:            # measurement is more stable and remains enabled.
+[default4]:            pytest.param(False, marks=(pytest.mark.flaky, pytest.mark.flaky_in_dev)),
+[default4]:            pytest.param(True),
+[default4]:        ],
+[default4]:        ids=["default", "symmetric_memory"],
+[default4]:    )
+[default4]:    @pytest.mark.parametrize(
+[default4]:        "overlap_allgather_reduction", [True, False], ids=["separate_streams", "unified_stream"]
+[default4]:    )
+[default4]:    def test_overlaps_communication_and_compute(
+[default4]:        distributed_setup, placements_factory, use_symmetric_memory, overlap_allgather_reduction
+[default4]:    ):
+[default4]:        """ZeRO-1/2/3 communication should overlap GEMM compute."""
+[default4]:        world_size = distributed_setup.world_size
+[default4]:        device = distributed_setup.device
+[default4]:        if world_size < 2:
+[default4]:            pytest.skip("This test requires at least 2 ranks.")
+[default4]:    
+[default4]:        # A large hidden size keeps the per-layer GEMMs long enough that the
+[default4]:        # collectives reliably overlap them. The overlap count is otherwise
+[default4]:        # launch-bound: the host issues kernels with gaps (amplified by CI's
+[default4]:        # `coverage run` wrapper), so with short GEMMs a collective can land in a
+[default4]:        # gap between GEMMs instead of running alongside one, making the count jitter
+[default4]:        # run to run. At dim=16384 the GEMMs dominate that launch jitter and the
+[default4]:        # overlap becomes deterministic. (dim=8192 was flaky under coverage.)
+[default4]:        dim = 16384
+[default4]:        num_children = 4
+[default4]:        dtype = torch.bfloat16
+[default4]:        placements = placements_factory()
+[default4]:    
+[default4]:        # new_group requires a default process group. Initialize it here so this test works
+[default4]:        # in isolation. Do not eagerly initialize it with device_id in the shared fixture:
+[default4]:        # that can hang teardown after communicator splits; see
+[default4]:        # https://github.com/pytorch/pytorch/issues/190396.
+[default4]:        if not dist.is_initialized():
+[default4]:            dist.init_process_group(backend="nccl")
+[default4]:    
+[default4]:        if use_symmetric_memory:
+[default4]:            # Dedicated communicator with NCCL's zero-CTA policy. cta_policy is a
+[default4]:            # per-communicator property, so scoping it to this group leaves the rest of the
+[default4]:            # bucket on default-CTA symmetric-memory kernels (test_symmetric_memory.py asserts
+[default4]:            # ncclSymk all-gather kernel counts, which zero-CTA would turn into copy-engine
+[default4]:            # memcpys). This 1-D group models the DP (FSDP) sub-mesh that mfsdp is handed in
+[default4]:            # production: with EP/TP the full device mesh is multi-dimensional, but mfsdp
+[default4]:            # requires an all-FSDP mesh (see experimental/module.py) and never sees the TP/EP
+[default4]:            # axes, so only the DP communicator needs the zero-CTA policy.
+[default4]:            zero_cta_options = dist.ProcessGroupNCCL.Options()
+[default4]:            zero_cta_options.config.cta_policy = dist.ProcessGroupNCCL.NCCL_CTA_POLICY_ZERO
+[default4]:            dp_group = dist.new_group(backend="nccl", pg_options=zero_cta_options)
+[default4]:            # NCCL window registration can fail when symmetric-memory rendezvous is the first
+[default4]:            # operation on a communicator, so initialize this communicator explicitly.
+[default4]:            dist.barrier(group=dp_group, device_ids=[device.index])
+[default4]:        else:
+[default4]:            dp_group = dist.new_group(backend="nccl")
+[default4]:    
+[default4]:        mesh = DeviceMesh.from_group(dp_group, device.type)
+[default4]:        model = MultiChildModel(dim=dim, num_children=num_children).to(device=device, dtype=dtype)
+[default4]:        policy = MixedPrecisionPolicy(main_params_dtype=dtype, main_grads_dtype=dtype)
+[default4]:        with fully_shard_context(
+[default4]:            FsdpContext(
+[default4]:                device=device,
+[default4]:                runtime_policy=RuntimePolicy(
+[default4]:                    use_symmetric_memory=use_symmetric_memory,
+[default4]:                    overlap_allgather_reduction=overlap_allgather_reduction,
+[default4]:                ),
+[default4]:            )
+[default4]:        ) as context:
+[default4]:            for layer in model.layers:
+[default4]:                fully_shard(layer, mesh=mesh, placements=placements, mixed_precision_policy=policy)
+[default4]:    
+[default4]:        optimizer = torch.optim.SGD(model.parameters(), lr=0.01, foreach=False)
+[default4]:        fully_shard_optimizer(optimizer)
+[default4]:        x = torch.randn(8192, dim, device=device, dtype=dtype, requires_grad=True)
+[default4]:    
+[default4]:        def train_one_step() -> None:
+[default4]:            """Run one optimizer step consuming two microbatches."""
+[default4]:            optimizer.zero_grad(set_to_none=True)
+[default4]:            for microbatch_index in range(2):
+[default4]:                with finalize_gradients(context, enabled=microbatch_index == 1):
+[default4]:                    model(x).sum().backward()
+[default4]:            optimizer.step()
+[default4]:    
+[default4]:        train_one_step()
+[default4]:        torch.cuda.synchronize(device)
+[default4]:    
+[default4]:        with torch.profiler.profile() as prof:
+[default4]:            train_one_step()
+[default4]:            # Synchronize inside the profiler context so in-flight device kernels
+[default4]:            # complete and get recorded before the profiler stops on __exit__.
+[default4]:            # Synchronizing after the context would finalize the trace first and
+[default4]:            # drop the CUDA events.
+[default4]:            torch.cuda.synchronize(device)
+[default4]:    
+[default4]:        gemm_groups = collect_linked_event_groups(prof, _GEMM_OP_NAME_SUBSTRING)
+[default4]:        # Each child Linear runs one forward and two backward matmuls per microbatch.
+[default4]:        # aten::mm may also launch auxiliary kernels, so check only the matmul lower bound.
+[default4]:        expected_gemm_count = 6 * num_children
+[default4]:>       assert len(gemm_groups) >= expected_gemm_count, (
+[default4]:            f"Expected at least {expected_gemm_count} groups linked to GEMMs, got "
+[default4]:            f"{len(gemm_groups)}: {gemm_groups}"
+[default4]:        )
+[default4]:E       AssertionError: Expected at least 24 groups linked to GEMMs, got 23: [['Memset (Device)', 'nvjet_sm90_tst_192x192_64x4_2x1_v_bz_coopB_TNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x4_2x1_v_bz_coopB_TNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x4_2x1_v_bz_coopB_TNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_1x2_h_bz_coopB_NTN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_2x1_v_bz_coopB_NNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_1x2_h_bz_coopB_NTN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_2x1_v_bz_coopB_NNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_1x2_h_bz_coopB_NTN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_2x1_v_bz_coopB_NNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_1x2_h_bz_coopB_NTN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_2x1_v_bz_coopB_NNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x4_2x1_v_bz_coopB_TNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x4_2x1_v_bz_coopB_TNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x4_2x1_v_bz_coopB_TNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x4_2x1_v_bz_coopB_TNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_1x2_h_bz_coopB_NTN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_2x1_v_bz_coopB_NNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_1x2_h_bz_coopB_NTN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_2x1_v_bz_coopB_NNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_1x2_h_bz_coopB_NTN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_2x1_v_bz_coopB_NNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_1x2_h_bz_coopB_NTN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_2x1_v_bz_coopB_NNN']]
+[default4]:E       assert 23 >= 24
+[default4]:E        +  where 23 = len([['Memset (Device)', 'nvjet_sm90_tst_192x192_64x4_2x1_v_bz_coopB_TNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64...sm90_tst_192x192_64x3_2x1_v_bz_coopB_NNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_1x2_h_bz_coopB_NTN'], ...])
+[default4]:
+[default4]:tests/unit_tests/distributed/mfsdp_v2/test_overlap.py:183: AssertionError
+[default3]:USDT:2026-11-12 13:18:16 169:169 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default1]:USDT:2026-11-12 13:18:16 167:167 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default0]:USDT:2026-11-12 13:18:16 166:166 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default2]:USDT:2026-11-12 13:18:16 168:168 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default5]:USDT:2026-11-12 13:18:16 171:171 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default4]:USDT:2026-11-12 13:18:16 170:170 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default6]:USDT:2026-11-12 13:18:16 172:172 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default7]:USDT:2026-11-12 13:18:16 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default1]:.[default7]:.[default0]:.[default3]:.[default2]:.[default5]:.[default1]:USDT:2026-11-12 13:18:17 167:167 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default0]:USDT:2026-11-12 13:18:17 166:166 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default2]:USDT:2026-11-12 13:18:17 168:168 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default4]:.[default5]:USDT:2026-11-12 13:18:17 171:171 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default4]:USDT:2026-11-12 13:18:17 170:170 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:USDT:2026-11-12 13:18:17 172:172 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default7]:USDT:2026-11-12 13:18:17 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:.[default3]:USDT:2026-11-12 13:18:17 169:169 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default1]:USDT:2026-11-12 13:18:28 167:167 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default0]:USDT:2026-11-12 13:18:28 166:166 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default2]:USDT:2026-11-12 13:18:28 168:168 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default5]:USDT:2026-11-12 13:18:28 171:171 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default4]:USDT:2026-11-12 13:18:28 170:170 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default6]:USDT:2026-11-12 13:18:28 172:172 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default7]:USDT:2026-11-12 13:18:28 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default3]:USDT:2026-11-12 13:18:28 169:169 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default3]:USDT:2026-11-12 13:18:29 169:169 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default1]:.[default0]:.[default7]:.[default3]:.[default5]:.[default2]:.[default1]:USDT:2026-11-12 13:18:29 167:167 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default0]:USDT:2026-11-12 13:18:29 166:166 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default2]:USDT:2026-11-12 13:18:29 168:168 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default5]:USDT:2026-11-12 13:18:29 171:171 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default4]:.[default4]:USDT:2026-11-12 13:18:29 170:170 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:USDT:2026-11-12 13:18:29 172:172 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default7]:USDT:2026-11-12 13:18:29 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:.[default3]:USDT:2026-11-12 13:18:41 169:169 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default1]:USDT:2026-11-12 13:18:41 167:167 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default0]:USDT:2026-11-12 13:18:41 166:166 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default2]:USDT:2026-11-12 13:18:41 168:168 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default5]:USDT:2026-11-12 13:18:41 171:171 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default4]:USDT:2026-11-12 13:18:41 170:170 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default7]:USDT:2026-11-12 13:18:41 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default6]:USDT:2026-11-12 13:18:41 172:172 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default4]:USDT:2026-11-12 13:18:41 170:170 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default7]:USDT:2026-11-12 13:18:41 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:USDT:2026-11-12 13:18:41 172:172 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default3]:USDT:2026-11-12 13:18:41 169:169 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default1]:.[default0]:.[default7]:.[default3]:.[default1]:USDT:2026-11-12 13:18:41 167:167 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default5]:.[default2]:.[default0]:USDT:2026-11-12 13:18:41 166:166 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default2]:USDT:2026-11-12 13:18:41 168:168 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default5]:USDT:2026-11-12 13:18:41 171:171 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default4]:.[default6]:.[default3]:USDT:2026-11-12 13:18:54 169:169 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default0]:USDT:2026-11-12 13:18:54 166:166 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default1]:USDT:2026-11-12 13:18:54 167:167 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default5]:USDT:2026-11-12 13:18:54 171:171 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default2]:USDT:2026-11-12 13:18:54 168:168 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default7]:USDT:2026-11-12 13:18:54 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default4]:USDT:2026-11-12 13:18:54 170:170 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default6]:USDT:2026-11-12 13:18:54 172:172 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default3]:USDT:2026-11-12 13:18:55 169:169 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default1]:.[default0]:.[default7]:.[default5]:.[default3]:.[default0]:USDT:2026-11-12 13:18:55 166:166 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default4]:.[default1]:USDT:2026-11-12 13:18:55 167:167 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default2]:.[default5]:USDT:2026-11-12 13:18:55 171:171 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default2]:USDT:2026-11-12 13:18:55 168:168 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default7]:USDT:2026-11-12 13:18:55 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:USDT:2026-11-12 13:18:55 172:172 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default4]:USDT:2026-11-12 13:18:55 170:170 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:.[default2]:USDT:2026-11-12 13:19:07 168:168 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default7]:USDT:2026-11-12 13:19:07 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default6]:USDT:2026-11-12 13:19:07 172:172 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default4]:USDT:2026-11-12 13:19:07 170:170 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default3]:USDT:2026-11-12 13:19:07 169:169 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default0]:USDT:2026-11-12 13:19:07 166:166 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default1]:USDT:2026-11-12 13:19:07 167:167 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default5]:USDT:2026-11-12 13:19:07 171:171 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default5]:USDT:2026-11-12 13:19:07 171:171 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default2]:USDT:2026-11-12 13:19:07 168:168 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default7]:USDT:2026-11-12 13:19:07 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:USDT:2026-11-12 13:19:07 172:172 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default4]:USDT:2026-11-12 13:19:07 170:170 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default3]:USDT:2026-11-12 13:19:07 169:169 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default0]:USDT:2026-11-12 13:19:07 166:166 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default1]:USDT:2026-11-12 13:19:07 167:167 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:.[default5]:.[default0]:.[default7]:.[default4]:.[default2]:.[default1]:.[default3]:.[default7]:USDT:2026-11-12 13:19:18 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default4]:USDT:2026-11-12 13:19:18 170:170 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default6]:USDT:2026-11-12 13:19:18 172:172 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default3]:USDT:2026-11-12 13:19:18 169:169 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default0]:USDT:2026-11-12 13:19:18 166:166 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default1]:USDT:2026-11-12 13:19:18 167:167 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default5]:USDT:2026-11-12 13:19:18 171:171 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default2]:USDT:2026-11-12 13:19:18 168:168 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default3]:USDT:2026-11-12 13:19:19 169:169 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default5]:.[default1]:.[default7]:.[default0]:.[default3]:.[default0]:USDT:2026-11-12 13:19:19 166:166 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default1]:USDT:2026-11-12 13:19:19 167:167 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default4]:.[default2]:.[default5]:USDT:2026-11-12 13:19:19 171:171 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default2]:USDT:2026-11-12 13:19:19 168:168 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default7]:USDT:2026-11-12 13:19:19 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default4]:USDT:2026-11-12 13:19:19 170:170 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:USDT:2026-11-12 13:19:19 172:172 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:.[default0]:USDT:2026-11-12 13:19:29 166:166 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default1]:USDT:2026-11-12 13:19:29 167:167 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default5]:USDT:2026-11-12 13:19:29 171:171 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default2]:USDT:2026-11-12 13:19:29 168:168 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default7]:USDT:2026-11-12 13:19:29 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default4]:USDT:2026-11-12 13:19:29 170:170 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default6]:USDT:2026-11-12 13:19:29 172:172 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default3]:USDT:2026-11-12 13:19:29 169:169 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default0]:USDT:2026-11-12 13:19:30 166:166 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default1]:USDT:2026-11-12 13:19:30 167:167 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default5]:USDT:2026-11-12 13:19:30 171:171 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default2]:USDT:2026-11-12 13:19:30 168:168 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default7]:USDT:2026-11-12 13:19:30 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default4]:USDT:2026-11-12 13:19:30 170:170 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:USDT:2026-11-12 13:19:30 172:172 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:.[default3]:USDT:2026-11-12 13:19:30 169:169 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default7]:.[default1]:.[default3]:.[default5]:.[default0]:.[default4]:.[default2]:.[default0]:USDT:2026-11-12 13:19:40 166:166 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default1]:USDT:2026-11-12 13:19:40 167:167 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default5]:USDT:2026-11-12 13:19:40 171:171 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default7]:USDT:2026-11-12 13:19:40 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default4]:USDT:2026-11-12 13:19:40 170:170 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default2]:USDT:2026-11-12 13:19:40 168:168 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default6]:USDT:2026-11-12 13:19:40 172:172 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default3]:USDT:2026-11-12 13:19:40 169:169 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default3]:USDT:2026-11-12 13:19:41 169:169 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default7]:.[default1]:.[default3]:.[default5]:.[default0]:.[default4]:.[default2]:.[default0]:USDT:2026-11-12 13:19:41 166:166 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default1]:USDT:2026-11-12 13:19:41 167:167 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default5]:USDT:2026-11-12 13:19:41 171:171 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default7]:USDT:2026-11-12 13:19:41 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default4]:USDT:2026-11-12 13:19:41 170:170 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:USDT:2026-11-12 13:19:41 172:172 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default2]:USDT:2026-11-12 13:19:41 168:168 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:.[default0]:USDT:2026-11-12 13:19:53 166:166 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default1]:USDT:2026-11-12 13:19:53 167:167 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default5]:USDT:2026-11-12 13:19:53 171:171 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default7]:USDT:2026-11-12 13:19:53 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default4]:USDT:2026-11-12 13:19:53 170:170 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default6]:USDT:2026-11-12 13:19:53 172:172 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default2]:USDT:2026-11-12 13:19:53 168:168 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default3]:USDT:2026-11-12 13:19:53 169:169 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default0]:.[default7]:.[default1]:.[default5]:.[default4]:.[default2]:.[default0]:USDT:2026-11-12 13:19:54 166:166 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default1]:USDT:2026-11-12 13:19:54 167:167 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default5]:USDT:2026-11-12 13:19:54 171:171 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default7]:USDT:2026-11-12 13:19:54 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default4]:USDT:2026-11-12 13:19:54 170:170 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:USDT:2026-11-12 13:19:54 172:172 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default2]:USDT:2026-11-12 13:19:54 168:168 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:.[default3]:USDT:2026-11-12 13:19:54 169:169 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default3]:.[default1]:USDT:2026-11-12 13:20:06 167:167 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default0]:USDT:2026-11-12 13:20:06 166:166 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default5]:USDT:2026-11-12 13:20:06 171:171 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default7]:USDT:2026-11-12 13:20:06 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default4]:USDT:2026-11-12 13:20:06 170:170 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default6]:USDT:2026-11-12 13:20:06 172:172 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default2]:USDT:2026-11-12 13:20:06 168:168 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default3]:USDT:2026-11-12 13:20:06 169:169 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default1]:USDT:2026-11-12 13:20:06 167:167 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default0]:USDT:2026-11-12 13:20:06 166:166 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default5]:USDT:2026-11-12 13:20:06 171:171 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default7]:USDT:2026-11-12 13:20:06 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:USDT:2026-11-12 13:20:06 172:172 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default4]:USDT:2026-11-12 13:20:06 170:170 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default1]:.[default6]:.[default2]:USDT:2026-11-12 13:20:06 168:168 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default3]:USDT:2026-11-12 13:20:06 169:169 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default0]:.[default7]:.[default3]:.[default5]:.[default4]:.[default2]:.[default7]:USDT:2026-11-12 13:20:18 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default6]:USDT:2026-11-12 13:20:18 172:172 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default4]:USDT:2026-11-12 13:20:18 170:170 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default2]:USDT:2026-11-12 13:20:18 168:168 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default3]:USDT:2026-11-12 13:20:18 169:169 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default0]:USDT:2026-11-12 13:20:18 166:166 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default1]:USDT:2026-11-12 13:20:18 167:167 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default5]:USDT:2026-11-12 13:20:18 171:171 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default7]:USDT:2026-11-12 13:20:18 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:USDT:2026-11-12 13:20:18 172:172 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default4]:USDT:2026-11-12 13:20:18 170:170 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default2]:USDT:2026-11-12 13:20:18 168:168 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default3]:USDT:2026-11-12 13:20:18 169:169 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default0]:.[default2]:.[default1]:USDT:2026-11-12 13:20:18 167:167 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default0]:USDT:2026-11-12 13:20:18 166:166 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default5]:USDT:2026-11-12 13:20:18 171:171 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default1]:.[default7]:.[default3]:.[default5]:.[default4]:.[default6]:.[default0]:USDT:2026-11-12 13:20:28 166:166 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default1]:USDT:2026-11-12 13:20:28 167:167 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default5]:USDT:2026-11-12 13:20:28 171:171 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default7]:USDT:2026-11-12 13:20:28 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default6]:USDT:2026-11-12 13:20:28 172:172 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default4]:USDT:2026-11-12 13:20:28 170:170 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default2]:USDT:2026-11-12 13:20:28 168:168 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default3]:USDT:2026-11-12 13:20:28 169:169 SyncActivityProfilerHandler.cpp:39] profiler_start
+[default1]:USDT:2026-11-12 13:20:28 167:167 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default5]:USDT:2026-11-12 13:20:28 171:171 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default7]:USDT:2026-11-12 13:20:28 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default6]:USDT:2026-11-12 13:20:28 172:172 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default4]:USDT:2026-11-12 13:20:28 170:170 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default2]:USDT:2026-11-12 13:20:28 168:168 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default3]:USDT:2026-11-12 13:20:28 169:169 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default7]:.[default3]:.[default5]:.[default0]:USDT:2026-11-12 13:20:28 166:166 SyncActivityProfilerHandler.cpp:46] profiler_stop
+[default4]:.[default6]:.[default2]:.[default1]:.[default0]:.[default6]:
+[default6]:=============================== warnings summary ===============================
+[default6]:megatron/core/optimizer/__init__.py:25
+[default6]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/__init__.py:25: UserWarning: Transformer Engine and Apex are not installed. Falling back to Torch optimizers.
+[default6]:    warnings.warn(
+[default6]:
+[default6]:megatron/core/inference/contexts/__init__.py:9
+[default6]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/inference/contexts/__init__.py:9: DeprecationWarning: The following imports from `dynamic_context.py` will be removed in this file in `megatron-core` 0.14. The imports here result in a cyclic import issue that causes rotary embeddings to import from Apex rather than Transformer Engine.
+[default6]:    warnings.warn(
+[default6]:
+[default6]:megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:115
+[default6]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:115: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[default6]:    warnings.warn(
+[default6]:
+[default6]:megatron/core/optimizer/optimizer.py:29
+[default6]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/optimizer.py:29: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[default6]:    warnings.warn(
+[default6]:
+[default6]:megatron/core/optimizer/clip_grads.py:32
+[default6]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/clip_grads.py:32: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier, multi_tensor_l2norm, and multi_tensor_scale
+[default6]:    warnings.warn(
+[default6]:
+[default6]:megatron/core/hyper_comm_grid.py:20
+[default6]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/hyper_comm_grid.py:20: UserWarning: absl.logging is not installed. Using logging.getLogger(__name__) instead. Please install absl.logging with `pip install absl-py` to use absl.logging.
+[default6]:    warnings.warn(
+[default6]:
+[default6]:megatron/training/utils/common_utils.py:27
+[default6]:  /planning-users/yangyeyuan/Megatron-LM/megatron/training/utils/common_utils.py:27: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_l2norm
+[default6]:    warnings.warn(
+[default6]:
+[default6]:megatron/core/extensions/transformer_engine_spec_provider.py:105
+[default6]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/extensions/transformer_engine_spec_provider.py:105: UserWarning: Only transformer-engine>=1.7.0 supports MoE experts, but your version is 0.0.0. Use local linear implementation instead.
+[default6]:    warnings.warn(
+[default6]:
+[default6]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py: 4 warnings
+[default6]:tests/unit_tests/distributed/mfsdp_v2/test_overlap.py: 13 warnings
+[default6]:  /planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+[default6]:    return func(*args, **kwargs)
+[default6]:
+[default6]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default6]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[symmetric_memory]
+[default6]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_local_accumulation_captures_full_iteration
+[default6]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_hfsdp_outer_allgather_overlap_captures_full_iteration
+[default6]:  sys:1: UserWarning: Full backward hook is firing when gradients are computed with respect to module outputs since no inputs require gradients. See https://docs.pytorch.org/docs/main/generated/torch.nn.Module.html#torch.nn.Module.register_full_backward_hook for more details.
+[default6]:
+[default6]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py: 3 warnings
+[default6]:tests/unit_tests/distributed/mfsdp_v2/test_overlap.py: 13 warnings
+[default6]:  /planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+[default6]:    return func(*args, **kwargs)
+[default6]:
+[default6]:-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[default6]:==================================== PASSES ====================================
+[default6]:____________________ test_captures_full_iteration[default] _____________________
+[default6]:------------------------------ Captured log setup ------------------------------
+[default6]:INFO     tests.test_utils.python_scripts.download_unit_tests_dataset:download_unit_tests_dataset.py:90   Downloading datasets.zip...
+[default6]:ERROR    tests.test_utils.python_scripts.download_unit_tests_dataset:download_unit_tests_dataset.py:100   Error downloading/extracting datasets.zip: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /NVIDIA/Megatron-LM/releases/download/v2.5/datasets.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7f1151a31730>, 'Connection to github.com timed out. (connect timeout=60)'))
+[default6]:------------------------------ Captured log call -------------------------------
+[default6]:INFO     test_cuda_graph:test_cuda_graph.py:141 CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default6]:________________ test_captures_full_iteration[symmetric_memory] ________________
+[default6]:------------------------------ Captured log call -------------------------------
+[default6]:INFO     test_cuda_graph:test_cuda_graph.py:141 CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default6]:============================= slowest 15 durations =============================
+[default6]:61.35s setup    tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default6]:13.01s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero2]
+[default6]:12.54s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero3]
+[default6]:12.46s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1]
+[default6]:12.40s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero1]
+[default6]:12.21s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero3]
+[default6]:12.20s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero1]
+[default6]:11.91s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero2]
+[default6]:11.07s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero3]
+[default6]:11.01s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero3]
+[default6]:10.72s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero2]
+[default6]:10.55s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero2]
+[default6]:10.27s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero1]
+[default6]:9.44s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_prefetch_size_zero_disables_allgather_overlap
+[default6]:4.42s call     tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default6]:=========================== short test summary info ============================
+[default6]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default6]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[symmetric_memory]
+[default6]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_local_accumulation_captures_full_iteration
+[default6]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_hfsdp_outer_allgather_overlap_captures_full_iteration
+[default6]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1]
+[default6]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero2]
+[default6]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero3]
+[default6]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero1]
+[default6]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero2]
+[default6]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero3]
+[default6]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero1]
+[default6]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero2]
+[default6]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero3]
+[default6]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero1]
+[default6]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero2]
+[default6]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero3]
+[default6]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_prefetch_size_zero_disables_allgather_overlap
+[default6]:17 passed, 45 warnings in 226.00s (0:03:46)
+[default7]:
+[default7]:=============================== warnings summary ===============================
+[default7]:megatron/core/optimizer/__init__.py:25
+[default7]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/__init__.py:25: UserWarning: Transformer Engine and Apex are not installed. Falling back to Torch optimizers.
+[default7]:    warnings.warn(
+[default7]:
+[default7]:megatron/core/inference/contexts/__init__.py:9
+[default7]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/inference/contexts/__init__.py:9: DeprecationWarning: The following imports from `dynamic_context.py` will be removed in this file in `megatron-core` 0.14. The imports here result in a cyclic import issue that causes rotary embeddings to import from Apex rather than Transformer Engine.
+[default7]:    warnings.warn(
+[default7]:
+[default7]:megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:115
+[default7]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:115: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[default7]:    warnings.warn(
+[default7]:
+[default7]:megatron/core/optimizer/optimizer.py:29
+[default7]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/optimizer.py:29: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[default7]:    warnings.warn(
+[default7]:
+[default7]:megatron/core/optimizer/clip_grads.py:32
+[default7]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/clip_grads.py:32: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier, multi_tensor_l2norm, and multi_tensor_scale
+[default7]:    warnings.warn(
+[default7]:
+[default7]:megatron/core/hyper_comm_grid.py:20
+[default7]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/hyper_comm_grid.py:20: UserWarning: absl.logging is not installed. Using logging.getLogger(__name__) instead. Please install absl.logging with `pip install absl-py` to use absl.logging.
+[default7]:    warnings.warn(
+[default7]:
+[default7]:megatron/training/utils/common_utils.py:27
+[default7]:  /planning-users/yangyeyuan/Megatron-LM/megatron/training/utils/common_utils.py:27: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_l2norm
+[default7]:    warnings.warn(
+[default7]:
+[default7]:megatron/core/extensions/transformer_engine_spec_provider.py:105
+[default7]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/extensions/transformer_engine_spec_provider.py:105: UserWarning: Only transformer-engine>=1.7.0 supports MoE experts, but your version is 0.0.0. Use local linear implementation instead.
+[default7]:    warnings.warn(
+[default7]:
+[default7]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py: 4 warnings
+[default7]:tests/unit_tests/distributed/mfsdp_v2/test_overlap.py: 13 warnings
+[default7]:  /planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+[default7]:    return func(*args, **kwargs)
+[default7]:
+[default7]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default7]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[symmetric_memory]
+[default7]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_local_accumulation_captures_full_iteration
+[default7]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_hfsdp_outer_allgather_overlap_captures_full_iteration
+[default7]:  sys:1: UserWarning: Full backward hook is firing when gradients are computed with respect to module outputs since no inputs require gradients. See https://docs.pytorch.org/docs/main/generated/torch.nn.Module.html#torch.nn.Module.register_full_backward_hook for more details.
+[default7]:
+[default7]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py: 3 warnings
+[default7]:tests/unit_tests/distributed/mfsdp_v2/test_overlap.py: 13 warnings
+[default7]:  /planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+[default7]:    return func(*args, **kwargs)
+[default7]:
+[default7]:-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[default7]:==================================== PASSES ====================================
+[default7]:____________________ test_captures_full_iteration[default] _____________________
+[default7]:------------------------------ Captured log setup ------------------------------
+[default7]:INFO     tests.test_utils.python_scripts.download_unit_tests_dataset:download_unit_tests_dataset.py:90   Downloading datasets.zip...
+[default7]:ERROR    tests.test_utils.python_scripts.download_unit_tests_dataset:download_unit_tests_dataset.py:100   Error downloading/extracting datasets.zip: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /NVIDIA/Megatron-LM/releases/download/v2.5/datasets.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7f9e9436fec0>, 'Connection to github.com timed out. (connect timeout=60)'))
+[default7]:------------------------------ Captured log call -------------------------------
+[default7]:INFO     test_cuda_graph:test_cuda_graph.py:141 CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default7]:________________ test_captures_full_iteration[symmetric_memory] ________________
+[default7]:------------------------------ Captured log call -------------------------------
+[default7]:INFO     test_cuda_graph:test_cuda_graph.py:141 CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default7]:============================= slowest 15 durations =============================
+[default7]:61.35s setup    tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default7]:13.01s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero2]
+[default7]:12.53s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero3]
+[default7]:12.38s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero1]
+[default7]:12.21s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero3]
+[default7]:12.20s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero1]
+[default7]:12.05s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1]
+[default7]:11.91s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero2]
+[default7]:11.16s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero3]
+[default7]:10.93s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero3]
+[default7]:10.72s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero2]
+[default7]:10.49s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero2]
+[default7]:10.27s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero1]
+[default7]:9.43s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_prefetch_size_zero_disables_allgather_overlap
+[default7]:4.41s call     tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default7]:=========================== short test summary info ============================
+[default7]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default7]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[symmetric_memory]
+[default7]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_local_accumulation_captures_full_iteration
+[default7]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_hfsdp_outer_allgather_overlap_captures_full_iteration
+[default7]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1]
+[default7]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero2]
+[default7]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero3]
+[default7]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero1]
+[default7]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero2]
+[default7]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero3]
+[default7]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero1]
+[default7]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero2]
+[default7]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero3]
+[default7]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero1]
+[default7]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero2]
+[default7]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero3]
+[default7]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_prefetch_size_zero_disables_allgather_overlap
+[default7]:17 passed, 45 warnings in 226.00s (0:03:46)
+[default0]:
+[default0]:=============================== warnings summary ===============================
+[default0]:megatron/core/optimizer/__init__.py:25
+[default0]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/__init__.py:25: UserWarning: Transformer Engine and Apex are not installed. Falling back to Torch optimizers.
+[default0]:    warnings.warn(
+[default0]:
+[default0]:megatron/core/inference/contexts/__init__.py:9
+[default0]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/inference/contexts/__init__.py:9: DeprecationWarning: The following imports from `dynamic_context.py` will be removed in this file in `megatron-core` 0.14. The imports here result in a cyclic import issue that causes rotary embeddings to import from Apex rather than Transformer Engine.
+[default0]:    warnings.warn(
+[default0]:
+[default0]:megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:115
+[default0]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:115: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[default0]:    warnings.warn(
+[default0]:
+[default0]:megatron/core/optimizer/optimizer.py:29
+[default0]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/optimizer.py:29: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[default0]:    warnings.warn(
+[default0]:
+[default0]:megatron/core/optimizer/clip_grads.py:32
+[default0]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/clip_grads.py:32: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier, multi_tensor_l2norm, and multi_tensor_scale
+[default0]:    warnings.warn(
+[default0]:
+[default0]:megatron/core/hyper_comm_grid.py:20
+[default0]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/hyper_comm_grid.py:20: UserWarning: absl.logging is not installed. Using logging.getLogger(__name__) instead. Please install absl.logging with `pip install absl-py` to use absl.logging.
+[default0]:    warnings.warn(
+[default0]:
+[default0]:megatron/training/utils/common_utils.py:27
+[default0]:  /planning-users/yangyeyuan/Megatron-LM/megatron/training/utils/common_utils.py:27: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_l2norm
+[default0]:    warnings.warn(
+[default0]:
+[default0]:megatron/core/models/mimo/config/base_configs.py:12
+[default0]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/models/mimo/config/base_configs.py:12: UserWarning: MimoModelConfig is experimental and still under active development. The API may change without notice in future releases.
+[default0]:    class MimoModelConfig:
+[default0]:
+[default0]:megatron/core/extensions/transformer_engine_spec_provider.py:105
+[default0]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/extensions/transformer_engine_spec_provider.py:105: UserWarning: Only transformer-engine>=1.7.0 supports MoE experts, but your version is 0.0.0. Use local linear implementation instead.
+[default0]:    warnings.warn(
+[default0]:
+[default0]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py: 4 warnings
+[default0]:tests/unit_tests/distributed/mfsdp_v2/test_overlap.py: 13 warnings
+[default0]:  /planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+[default0]:    return func(*args, **kwargs)
+[default0]:
+[default0]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default0]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[symmetric_memory]
+[default0]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_local_accumulation_captures_full_iteration
+[default0]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_hfsdp_outer_allgather_overlap_captures_full_iteration
+[default0]:  sys:1: UserWarning: Full backward hook is firing when gradients are computed with respect to module outputs since no inputs require gradients. See https://docs.pytorch.org/docs/main/generated/torch.nn.Module.html#torch.nn.Module.register_full_backward_hook for more details.
+[default0]:
+[default0]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py: 3 warnings
+[default0]:tests/unit_tests/distributed/mfsdp_v2/test_overlap.py: 13 warnings
+[default0]:  /planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+[default0]:    return func(*args, **kwargs)
+[default0]:
+[default0]:-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[default0]:==================================== PASSES ====================================
+[default0]:____________________ test_captures_full_iteration[default] _____________________
+[default0]:------------------------------ Captured log setup ------------------------------
+[default0]:INFO     tests.test_utils.python_scripts.download_unit_tests_dataset:download_unit_tests_dataset.py:90   Downloading datasets.zip...
+[default0]:ERROR    tests.test_utils.python_scripts.download_unit_tests_dataset:download_unit_tests_dataset.py:100   Error downloading/extracting datasets.zip: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /NVIDIA/Megatron-LM/releases/download/v2.5/datasets.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7f7cca4cf590>, 'Connection to github.com timed out. (connect timeout=60)'))
+[default0]:------------------------------ Captured log call -------------------------------
+[default0]:INFO     test_cuda_graph:test_cuda_graph.py:141 CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default0]:________________ test_captures_full_iteration[symmetric_memory] ________________
+[default0]:------------------------------ Captured log call -------------------------------
+[default0]:INFO     test_cuda_graph:test_cuda_graph.py:141 CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default0]:============================= slowest 15 durations =============================
+[default0]:61.20s setup    tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default0]:13.10s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero2]
+[default0]:12.44s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero1]
+[default0]:12.27s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero3]
+[default0]:12.21s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero1]
+[default0]:12.05s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1]
+[default0]:12.03s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero2]
+[default0]:11.66s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero3]
+[default0]:11.08s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero3]
+[default0]:10.93s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero3]
+[default0]:10.72s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero2]
+[default0]:10.55s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero2]
+[default0]:10.38s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero1]
+[default0]:9.94s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_prefetch_size_zero_disables_allgather_overlap
+[default0]:4.36s call     tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default0]:=========================== short test summary info ============================
+[default0]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default0]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[symmetric_memory]
+[default0]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_local_accumulation_captures_full_iteration
+[default0]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_hfsdp_outer_allgather_overlap_captures_full_iteration
+[default0]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1]
+[default0]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero2]
+[default0]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero3]
+[default0]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero1]
+[default0]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero2]
+[default0]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero3]
+[default0]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero1]
+[default0]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero2]
+[default0]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero3]
+[default0]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero1]
+[default0]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero2]
+[default0]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero3]
+[default0]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_prefetch_size_zero_disables_allgather_overlap
+[default0]:17 passed, 46 warnings in 226.38s (0:03:46)
+[default1]:
+[default1]:=============================== warnings summary ===============================
+[default1]:megatron/core/optimizer/__init__.py:25
+[default1]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/__init__.py:25: UserWarning: Transformer Engine and Apex are not installed. Falling back to Torch optimizers.
+[default1]:    warnings.warn(
+[default1]:
+[default1]:megatron/core/inference/contexts/__init__.py:9
+[default1]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/inference/contexts/__init__.py:9: DeprecationWarning: The following imports from `dynamic_context.py` will be removed in this file in `megatron-core` 0.14. The imports here result in a cyclic import issue that causes rotary embeddings to import from Apex rather than Transformer Engine.
+[default1]:    warnings.warn(
+[default1]:
+[default1]:megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:115
+[default1]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:115: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[default1]:    warnings.warn(
+[default1]:
+[default1]:megatron/core/optimizer/optimizer.py:29
+[default1]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/optimizer.py:29: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[default1]:    warnings.warn(
+[default1]:
+[default1]:megatron/core/optimizer/clip_grads.py:32
+[default1]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/clip_grads.py:32: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier, multi_tensor_l2norm, and multi_tensor_scale
+[default1]:    warnings.warn(
+[default1]:
+[default1]:megatron/core/hyper_comm_grid.py:20
+[default1]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/hyper_comm_grid.py:20: UserWarning: absl.logging is not installed. Using logging.getLogger(__name__) instead. Please install absl.logging with `pip install absl-py` to use absl.logging.
+[default1]:    warnings.warn(
+[default1]:
+[default1]:megatron/training/utils/common_utils.py:27
+[default1]:  /planning-users/yangyeyuan/Megatron-LM/megatron/training/utils/common_utils.py:27: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_l2norm
+[default1]:    warnings.warn(
+[default1]:
+[default1]:megatron/core/extensions/transformer_engine_spec_provider.py:105
+[default1]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/extensions/transformer_engine_spec_provider.py:105: UserWarning: Only transformer-engine>=1.7.0 supports MoE experts, but your version is 0.0.0. Use local linear implementation instead.
+[default1]:    warnings.warn(
+[default1]:
+[default1]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py: 4 warnings
+[default1]:tests/unit_tests/distributed/mfsdp_v2/test_overlap.py: 13 warnings
+[default1]:  /planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+[default1]:    return func(*args, **kwargs)
+[default1]:
+[default1]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default1]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[symmetric_memory]
+[default1]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_local_accumulation_captures_full_iteration
+[default1]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_hfsdp_outer_allgather_overlap_captures_full_iteration
+[default1]:  sys:1: UserWarning: Full backward hook is firing when gradients are computed with respect to module outputs since no inputs require gradients. See https://docs.pytorch.org/docs/main/generated/torch.nn.Module.html#torch.nn.Module.register_full_backward_hook for more details.
+[default1]:
+[default1]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py: 3 warnings
+[default1]:tests/unit_tests/distributed/mfsdp_v2/test_overlap.py: 13 warnings
+[default1]:  /planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+[default1]:    return func(*args, **kwargs)
+[default1]:
+[default1]:-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[default1]:==================================== PASSES ====================================
+[default1]:____________________ test_captures_full_iteration[default] _____________________
+[default1]:------------------------------ Captured log setup ------------------------------
+[default1]:INFO     tests.test_utils.python_scripts.download_unit_tests_dataset:download_unit_tests_dataset.py:90   Downloading datasets.zip...
+[default1]:ERROR    tests.test_utils.python_scripts.download_unit_tests_dataset:download_unit_tests_dataset.py:100   Error downloading/extracting datasets.zip: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /NVIDIA/Megatron-LM/releases/download/v2.5/datasets.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7fc270eea060>, 'Connection to github.com timed out. (connect timeout=60)'))
+[default1]:------------------------------ Captured log call -------------------------------
+[default1]:INFO     test_cuda_graph:test_cuda_graph.py:141 CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default1]:________________ test_captures_full_iteration[symmetric_memory] ________________
+[default1]:------------------------------ Captured log call -------------------------------
+[default1]:INFO     test_cuda_graph:test_cuda_graph.py:141 CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default1]:============================= slowest 15 durations =============================
+[default1]:61.20s setup    tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default1]:13.09s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero2]
+[default1]:12.45s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1]
+[default1]:12.40s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero3]
+[default1]:12.40s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero1]
+[default1]:12.22s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero1]
+[default1]:12.00s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero2]
+[default1]:11.63s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero3]
+[default1]:11.08s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero3]
+[default1]:10.93s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero3]
+[default1]:10.72s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero2]
+[default1]:10.49s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero2]
+[default1]:10.36s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero1]
+[default1]:9.79s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_prefetch_size_zero_disables_allgather_overlap
+[default1]:4.36s call     tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default1]:=========================== short test summary info ============================
+[default1]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default1]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[symmetric_memory]
+[default1]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_local_accumulation_captures_full_iteration
+[default1]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_hfsdp_outer_allgather_overlap_captures_full_iteration
+[default1]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1]
+[default1]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero2]
+[default1]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero3]
+[default1]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero1]
+[default1]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero2]
+[default1]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero3]
+[default1]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero1]
+[default1]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero2]
+[default1]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero3]
+[default1]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero1]
+[default1]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero2]
+[default1]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero3]
+[default1]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_prefetch_size_zero_disables_allgather_overlap
+[default1]:17 passed, 45 warnings in 226.39s (0:03:46)
+[default5]:
+[default5]:=============================== warnings summary ===============================
+[default5]:megatron/core/optimizer/__init__.py:25
+[default5]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/__init__.py:25: UserWarning: Transformer Engine and Apex are not installed. Falling back to Torch optimizers.
+[default5]:    warnings.warn(
+[default5]:
+[default5]:megatron/core/inference/contexts/__init__.py:9
+[default5]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/inference/contexts/__init__.py:9: DeprecationWarning: The following imports from `dynamic_context.py` will be removed in this file in `megatron-core` 0.14. The imports here result in a cyclic import issue that causes rotary embeddings to import from Apex rather than Transformer Engine.
+[default5]:    warnings.warn(
+[default5]:
+[default5]:megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:115
+[default5]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:115: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[default5]:    warnings.warn(
+[default5]:
+[default5]:megatron/core/optimizer/optimizer.py:29
+[default5]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/optimizer.py:29: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[default5]:    warnings.warn(
+[default5]:
+[default5]:megatron/core/optimizer/clip_grads.py:32
+[default5]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/clip_grads.py:32: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier, multi_tensor_l2norm, and multi_tensor_scale
+[default5]:    warnings.warn(
+[default5]:
+[default5]:megatron/core/hyper_comm_grid.py:20
+[default5]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/hyper_comm_grid.py:20: UserWarning: absl.logging is not installed. Using logging.getLogger(__name__) instead. Please install absl.logging with `pip install absl-py` to use absl.logging.
+[default5]:    warnings.warn(
+[default5]:
+[default5]:megatron/training/utils/common_utils.py:27
+[default5]:  /planning-users/yangyeyuan/Megatron-LM/megatron/training/utils/common_utils.py:27: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_l2norm
+[default5]:    warnings.warn(
+[default5]:
+[default5]:megatron/core/extensions/transformer_engine_spec_provider.py:105
+[default5]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/extensions/transformer_engine_spec_provider.py:105: UserWarning: Only transformer-engine>=1.7.0 supports MoE experts, but your version is 0.0.0. Use local linear implementation instead.
+[default5]:    warnings.warn(
+[default5]:
+[default5]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py: 4 warnings
+[default5]:tests/unit_tests/distributed/mfsdp_v2/test_overlap.py: 13 warnings
+[default5]:  /planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+[default5]:    return func(*args, **kwargs)
+[default5]:
+[default5]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default5]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[symmetric_memory]
+[default5]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_local_accumulation_captures_full_iteration
+[default5]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_hfsdp_outer_allgather_overlap_captures_full_iteration
+[default5]:  sys:1: UserWarning: Full backward hook is firing when gradients are computed with respect to module outputs since no inputs require gradients. See https://docs.pytorch.org/docs/main/generated/torch.nn.Module.html#torch.nn.Module.register_full_backward_hook for more details.
+[default5]:
+[default5]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py: 3 warnings
+[default5]:tests/unit_tests/distributed/mfsdp_v2/test_overlap.py: 13 warnings
+[default5]:  /planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+[default5]:    return func(*args, **kwargs)
+[default5]:
+[default5]:-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[default5]:==================================== PASSES ====================================
+[default5]:____________________ test_captures_full_iteration[default] _____________________
+[default5]:------------------------------ Captured log setup ------------------------------
+[default5]:INFO     tests.test_utils.python_scripts.download_unit_tests_dataset:download_unit_tests_dataset.py:90   Downloading datasets.zip...
+[default5]:ERROR    tests.test_utils.python_scripts.download_unit_tests_dataset:download_unit_tests_dataset.py:100   Error downloading/extracting datasets.zip: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /NVIDIA/Megatron-LM/releases/download/v2.5/datasets.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7fc05ad4f470>, 'Connection to github.com timed out. (connect timeout=60)'))
+[default5]:------------------------------ Captured log call -------------------------------
+[default5]:INFO     test_cuda_graph:test_cuda_graph.py:141 CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default5]:________________ test_captures_full_iteration[symmetric_memory] ________________
+[default5]:------------------------------ Captured log call -------------------------------
+[default5]:INFO     test_cuda_graph:test_cuda_graph.py:141 CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default5]:============================= slowest 15 durations =============================
+[default5]:61.36s setup    tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default5]:13.02s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero2]
+[default5]:12.54s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero3]
+[default5]:12.38s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero1]
+[default5]:12.22s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero3]
+[default5]:12.21s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero1]
+[default5]:12.05s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1]
+[default5]:11.92s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero2]
+[default5]:11.16s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero3]
+[default5]:11.01s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero3]
+[default5]:10.72s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero2]
+[default5]:10.49s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero2]
+[default5]:10.30s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero1]
+[default5]:9.44s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_prefetch_size_zero_disables_allgather_overlap
+[default5]:4.41s call     tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default5]:=========================== short test summary info ============================
+[default5]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default5]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[symmetric_memory]
+[default5]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_local_accumulation_captures_full_iteration
+[default5]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_hfsdp_outer_allgather_overlap_captures_full_iteration
+[default5]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1]
+[default5]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero2]
+[default5]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero3]
+[default5]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero1]
+[default5]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero2]
+[default5]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero3]
+[default5]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero1]
+[default5]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero2]
+[default5]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero3]
+[default5]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero1]
+[default5]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero2]
+[default5]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero3]
+[default5]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_prefetch_size_zero_disables_allgather_overlap
+[default5]:17 passed, 45 warnings in 226.45s (0:03:46)
+[default3]:
+[default3]:=============================== warnings summary ===============================
+[default3]:megatron/core/optimizer/__init__.py:25
+[default3]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/__init__.py:25: UserWarning: Transformer Engine and Apex are not installed. Falling back to Torch optimizers.
+[default3]:    warnings.warn(
+[default3]:
+[default3]:megatron/core/inference/contexts/__init__.py:9
+[default3]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/inference/contexts/__init__.py:9: DeprecationWarning: The following imports from `dynamic_context.py` will be removed in this file in `megatron-core` 0.14. The imports here result in a cyclic import issue that causes rotary embeddings to import from Apex rather than Transformer Engine.
+[default3]:    warnings.warn(
+[default3]:
+[default3]:megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:115
+[default3]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:115: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[default3]:    warnings.warn(
+[default3]:
+[default3]:megatron/core/optimizer/optimizer.py:29
+[default3]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/optimizer.py:29: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[default3]:    warnings.warn(
+[default3]:
+[default3]:megatron/core/optimizer/clip_grads.py:32
+[default3]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/clip_grads.py:32: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier, multi_tensor_l2norm, and multi_tensor_scale
+[default3]:    warnings.warn(
+[default3]:
+[default3]:megatron/core/hyper_comm_grid.py:20
+[default3]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/hyper_comm_grid.py:20: UserWarning: absl.logging is not installed. Using logging.getLogger(__name__) instead. Please install absl.logging with `pip install absl-py` to use absl.logging.
+[default3]:    warnings.warn(
+[default3]:
+[default3]:megatron/training/utils/common_utils.py:27
+[default3]:  /planning-users/yangyeyuan/Megatron-LM/megatron/training/utils/common_utils.py:27: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_l2norm
+[default3]:    warnings.warn(
+[default3]:
+[default3]:megatron/core/extensions/transformer_engine_spec_provider.py:105
+[default3]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/extensions/transformer_engine_spec_provider.py:105: UserWarning: Only transformer-engine>=1.7.0 supports MoE experts, but your version is 0.0.0. Use local linear implementation instead.
+[default3]:    warnings.warn(
+[default3]:
+[default3]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py: 4 warnings
+[default3]:tests/unit_tests/distributed/mfsdp_v2/test_overlap.py: 13 warnings
+[default3]:  /planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+[default3]:    return func(*args, **kwargs)
+[default3]:
+[default3]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default3]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[symmetric_memory]
+[default3]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_local_accumulation_captures_full_iteration
+[default3]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_hfsdp_outer_allgather_overlap_captures_full_iteration
+[default3]:  sys:1: UserWarning: Full backward hook is firing when gradients are computed with respect to module outputs since no inputs require gradients. See https://docs.pytorch.org/docs/main/generated/torch.nn.Module.html#torch.nn.Module.register_full_backward_hook for more details.
+[default3]:
+[default3]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py: 3 warnings
+[default3]:tests/unit_tests/distributed/mfsdp_v2/test_overlap.py: 13 warnings
+[default3]:  /planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+[default3]:    return func(*args, **kwargs)
+[default3]:
+[default3]:-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[default3]:==================================== PASSES ====================================
+[default3]:____________________ test_captures_full_iteration[default] _____________________
+[default3]:------------------------------ Captured log setup ------------------------------
+[default3]:INFO     tests.test_utils.python_scripts.download_unit_tests_dataset:download_unit_tests_dataset.py:90   Downloading datasets.zip...
+[default3]:ERROR    tests.test_utils.python_scripts.download_unit_tests_dataset:download_unit_tests_dataset.py:100   Error downloading/extracting datasets.zip: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /NVIDIA/Megatron-LM/releases/download/v2.5/datasets.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7f2119617d40>, 'Connection to github.com timed out. (connect timeout=60)'))
+[default3]:------------------------------ Captured log call -------------------------------
+[default3]:INFO     test_cuda_graph:test_cuda_graph.py:141 CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default3]:________________ test_captures_full_iteration[symmetric_memory] ________________
+[default3]:------------------------------ Captured log call -------------------------------
+[default3]:INFO     test_cuda_graph:test_cuda_graph.py:141 CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default3]:============================= slowest 15 durations =============================
+[default3]:61.34s setup    tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default3]:13.06s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero2]
+[default3]:12.39s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero1]
+[default3]:12.39s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero3]
+[default3]:12.28s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero1]
+[default3]:12.05s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1]
+[default3]:11.94s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero2]
+[default3]:11.86s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero3]
+[default3]:11.09s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero3]
+[default3]:10.93s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero3]
+[default3]:10.72s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero2]
+[default3]:10.50s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero2]
+[default3]:10.33s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero1]
+[default3]:9.49s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_prefetch_size_zero_disables_allgather_overlap
+[default3]:4.43s call     tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default3]:=========================== short test summary info ============================
+[default3]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default3]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[symmetric_memory]
+[default3]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_local_accumulation_captures_full_iteration
+[default3]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_hfsdp_outer_allgather_overlap_captures_full_iteration
+[default3]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1]
+[default3]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero2]
+[default3]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero3]
+[default3]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero1]
+[default3]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero2]
+[default3]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero3]
+[default3]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero1]
+[default3]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero2]
+[default3]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero3]
+[default3]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero1]
+[default3]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero2]
+[default3]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero3]
+[default3]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_prefetch_size_zero_disables_allgather_overlap
+[default3]:17 passed, 45 warnings in 226.41s (0:03:46)
+[default2]:
+[default2]:=============================== warnings summary ===============================
+[default2]:megatron/core/optimizer/__init__.py:25
+[default2]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/__init__.py:25: UserWarning: Transformer Engine and Apex are not installed. Falling back to Torch optimizers.
+[default2]:    warnings.warn(
+[default2]:
+[default2]:megatron/core/inference/contexts/__init__.py:9
+[default2]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/inference/contexts/__init__.py:9: DeprecationWarning: The following imports from `dynamic_context.py` will be removed in this file in `megatron-core` 0.14. The imports here result in a cyclic import issue that causes rotary embeddings to import from Apex rather than Transformer Engine.
+[default2]:    warnings.warn(
+[default2]:
+[default2]:megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:115
+[default2]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:115: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[default2]:    warnings.warn(
+[default2]:
+[default2]:megatron/core/optimizer/optimizer.py:29
+[default2]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/optimizer.py:29: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[default2]:    warnings.warn(
+[default2]:
+[default2]:megatron/core/optimizer/clip_grads.py:32
+[default2]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/clip_grads.py:32: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier, multi_tensor_l2norm, and multi_tensor_scale
+[default2]:    warnings.warn(
+[default2]:
+[default2]:megatron/core/hyper_comm_grid.py:20
+[default2]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/hyper_comm_grid.py:20: UserWarning: absl.logging is not installed. Using logging.getLogger(__name__) instead. Please install absl.logging with `pip install absl-py` to use absl.logging.
+[default2]:    warnings.warn(
+[default2]:
+[default2]:megatron/training/utils/common_utils.py:27
+[default2]:  /planning-users/yangyeyuan/Megatron-LM/megatron/training/utils/common_utils.py:27: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_l2norm
+[default2]:    warnings.warn(
+[default2]:
+[default2]:megatron/core/extensions/transformer_engine_spec_provider.py:105
+[default2]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/extensions/transformer_engine_spec_provider.py:105: UserWarning: Only transformer-engine>=1.7.0 supports MoE experts, but your version is 0.0.0. Use local linear implementation instead.
+[default2]:    warnings.warn(
+[default2]:
+[default2]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py: 4 warnings
+[default2]:tests/unit_tests/distributed/mfsdp_v2/test_overlap.py: 13 warnings
+[default2]:  /planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+[default2]:    return func(*args, **kwargs)
+[default2]:
+[default2]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default2]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[symmetric_memory]
+[default2]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_local_accumulation_captures_full_iteration
+[default2]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_hfsdp_outer_allgather_overlap_captures_full_iteration
+[default2]:  sys:1: UserWarning: Full backward hook is firing when gradients are computed with respect to module outputs since no inputs require gradients. See https://docs.pytorch.org/docs/main/generated/torch.nn.Module.html#torch.nn.Module.register_full_backward_hook for more details.
+[default2]:
+[default2]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py: 3 warnings
+[default2]:tests/unit_tests/distributed/mfsdp_v2/test_overlap.py: 13 warnings
+[default2]:  /planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+[default2]:    return func(*args, **kwargs)
+[default2]:
+[default2]:-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[default2]:==================================== PASSES ====================================
+[default2]:____________________ test_captures_full_iteration[default] _____________________
+[default2]:------------------------------ Captured log setup ------------------------------
+[default2]:INFO     tests.test_utils.python_scripts.download_unit_tests_dataset:download_unit_tests_dataset.py:90   Downloading datasets.zip...
+[default2]:ERROR    tests.test_utils.python_scripts.download_unit_tests_dataset:download_unit_tests_dataset.py:100   Error downloading/extracting datasets.zip: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /NVIDIA/Megatron-LM/releases/download/v2.5/datasets.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7f86524ca2a0>, 'Connection to github.com timed out. (connect timeout=60)'))
+[default2]:------------------------------ Captured log call -------------------------------
+[default2]:INFO     test_cuda_graph:test_cuda_graph.py:141 CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default2]:________________ test_captures_full_iteration[symmetric_memory] ________________
+[default2]:------------------------------ Captured log call -------------------------------
+[default2]:INFO     test_cuda_graph:test_cuda_graph.py:141 CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default2]:============================= slowest 15 durations =============================
+[default2]:61.21s setup    tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default2]:13.07s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero2]
+[default2]:12.52s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero1]
+[default2]:12.46s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1]
+[default2]:12.21s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero1]
+[default2]:12.20s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero3]
+[default2]:11.98s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero2]
+[default2]:11.61s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero3]
+[default2]:11.08s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero3]
+[default2]:10.93s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero3]
+[default2]:10.72s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero2]
+[default2]:10.49s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero2]
+[default2]:10.35s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero1]
+[default2]:9.79s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_prefetch_size_zero_disables_allgather_overlap
+[default2]:4.37s call     tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default2]:=========================== short test summary info ============================
+[default2]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default2]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[symmetric_memory]
+[default2]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_local_accumulation_captures_full_iteration
+[default2]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_hfsdp_outer_allgather_overlap_captures_full_iteration
+[default2]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1]
+[default2]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero2]
+[default2]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero3]
+[default2]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero1]
+[default2]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero2]
+[default2]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero3]
+[default2]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero1]
+[default2]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero2]
+[default2]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero3]
+[default2]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero1]
+[default2]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero2]
+[default2]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero3]
+[default2]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_prefetch_size_zero_disables_allgather_overlap
+[default2]:17 passed, 45 warnings in 226.40s (0:03:46)
+[default4]:
+[default4]:=================================== FAILURES ===================================
+[default4]:___ test_overlaps_communication_and_compute[separate_streams-default-zero1] ____
+[default4]:
+[default4]:distributed_setup = DistributedSetup(rank=4, world_size=8, device=device(type='cuda', index=4))
+[default4]:placements_factory = <function _zero1_placements at 0x7fac9f869e40>
+[default4]:use_symmetric_memory = False, overlap_allgather_reduction = True
+[default4]:
+[default4]:    @pytest.mark.parametrize(
+[default4]:        "placements_factory",
+[default4]:        [
+[default4]:            pytest.param(_zero1_placements, id="zero1"),
+[default4]:            pytest.param(_zero2_placements, id="zero2"),
+[default4]:            pytest.param(_default_placements, id="zero3"),
+[default4]:        ],
+[default4]:    )
+[default4]:    @pytest.mark.parametrize(
+[default4]:        "use_symmetric_memory",
+[default4]:        [
+[default4]:            # Both variants' all-gathers are launch-timing sensitive, but default-CTA
+[default4]:            # kernels occupy more compute CTAs, making the profiler overlap count less
+[default4]:            # stable across ranks (see
+[default4]:            # https://github.com/NVIDIA/Megatron-LM/actions/runs/31615942188).
+[default4]:            # The symmetric-memory variant uses zero-CTA all-gather kernels, so its overlap
+[default4]:            # measurement is more stable and remains enabled.
+[default4]:            pytest.param(False, marks=(pytest.mark.flaky, pytest.mark.flaky_in_dev)),
+[default4]:            pytest.param(True),
+[default4]:        ],
+[default4]:        ids=["default", "symmetric_memory"],
+[default4]:    )
+[default4]:    @pytest.mark.parametrize(
+[default4]:        "overlap_allgather_reduction", [True, False], ids=["separate_streams", "unified_stream"]
+[default4]:    )
+[default4]:    def test_overlaps_communication_and_compute(
+[default4]:        distributed_setup, placements_factory, use_symmetric_memory, overlap_allgather_reduction
+[default4]:    ):
+[default4]:        """ZeRO-1/2/3 communication should overlap GEMM compute."""
+[default4]:        world_size = distributed_setup.world_size
+[default4]:        device = distributed_setup.device
+[default4]:        if world_size < 2:
+[default4]:            pytest.skip("This test requires at least 2 ranks.")
+[default4]:    
+[default4]:        # A large hidden size keeps the per-layer GEMMs long enough that the
+[default4]:        # collectives reliably overlap them. The overlap count is otherwise
+[default4]:        # launch-bound: the host issues kernels with gaps (amplified by CI's
+[default4]:        # `coverage run` wrapper), so with short GEMMs a collective can land in a
+[default4]:        # gap between GEMMs instead of running alongside one, making the count jitter
+[default4]:        # run to run. At dim=16384 the GEMMs dominate that launch jitter and the
+[default4]:        # overlap becomes deterministic. (dim=8192 was flaky under coverage.)
+[default4]:        dim = 16384
+[default4]:        num_children = 4
+[default4]:        dtype = torch.bfloat16
+[default4]:        placements = placements_factory()
+[default4]:    
+[default4]:        # new_group requires a default process group. Initialize it here so this test works
+[default4]:        # in isolation. Do not eagerly initialize it with device_id in the shared fixture:
+[default4]:        # that can hang teardown after communicator splits; see
+[default4]:        # https://github.com/pytorch/pytorch/issues/190396.
+[default4]:        if not dist.is_initialized():
+[default4]:            dist.init_process_group(backend="nccl")
+[default4]:    
+[default4]:        if use_symmetric_memory:
+[default4]:            # Dedicated communicator with NCCL's zero-CTA policy. cta_policy is a
+[default4]:            # per-communicator property, so scoping it to this group leaves the rest of the
+[default4]:            # bucket on default-CTA symmetric-memory kernels (test_symmetric_memory.py asserts
+[default4]:            # ncclSymk all-gather kernel counts, which zero-CTA would turn into copy-engine
+[default4]:            # memcpys). This 1-D group models the DP (FSDP) sub-mesh that mfsdp is handed in
+[default4]:            # production: with EP/TP the full device mesh is multi-dimensional, but mfsdp
+[default4]:            # requires an all-FSDP mesh (see experimental/module.py) and never sees the TP/EP
+[default4]:            # axes, so only the DP communicator needs the zero-CTA policy.
+[default4]:            zero_cta_options = dist.ProcessGroupNCCL.Options()
+[default4]:            zero_cta_options.config.cta_policy = dist.ProcessGroupNCCL.NCCL_CTA_POLICY_ZERO
+[default4]:            dp_group = dist.new_group(backend="nccl", pg_options=zero_cta_options)
+[default4]:            # NCCL window registration can fail when symmetric-memory rendezvous is the first
+[default4]:            # operation on a communicator, so initialize this communicator explicitly.
+[default4]:            dist.barrier(group=dp_group, device_ids=[device.index])
+[default4]:        else:
+[default4]:            dp_group = dist.new_group(backend="nccl")
+[default4]:    
+[default4]:        mesh = DeviceMesh.from_group(dp_group, device.type)
+[default4]:        model = MultiChildModel(dim=dim, num_children=num_children).to(device=device, dtype=dtype)
+[default4]:        policy = MixedPrecisionPolicy(main_params_dtype=dtype, main_grads_dtype=dtype)
+[default4]:        with fully_shard_context(
+[default4]:            FsdpContext(
+[default4]:                device=device,
+[default4]:                runtime_policy=RuntimePolicy(
+[default4]:                    use_symmetric_memory=use_symmetric_memory,
+[default4]:                    overlap_allgather_reduction=overlap_allgather_reduction,
+[default4]:                ),
+[default4]:            )
+[default4]:        ) as context:
+[default4]:            for layer in model.layers:
+[default4]:                fully_shard(layer, mesh=mesh, placements=placements, mixed_precision_policy=policy)
+[default4]:    
+[default4]:        optimizer = torch.optim.SGD(model.parameters(), lr=0.01, foreach=False)
+[default4]:        fully_shard_optimizer(optimizer)
+[default4]:        x = torch.randn(8192, dim, device=device, dtype=dtype, requires_grad=True)
+[default4]:    
+[default4]:        def train_one_step() -> None:
+[default4]:            """Run one optimizer step consuming two microbatches."""
+[default4]:            optimizer.zero_grad(set_to_none=True)
+[default4]:            for microbatch_index in range(2):
+[default4]:                with finalize_gradients(context, enabled=microbatch_index == 1):
+[default4]:                    model(x).sum().backward()
+[default4]:            optimizer.step()
+[default4]:    
+[default4]:        train_one_step()
+[default4]:        torch.cuda.synchronize(device)
+[default4]:    
+[default4]:        with torch.profiler.profile() as prof:
+[default4]:            train_one_step()
+[default4]:            # Synchronize inside the profiler context so in-flight device kernels
+[default4]:            # complete and get recorded before the profiler stops on __exit__.
+[default4]:            # Synchronizing after the context would finalize the trace first and
+[default4]:            # drop the CUDA events.
+[default4]:            torch.cuda.synchronize(device)
+[default4]:    
+[default4]:        gemm_groups = collect_linked_event_groups(prof, _GEMM_OP_NAME_SUBSTRING)
+[default4]:        # Each child Linear runs one forward and two backward matmuls per microbatch.
+[default4]:        # aten::mm may also launch auxiliary kernels, so check only the matmul lower bound.
+[default4]:        expected_gemm_count = 6 * num_children
+[default4]:>       assert len(gemm_groups) >= expected_gemm_count, (
+[default4]:            f"Expected at least {expected_gemm_count} groups linked to GEMMs, got "
+[default4]:            f"{len(gemm_groups)}: {gemm_groups}"
+[default4]:        )
+[default4]:E       AssertionError: Expected at least 24 groups linked to GEMMs, got 23: [['Memset (Device)', 'nvjet_sm90_tst_192x192_64x4_2x1_v_bz_coopB_TNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x4_2x1_v_bz_coopB_TNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x4_2x1_v_bz_coopB_TNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_1x2_h_bz_coopB_NTN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_2x1_v_bz_coopB_NNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_1x2_h_bz_coopB_NTN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_2x1_v_bz_coopB_NNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_1x2_h_bz_coopB_NTN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_2x1_v_bz_coopB_NNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_1x2_h_bz_coopB_NTN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_2x1_v_bz_coopB_NNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x4_2x1_v_bz_coopB_TNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x4_2x1_v_bz_coopB_TNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x4_2x1_v_bz_coopB_TNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x4_2x1_v_bz_coopB_TNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_1x2_h_bz_coopB_NTN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_2x1_v_bz_coopB_NNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_1x2_h_bz_coopB_NTN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_2x1_v_bz_coopB_NNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_1x2_h_bz_coopB_NTN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_2x1_v_bz_coopB_NNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_1x2_h_bz_coopB_NTN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_2x1_v_bz_coopB_NNN']]
+[default4]:E       assert 23 >= 24
+[default4]:E        +  where 23 = len([['Memset (Device)', 'nvjet_sm90_tst_192x192_64x4_2x1_v_bz_coopB_TNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64...sm90_tst_192x192_64x3_2x1_v_bz_coopB_NNN'], ['Memset (Device)', 'nvjet_sm90_tst_192x192_64x3_1x2_h_bz_coopB_NTN'], ...])
+[default4]:
+[default4]:tests/unit_tests/distributed/mfsdp_v2/test_overlap.py:183: AssertionError
+[default4]:=============================== warnings summary ===============================
+[default4]:megatron/core/optimizer/__init__.py:25
+[default4]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/__init__.py:25: UserWarning: Transformer Engine and Apex are not installed. Falling back to Torch optimizers.
+[default4]:    warnings.warn(
+[default4]:
+[default4]:megatron/core/inference/contexts/__init__.py:9
+[default4]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/inference/contexts/__init__.py:9: DeprecationWarning: The following imports from `dynamic_context.py` will be removed in this file in `megatron-core` 0.14. The imports here result in a cyclic import issue that causes rotary embeddings to import from Apex rather than Transformer Engine.
+[default4]:    warnings.warn(
+[default4]:
+[default4]:megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:115
+[default4]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:115: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[default4]:    warnings.warn(
+[default4]:
+[default4]:megatron/core/optimizer/optimizer.py:29
+[default4]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/optimizer.py:29: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[default4]:    warnings.warn(
+[default4]:
+[default4]:megatron/core/optimizer/clip_grads.py:32
+[default4]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/clip_grads.py:32: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier, multi_tensor_l2norm, and multi_tensor_scale
+[default4]:    warnings.warn(
+[default4]:
+[default4]:megatron/core/hyper_comm_grid.py:20
+[default4]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/hyper_comm_grid.py:20: UserWarning: absl.logging is not installed. Using logging.getLogger(__name__) instead. Please install absl.logging with `pip install absl-py` to use absl.logging.
+[default4]:    warnings.warn(
+[default4]:
+[default4]:megatron/training/utils/common_utils.py:27
+[default4]:  /planning-users/yangyeyuan/Megatron-LM/megatron/training/utils/common_utils.py:27: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_l2norm
+[default4]:    warnings.warn(
+[default4]:
+[default4]:megatron/core/extensions/transformer_engine_spec_provider.py:105
+[default4]:  /planning-users/yangyeyuan/Megatron-LM/megatron/core/extensions/transformer_engine_spec_provider.py:105: UserWarning: Only transformer-engine>=1.7.0 supports MoE experts, but your version is 0.0.0. Use local linear implementation instead.
+[default4]:    warnings.warn(
+[default4]:
+[default4]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py: 4 warnings
+[default4]:tests/unit_tests/distributed/mfsdp_v2/test_overlap.py: 13 warnings
+[default4]:  /planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+[default4]:    return func(*args, **kwargs)
+[default4]:
+[default4]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default4]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[symmetric_memory]
+[default4]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_local_accumulation_captures_full_iteration
+[default4]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_hfsdp_outer_allgather_overlap_captures_full_iteration
+[default4]:  sys:1: UserWarning: Full backward hook is firing when gradients are computed with respect to module outputs since no inputs require gradients. See https://docs.pytorch.org/docs/main/generated/torch.nn.Module.html#torch.nn.Module.register_full_backward_hook for more details.
+[default4]:
+[default4]:tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py: 3 warnings
+[default4]:tests/unit_tests/distributed/mfsdp_v2/test_overlap.py: 13 warnings
+[default4]:  /planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+[default4]:    return func(*args, **kwargs)
+[default4]:
+[default4]:-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[default4]:==================================== PASSES ====================================
+[default4]:____________________ test_captures_full_iteration[default] _____________________
+[default4]:------------------------------ Captured log setup ------------------------------
+[default4]:INFO     tests.test_utils.python_scripts.download_unit_tests_dataset:download_unit_tests_dataset.py:90   Downloading datasets.zip...
+[default4]:ERROR    tests.test_utils.python_scripts.download_unit_tests_dataset:download_unit_tests_dataset.py:100   Error downloading/extracting datasets.zip: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /NVIDIA/Megatron-LM/releases/download/v2.5/datasets.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7fac9fb8b290>, 'Connection to github.com timed out. (connect timeout=60)'))
+[default4]:------------------------------ Captured log call -------------------------------
+[default4]:INFO     test_cuda_graph:test_cuda_graph.py:141 CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default4]:________________ test_captures_full_iteration[symmetric_memory] ________________
+[default4]:------------------------------ Captured log call -------------------------------
+[default4]:INFO     test_cuda_graph:test_cuda_graph.py:141 CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+[default4]:============================= slowest 15 durations =============================
+[default4]:61.32s setup    tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default4]:13.04s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero2]
+[default4]:12.48s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero1]
+[default4]:12.20s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero1]
+[default4]:12.17s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero3]
+[default4]:12.05s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1]
+[default4]:11.94s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero2]
+[default4]:11.84s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero3]
+[default4]:11.08s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero3]
+[default4]:10.93s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero3]
+[default4]:10.72s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero2]
+[default4]:10.49s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero2]
+[default4]:10.31s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero1]
+[default4]:9.44s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_prefetch_size_zero_disables_allgather_overlap
+[default4]:4.44s call     tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default4]:=========================== short test summary info ============================
+[default4]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+[default4]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[symmetric_memory]
+[default4]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_local_accumulation_captures_full_iteration
+[default4]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_hfsdp_outer_allgather_overlap_captures_full_iteration
+[default4]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero2]
+[default4]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero3]
+[default4]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero1]
+[default4]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero2]
+[default4]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero3]
+[default4]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero1]
+[default4]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero2]
+[default4]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero3]
+[default4]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero1]
+[default4]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero2]
+[default4]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero3]
+[default4]:PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_prefetch_size_zero_disables_allgather_overlap
+[default4]:FAILED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1]
+[default4]:1 failed, 16 passed, 45 warnings in 226.46s (0:03:46)
+W1112 13:20:31.868000 97 torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 166 closing signal SIGTERM
+W1112 13:20:31.870000 97 torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 167 closing signal SIGTERM
+W1112 13:20:31.870000 97 torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 168 closing signal SIGTERM
+W1112 13:20:31.870000 97 torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 169 closing signal SIGTERM
+W1112 13:20:31.870000 97 torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 171 closing signal SIGTERM
+E1112 13:20:32.594000 97 torch/distributed/elastic/multiprocessing/api.py:1002] failed (exitcode: 1) local_rank: 4 (pid: 170) of binary: /planning-users/yangyeyuan/envs/mfsdp-dev/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/run.py", line 1142, in <module>
+    main()
+  File "/planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 380, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/run.py", line 1138, in main
+    run(args)
+  File "/planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/run.py", line 1129, in run
+    elastic_launch(
+  File "/planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 197, in __call__
+    return launch_agent(
+           ^^^^^^^^^^^^^
+  File "/planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 386, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+pytest FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-11-12_13:20:31
+  host      : <host>
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 170) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

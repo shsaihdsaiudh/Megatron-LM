@@ -1,0 +1,349 @@
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO ncclOsDlopen(libnccl-env.so) failed: libnccl-env.so: cannot open shared object file: No such file or directory
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NCCL_SOCKET_IFNAME set to eth0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO cudaDriverVersion 13000
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NCCL version 2.30.7+cuda13.3
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NCCL git version HEAD a5187fa2e
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO ncclOsDlopen(libnccl-net.so) failed: libnccl-net.so: cannot open shared object file: No such file or directory
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Count not open libibverbs.so
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO dlvsym failed on mlx5dv_get_data_direct_sysfs_path - /usr/lib/x86_64-linux-gnu/libmlx5.so.1: undefined symbol: mlx5dv_get_data_direct_sysfs_path, version MLX5_1.25 version MLX5_1.25
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO dlvsym failed on mlx5dv_reg_dmabuf_mr - /usr/lib/x86_64-linux-gnu/libmlx5.so.1: undefined symbol: mlx5dv_reg_dmabuf_mr, version MLX5_1.25 version MLX5_1.25
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NCCL_IB_HCA set to =mlx5_1,mlx5_2,mlx5_3,mlx5_4
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB: [1] mlx5_1:uverbs1:1/RoCE provider=Mlx5 speed=400000 context=0x182d3400 pciPath=/sys/devices/pci0000:64/0000:64:00.0/0000:65:00.0 ar=0 oooRqSize=0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB: [2] mlx5_2:uverbs2:1/RoCE provider=Mlx5 speed=400000 context=0x18314a10 pciPath=/sys/devices/pci0000:66/0000:66:00.0/0000:67:00.0 ar=0 oooRqSize=0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB: [3] mlx5_3:uverbs3:1/RoCE provider=Mlx5 speed=400000 context=0x18356390 pciPath=/sys/devices/pci0000:68/0000:68:00.0/0000:69:00.0 ar=0 oooRqSize=0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB: [4] mlx5_4:uverbs4:1/RoCE provider=Mlx5 speed=400000 context=0x18397da0 pciPath=/sys/devices/pci0000:6a/0000:6a:00.0/0000:6b:00.0 ar=0 oooRqSize=0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB : Made virtual device [0] name=mlx5_1 speed=400000 ndevs=1 rail=-1 plane=-1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB : Made virtual device [1] name=mlx5_2 speed=400000 ndevs=1 rail=-1 plane=-1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB : Made virtual device [2] name=mlx5_3 speed=400000 ndevs=1 rail=-1 plane=-1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB : Made virtual device [3] name=mlx5_4 speed=400000 ndevs=1 rail=-1 plane=-1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB : Using [0]mlx5_1:1/RoCE [1]mlx5_2:1/RoCE [2]mlx5_3:1/RoCE [3]mlx5_4:1/RoCE [RO]; OOB eth0:<ip><0>
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Initialized NET plugin IB
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Assigned NET plugin IB to comm
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO ncclOsDlopen(libnccl-rma.so) failed: libnccl-rma.so: cannot open shared object file: No such file or directory
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO RMA/Plugin: Could not find: libnccl-rma.so
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO RMA/Plugin: Failed to load external plugin libnccl-rma.so, dlHandle: (nil), ncclRma: (nil)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO RMA/Plugin: Assigned plugin RMA_IB_PROXY to comm
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO ncclOsDlopen(libnccl-gin.so) failed: libnccl-gin.so: cannot open shared object file: No such file or directory
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO GIN/Plugin: Could not find: libnccl-gin.so
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO GIN/Plugin: Failed to load external plugin libnccl-gin.so, dlHandle: (nil), ncclGin: (nil)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO GIN/Plugin: Assigned plugin GIN_IB_GDAKI type 3 to comm
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Using network IB
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Loaded NVML from libnvidia-ml.so.1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO DMA-BUF is available on GPU device 0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO [Rank 0] ncclCommInitRankConfig comm 0xff80c50 rank 0 nranks 16 cudaDev 0 nvmlDev 0 busId 65020 commId 0x7e5c3f9911088bbf - Init START
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO MNNVL busId 0x65020 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/GIN_IB_GDAKI : GPU Direct RDMA Enabled for HCA 0 'mlx5_1'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/GIN_IB_GDAKI : GPU Direct RDMA Enabled for HCA 1 'mlx5_2'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/GIN_IB_GDAKI : GPU Direct RDMA Enabled for HCA 2 'mlx5_3'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/GIN_IB_GDAKI : GPU Direct RDMA Enabled for HCA 3 'mlx5_4'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/RMA_IB_PROXY : GPU Direct RDMA Enabled for HCA 0 'mlx5_1'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/RMA_IB_PROXY : GPU Direct RDMA Enabled for HCA 1 'mlx5_2'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/RMA_IB_PROXY : GPU Direct RDMA Enabled for HCA 2 'mlx5_3'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/RMA_IB_PROXY : GPU Direct RDMA Enabled for HCA 3 'mlx5_4'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB : GPU Direct RDMA Enabled for HCA 0 'mlx5_1'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB : GPU Direct RDMA Enabled for HCA 1 'mlx5_2'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB : GPU Direct RDMA Enabled for HCA 2 'mlx5_3'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB : GPU Direct RDMA Enabled for HCA 3 'mlx5_4'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 0 is 4-73. (GPU affinity = 0-89 ; CPU affinity = 4-73,90-179).
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NVLS multicast support is available on dev 0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Rank 0: 4 Net devices
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Rank 0: 0 CollNet devices
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Local Net device counts across ranks: min 4 max 4
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Local CollNet device counts across ranks: min 0 max 0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO comm 0xff80c50 rank 0 nRanks 16 nNodes 2 localRanks 8 localRank 0 MNNVL 0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NVLS tuning: nChannels 16 chunkSize 131072 treeMaxChunkSize 131072
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NVLS Head  0:  0  8
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NVLS Head  1:  2 10
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NVLS Head  2:  4 12
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NVLS Head  3:  6 14
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 00/16 :  0  7  6  5  4  3  2  1  8 15 14 13 12 11 10  9
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 01/16 :  0  7  6  5  4  3 10  9  8 15 14 13 12 11  2  1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 02/16 :  0  7  6  5 12 11 10  9  8 15 14 13  4  3  2  1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 03/16 :  0  7 14 13 12 11 10  9  8 15  6  5  4  3  2  1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 04/16 :  0  7  6  5  4  3  2  1  8 15 14 13 12 11 10  9
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 05/16 :  0  7  6  5  4  3 10  9  8 15 14 13 12 11  2  1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 06/16 :  0  7  6  5 12 11 10  9  8 15 14 13  4  3  2  1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 07/16 :  0  7 14 13 12 11 10  9  8 15  6  5  4  3  2  1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 08/16 :  0  7  6  5  4  3  2  1  8 15 14 13 12 11 10  9
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 09/16 :  0  7  6  5  4  3 10  9  8 15 14 13 12 11  2  1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 10/16 :  0  7  6  5 12 11 10  9  8 15 14 13  4  3  2  1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 11/16 :  0  7 14 13 12 11 10  9  8 15  6  5  4  3  2  1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 12/16 :  0  7  6  5  4  3  2  1  8 15 14 13 12 11 10  9
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 13/16 :  0  7  6  5  4  3 10  9  8 15 14 13 12 11  2  1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 14/16 :  0  7  6  5 12 11 10  9  8 15 14 13  4  3  2  1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 15/16 :  0  7 14 13 12 11 10  9  8 15  6  5  4  3  2  1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Trees [0] 1/8/-1->0->-1 [1] 1/-1/-1->0->7 [2] 1/-1/-1->0->7 [3] 1/-1/-1->0->7 [4] 7/-1/-1->0->1 [5] 7/-1/-1->0->1 [6] 7/-1/-1->0->1 [7] -1/-1/-1->0->1 [8] 1/-1/-1->0->8 [9] 1/-1/-1->0->7 [10] 1/-1/-1->0->7 [11] 1/-1/-1->0->7 [12] 7/-1/-1->0->1 [13] 7/-1/-1->0->1 [14] 7/-1/-1->0->1 [15] -1/-1/-1->0->1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO P2P Chunksize set to 131072
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Tuning P2P operations with maxP2pPeers = 16
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO ncclOsDlopen(libnccl-profiler.so) failed: libnccl-profiler.so: cannot open shared object file: No such file or directory
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO [Proxy Service] Device 0 CPU core 38
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3688 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 40
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO proxy listening socket at <ip><43487>
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO ncclOsDlopen(libnccl-tuner.so) failed: libnccl-tuner.so: cannot open shared object file: No such file or directory
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO 16 coll channels, 16 collnet channels, 16 nvls channels, 16 p2p channels, 4 p2p channels per peer
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO CC Off, workFifoBytes 1048576
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO ncclCommInitRankConfig comm 0xff80c50 rank 0 nranks 16 cudaDev 0 nvmlDev 0 busId 65020 commId 0x7e5c3f9911088bbf - Init COMPLETE
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 16 total 3.34 (kernels 0.22, alloc 1.16, bootstrap 0.50, allgathers 0.02, topo 0.08, graphs 1.15, connections 0.20, rest 0.01)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Initialized NET plugin IB
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Assigned NET plugin IB to comm
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO RMA/Plugin: Assigned plugin RMA_IB_PROXY to comm
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO GIN/Plugin: Assigned plugin GIN_IB_GDAKI type 3 to comm
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Using network IB
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO DMA-BUF is available on GPU device 0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO ncclCommSplit comm 0x1c182820 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 65020 parent 0xff80c50 childCount 1 color 0 key 0- Init START
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO MNNVL busId 0x65020 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/GIN_IB_GDAKI : GPU Direct RDMA Enabled for HCA 0 'mlx5_1'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/GIN_IB_GDAKI : GPU Direct RDMA Enabled for HCA 1 'mlx5_2'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/GIN_IB_GDAKI : GPU Direct RDMA Enabled for HCA 2 'mlx5_3'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/GIN_IB_GDAKI : GPU Direct RDMA Enabled for HCA 3 'mlx5_4'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/RMA_IB_PROXY : GPU Direct RDMA Enabled for HCA 0 'mlx5_1'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/RMA_IB_PROXY : GPU Direct RDMA Enabled for HCA 1 'mlx5_2'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/RMA_IB_PROXY : GPU Direct RDMA Enabled for HCA 2 'mlx5_3'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/RMA_IB_PROXY : GPU Direct RDMA Enabled for HCA 3 'mlx5_4'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB : GPU Direct RDMA Enabled for HCA 0 'mlx5_1'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB : GPU Direct RDMA Enabled for HCA 1 'mlx5_2'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB : GPU Direct RDMA Enabled for HCA 2 'mlx5_3'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB : GPU Direct RDMA Enabled for HCA 3 'mlx5_4'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 0 is 4-73. (GPU affinity = 0-89 ; CPU affinity = 4-73,90-179).
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Rank 0: 4 Net devices
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Rank 0: 0 CollNet devices
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Local Net device counts across ranks: min 4 max 4
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Local CollNet device counts across ranks: min 0 max 0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO comm 0x1c182820 rank 0 nRanks 2 nNodes 2 localRanks 1 localRank 0 MNNVL 0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 00/04 : 0 1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 01/04 : 0 1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 02/04 : 0 1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 03/04 : 0 1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] -1/-1/-1->0->1 [3] -1/-1/-1->0->1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO P2P Chunksize set to 131072
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Tuning P2P operations with maxP2pPeers = 2
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO [Proxy Service] Device 0 CPU core 72
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3720 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 8
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO proxy listening socket at <ip><39669>
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 4 p2p channels per peer
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO CC Off, workFifoBytes 1048576
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO ncclCommSplit comm 0x1c182820 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 65020 parent 0xff80c50 childCount 1 color 0 key 0 - Init COMPLETE
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Init timings - ncclCommSplit: rank 0 nranks 2 total 0.05 (kernels 0.00, alloc 0.00, bootstrap 0.00, allgathers 0.00, topo 0.04, graphs 0.00, connections 0.01, rest 0.00)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Initialized NET plugin IB
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Assigned NET plugin IB to comm
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO RMA/Plugin: Assigned plugin RMA_IB_PROXY to comm
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO GIN/Plugin: Assigned plugin GIN_IB_GDAKI type 3 to comm
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Using network IB
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO DMA-BUF is available on GPU device 0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO ncclCommSplit comm 0x1d708c50 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId 65020 parent 0xff80c50 childCount 2 color 0 key 0- Init START
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO MNNVL busId 0x65020 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/GIN_IB_GDAKI : GPU Direct RDMA Enabled for HCA 0 'mlx5_1'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/GIN_IB_GDAKI : GPU Direct RDMA Enabled for HCA 1 'mlx5_2'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/GIN_IB_GDAKI : GPU Direct RDMA Enabled for HCA 2 'mlx5_3'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/GIN_IB_GDAKI : GPU Direct RDMA Enabled for HCA 3 'mlx5_4'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/RMA_IB_PROXY : GPU Direct RDMA Enabled for HCA 0 'mlx5_1'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/RMA_IB_PROXY : GPU Direct RDMA Enabled for HCA 1 'mlx5_2'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/RMA_IB_PROXY : GPU Direct RDMA Enabled for HCA 2 'mlx5_3'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/RMA_IB_PROXY : GPU Direct RDMA Enabled for HCA 3 'mlx5_4'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB : GPU Direct RDMA Enabled for HCA 0 'mlx5_1'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB : GPU Direct RDMA Enabled for HCA 1 'mlx5_2'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB : GPU Direct RDMA Enabled for HCA 2 'mlx5_3'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NET/IB : GPU Direct RDMA Enabled for HCA 3 'mlx5_4'
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 0 is 4-73. (GPU affinity = 0-89 ; CPU affinity = 4-73,90-179).
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NVLS multicast support is available on dev 0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Rank 0: 4 Net devices
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Rank 0: 0 CollNet devices
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Local Net device counts across ranks: min 4 max 4
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Local CollNet device counts across ranks: min 0 max 0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO comm 0x1d708c50 rank 0 nRanks 8 nNodes 1 localRanks 8 localRank 0 MNNVL 0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO NVLS tuning: nChannels 16 chunkSize 131072 treeMaxChunkSize 131072
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 00/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 01/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 02/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 03/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 04/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 05/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 06/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 07/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 08/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 09/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 10/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 11/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 12/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 13/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 14/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 15/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 16/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 17/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 18/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 19/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 20/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 21/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 22/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 23/24 : 0 1 2 3 4 5 6 7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 1/-1/-1->0->-1 [3] 1/-1/-1->0->-1 [4] 1/-1/-1->0->-1 [5] 1/-1/-1->0->-1 [6] 1/-1/-1->0->-1 [7] 1/-1/-1->0->-1 [8] 1/-1/-1->0->-1 [9] 1/-1/-1->0->-1 [10] 1/-1/-1->0->-1 [11] 1/-1/-1->0->-1 [12] 1/-1/-1->0->-1 [13] 1/-1/-1->0->-1 [14] 1/-1/-1->0->-1 [15] 1/-1/-1->0->-1 [16] 1/-1/-1->0->-1 [17] 1/-1/-1->0->-1 [18] 1/-1/-1->0->-1 [19] 1/-1/-1->0->-1 [20] 1/-1/-1->0->-1 [21] 1/-1/-1->0->-1 [22] 1/-1/-1->0->-1 [23] 1/-1/-1->0->-1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO P2P Chunksize set to 524288
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3747 [0] NCCL INFO [Proxy Service] Device 0 CPU core 35
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3748 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 36
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3747 [0] NCCL INFO proxy listening socket at <ip><41033>
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO 24 coll channels, 24 collnet channels, 16 nvls channels, 32 p2p channels, 32 p2p channels per peer
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO CC Off, workFifoBytes 1048576
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO ncclCommSplit comm 0x1d708c50 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId 65020 parent 0xff80c50 childCount 2 color 0 key 0 - Init COMPLETE
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Init timings - ncclCommSplit: rank 0 nranks 8 total 0.25 (kernels 0.00, alloc 0.00, bootstrap 0.00, allgathers 0.01, topo 0.06, graphs 0.02, connections 0.14, rest 0.02)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Symmetric VA size=96GB
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3766 [0] NCCL INFO [Proxy Progress] Device 0 CPU core 20
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [receive] via NET/IB/0/GDRDMA
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [receive] via NET/IB/0/GDRDMA
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 02/0 : 1[0] -> 0[0] [receive] via NET/IB/0/GDRDMA
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 03/0 : 1[0] -> 0[0] [receive] via NET/IB/0/GDRDMA
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [send] via NET/IB/0/GDRDMA
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [send] via NET/IB/0/GDRDMA
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[0] [send] via NET/IB/0/GDRDMA
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[0] [send] via NET/IB/0/GDRDMA
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the send communicator (comm=0x7f9aac017000)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the recv communicator (comm=0x7f9aac05b000)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbRecvCommInit: Receive work requests will be posted on-demand
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the send communicator (comm=0x7f9aac0a3000)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbSenderQpsCreate: QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85854 pkey=0 pd=0x7f9aac057e60 oooRq=0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbConnectImpl: NCCL Dev 0 IbDev 0 Port 1 qp_num 85854 mtu 5 GID 3 (0/42E11A1AFFFF0000) ctsFifoRkey=0x13ecad ctsFifoLkey=0x13ecad
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbConnectImpl: IbDev 0 Port 1 qp_num 85854 query_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0}
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the recv communicator (comm=0x7f9aac123000)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbRecvCommInit: Receive work requests will be posted on-demand
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85855 pkey=0 pd=0x7f9aac057e60 oooRq=0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: Flush QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85857 pkey=0 pd=0x7f9aac057e60
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbSenderQpsCreate: QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85859 pkey=0 pd=0x7f9aac057e60 oooRq=0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbConnectImpl: NCCL Dev 0 IbDev 0 Port 1 qp_num 85859 mtu 5 GID 3 (0/42E11A1AFFFF0000) ctsFifoRkey=0x139757 ctsFifoLkey=0x139757
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbConnectImpl: IbDev 0 Port 1 qp_num 85859 query_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0}
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the send communicator (comm=0x7f9aac1ee000)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbSenderQpsToRts: Set ECE: IbDev 0 Port 1 qp_num 85854 set_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0}
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85861 pkey=0 pd=0x7f9aac057e60 oooRq=0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: Flush QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85862 pkey=0 pd=0x7f9aac057e60
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the recv communicator (comm=0x7f9aac282000)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbRecvCommInit: Receive work requests will be posted on-demand
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbSenderQpsToRts: Set ECE: IbDev 0 Port 1 qp_num 85859 set_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0}
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the send communicator (comm=0x7f9aac2ca000)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the recv communicator (comm=0x7f9aac30e000)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbRecvCommInit: Receive work requests will be posted on-demand
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85866 pkey=0 pd=0x7f9aac057e60 oooRq=0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: Flush QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85868 pkey=0 pd=0x7f9aac057e60
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbSenderQpsCreate: QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85869 pkey=0 pd=0x7f9aac057e60 oooRq=0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbConnectImpl: NCCL Dev 0 IbDev 0 Port 1 qp_num 85869 mtu 5 GID 3 (0/42E11A1AFFFF0000) ctsFifoRkey=0x13f6b7 ctsFifoLkey=0x13f6b7
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbConnectImpl: IbDev 0 Port 1 qp_num 85869 query_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0}
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbSenderQpsCreate: QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85872 pkey=0 pd=0x7f9aac057e60 oooRq=0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbConnectImpl: NCCL Dev 0 IbDev 0 Port 1 qp_num 85872 mtu 5 GID 3 (0/42E11A1AFFFF0000) ctsFifoRkey=0x142fef ctsFifoLkey=0x142fef
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbConnectImpl: IbDev 0 Port 1 qp_num 85872 query_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0}
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85873 pkey=0 pd=0x7f9aac057e60 oooRq=0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: Flush QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85874 pkey=0 pd=0x7f9aac057e60
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbSenderQpsToRts: Set ECE: IbDev 0 Port 1 qp_num 85869 set_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0}
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3719 [0] NCCL INFO NET/IB: ncclIbSenderQpsToRts: Set ECE: IbDev 0 Port 1 qp_num 85872 set_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0}
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Symmetric VA size=96GB
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 04/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 05/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 08/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 09/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 10/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 11/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 12/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 13/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 14/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 15/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 16/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 17/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 18/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 19/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 20/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 21/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 22/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 23/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Symmetric VA size=96GB
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3836 [0] NCCL INFO [Proxy Progress] Device 0 CPU core 39
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 00/0 : 9[1] -> 0[0] [receive] via NET/IB/0/GDRDMA
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 04/0 : 9[1] -> 0[0] [receive] via NET/IB/0/GDRDMA
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 08/0 : 9[1] -> 0[0] [receive] via NET/IB/0/GDRDMA
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 12/0 : 9[1] -> 0[0] [receive] via NET/IB/0/GDRDMA
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 00/0 : 0[0] -> 7[7] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 01/0 : 0[0] -> 7[7] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 02/0 : 0[0] -> 7[7] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 03/0 : 0[0] -> 7[7] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 04/0 : 0[0] -> 7[7] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 05/0 : 0[0] -> 7[7] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 06/0 : 0[0] -> 7[7] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 07/0 : 0[0] -> 7[7] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 08/0 : 0[0] -> 7[7] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 09/0 : 0[0] -> 7[7] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 10/0 : 0[0] -> 7[7] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 11/0 : 0[0] -> 7[7] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 12/0 : 0[0] -> 7[7] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 13/0 : 0[0] -> 7[7] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 14/0 : 0[0] -> 7[7] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 15/0 : 0[0] -> 7[7] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the recv communicator (comm=0x7f9af4042000)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbRecvCommInit: Receive work requests will be posted on-demand
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85876 pkey=0 pd=0x7f9aac057e60 oooRq=0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: Flush QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85877 pkey=0 pd=0x7f9aac057e60
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the recv communicator (comm=0x7f9af40dd000)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbRecvCommInit: Receive work requests will be posted on-demand
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85878 pkey=0 pd=0x7f9aac057e60 oooRq=0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: Flush QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85880 pkey=0 pd=0x7f9aac057e60
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the recv communicator (comm=0x7f9af4174000)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbRecvCommInit: Receive work requests will be posted on-demand
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85882 pkey=0 pd=0x7f9aac057e60 oooRq=0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: Flush QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85883 pkey=0 pd=0x7f9aac057e60
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the recv communicator (comm=0x7f9af420b000)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbRecvCommInit: Receive work requests will be posted on-demand
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85885 pkey=0 pd=0x7f9aac057e60 oooRq=0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: Flush QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85886 pkey=0 pd=0x7f9aac057e60
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 04/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 05/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 08/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 09/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 10/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 11/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 12/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 13/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 14/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 15/0 : 0[0] -> 1[1] via P2P/CUMEM
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 00/0 : 8[0] -> 0[0] [receive] via NET/IB/0/GDRDMA
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 08/0 : 8[0] -> 0[0] [receive] via NET/IB/0/GDRDMA
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 00/0 : 0[0] -> 8[0] [send] via NET/IB/0/GDRDMA
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Channel 08/0 : 0[0] -> 8[0] [send] via NET/IB/0/GDRDMA
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the send communicator (comm=0x7f9af42c9000)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the recv communicator (comm=0x7f9af430d000)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbRecvCommInit: Receive work requests will be posted on-demand
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the send communicator (comm=0x7f9af4355000)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbResiliencyInit: Resiliency is disabled on the recv communicator (comm=0x7f9af4399000)
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbRecvCommInit: Receive work requests will be posted on-demand
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbSenderQpsCreate: QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85891 pkey=0 pd=0x7f9aac057e60 oooRq=0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbConnectImpl: NCCL Dev 0 IbDev 0 Port 1 qp_num 85891 mtu 5 GID 3 (0/42E11A1AFFFF0000) ctsFifoRkey=0x15de9f ctsFifoLkey=0x15de9f
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbConnectImpl: IbDev 0 Port 1 qp_num 85891 query_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0}
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85892 pkey=0 pd=0x7f9aac057e60 oooRq=0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: Flush QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85893 pkey=0 pd=0x7f9aac057e60
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbSenderQpsToRts: Set ECE: IbDev 0 Port 1 qp_num 85891 set_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0}
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbSenderQpsCreate: QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85894 pkey=0 pd=0x7f9aac057e60 oooRq=0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbConnectImpl: NCCL Dev 0 IbDev 0 Port 1 qp_num 85894 mtu 5 GID 3 (0/42E11A1AFFFF0000) ctsFifoRkey=0x1505c4 ctsFifoLkey=0x1505c4
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbConnectImpl: IbDev 0 Port 1 qp_num 85894 query_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0}
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85895 pkey=0 pd=0x7f9aac057e60 oooRq=0
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbReceiverQpsCreateToRts: Flush QP created: port=1 dev=0 devName=mlx5_1 ndevs=4 nmdevs=4 qp_num=85896 pkey=0 pd=0x7f9aac057e60
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3686 [0] NCCL INFO NET/IB: ncclIbSenderQpsToRts: Set ECE: IbDev 0 Port 1 qp_num 85894 set_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0}
+bj4-ml-g8h20-k8s-slave170-20260614:3584:3584 [0] NCCL INFO Connected all trees

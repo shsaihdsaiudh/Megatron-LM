@@ -1,0 +1,54 @@
+jobName: 261110-mfsdp-e1-2node-yangyeyuan
+description: '#6714 gather side E1: exposed DP-outer all-gather in MFSDP v2 HFSDP baseline (main d2b0e35cc), mesh (2,8), 2x8 H20, uv venv torch 2.14.1'
+accessType: PRIVATE
+imageConfig:
+    # Image only provides the driver/nsys/IB stack; Python comes from the venv on /planning-users.
+    imageUrl: <redacted-image>
+    imageCommand: bash /planning-users/yangyeyuan/megatron-contrib/cml/e1_entry.sh
+modelUri: ""
+juiceFsMountConfigs:
+    - volume: <redacted>
+      juiceFsCluster: <redacted>
+      subPath: /
+      mountPath: /planning-users
+      readOnly: false
+envConfigs:
+    - key: RUN_NAME
+      value: e1-2node-20261111
+    - key: EXPECT_NODES
+      value: "2"
+    - key: MESH_OUTER
+      value: "2"
+    - key: GPUS_PER_NODE
+      value: "8"
+queueId: "<redacted>"
+priority: 5
+preemptible: false
+framework: pytorch
+resourceConfigs:
+    - nodeRole: worker
+      nodeNumber: 2
+      perNodeResourceSpec:
+        resourcePriority: GUARANTEED
+        resourceName: <redacted>
+        resourceNumber: 8
+      elastic: false
+      preemptible: false
+enableTensorboard: false
+enableMetrics: false
+retryConfig:
+    enableRetry: false
+    maxRetryTimes: 0
+    policySets: []
+rdma: true
+diagOptions:
+    - name: HangDetection
+      enable: false
+    - name: SanityCheck
+      enable: false
+      config:
+        preSanityCheck: false
+        postSanityCheck: false
+alertConfig:
+    enableAlert: false
+    alertItems: []

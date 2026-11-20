@@ -1,0 +1,14 @@
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[e1] world=16 mesh=(2,8) d=4096 layers=32 block=256MB bf16 total=8.0GB overlap_outer_communication=False CUDA_DEVICE_MAX_CONNECTIONS=None
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-1ce4.qdstrm'
+[1/1] [0%                          ] d4096_L32_T1024_ga4.rank0.nsys-repProcessing events...
+[1/1] [0%                          ] d4096_L32_T1024_ga4.rank0.nsys-rep[1/1] [========42%                 ] d4096_L32_T1024_ga4.rank0.nsys-rep[1/1] [==========49%               ] d4096_L32_T1024_ga4.rank0.nsys-rep[1/1] [============57%             ] d4096_L32_T1024_ga4.rank0.nsys-rep[1/1] [6%                          ] d4096_L32_T1024_ga4.rank0.nsys-rep[1/1] [12%                         ] d4096_L32_T1024_ga4.rank0.nsys-rep[1/1] [===23%                      ] d4096_L32_T1024_ga4.rank0.nsys-rep[1/1] [======35%                   ] d4096_L32_T1024_ga4.rank0.nsys-rep[1/1] [=========46%                ] d4096_L32_T1024_ga4.rank0.nsys-rep[1/1] [===========50%              ] d4096_L32_T1024_ga4.rank0.nsys-rep[1/1] [===========51%              ] d4096_L32_T1024_ga4.rank0.nsys-rep[1/1] [========================100%] d4096_L32_T1024_ga4.rank0.nsys-rep[1/1] [========================100%] d4096_L32_T1024_ga4.rank0.nsys-rep
+[e1] train  T= 1024 GA=4 fwd_mb0=1284.80 E=1206.24 fwd_rest=  78.70 step= 2145.59 opt=  2.86 mem=  6.3GB finite=True (14s)
+[e1] wrote /planning-users/yangyeyuan/megatron-contrib/results/e2/e2p1-2node-20261112/off/nsys_d4096_L32_T1024_ga4.json
+Generated:
+	/planning-users/yangyeyuan/megatron-contrib/results/e2/e2p1-2node-20261112/off/nsys/d4096_L32_T1024_ga4.rank0.nsys-rep

@@ -1,0 +1,97 @@
+Test data not found at /opt/data. Downloading...
+Test data downloaded successfully.
+................
+=============================== warnings summary ===============================
+megatron/core/optimizer/__init__.py:25
+  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/__init__.py:25: UserWarning: Transformer Engine and Apex are not installed. Falling back to Torch optimizers.
+    warnings.warn(
+
+megatron/core/inference/contexts/__init__.py:9
+  /planning-users/yangyeyuan/Megatron-LM/megatron/core/inference/contexts/__init__.py:9: DeprecationWarning: The following imports from `dynamic_context.py` will be removed in this file in `megatron-core` 0.14. The imports here result in a cyclic import issue that causes rotary embeddings to import from Apex rather than Transformer Engine.
+    warnings.warn(
+
+megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:115
+  /planning-users/yangyeyuan/Megatron-LM/megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:115: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+    warnings.warn(
+
+megatron/core/optimizer/optimizer.py:29
+  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/optimizer.py:29: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+    warnings.warn(
+
+megatron/core/optimizer/clip_grads.py:32
+  /planning-users/yangyeyuan/Megatron-LM/megatron/core/optimizer/clip_grads.py:32: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier, multi_tensor_l2norm, and multi_tensor_scale
+    warnings.warn(
+
+megatron/core/hyper_comm_grid.py:20
+  /planning-users/yangyeyuan/Megatron-LM/megatron/core/hyper_comm_grid.py:20: UserWarning: absl.logging is not installed. Using logging.getLogger(__name__) instead. Please install absl.logging with `pip install absl-py` to use absl.logging.
+    warnings.warn(
+
+megatron/training/utils/common_utils.py:27
+  /planning-users/yangyeyuan/Megatron-LM/megatron/training/utils/common_utils.py:27: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_l2norm
+    warnings.warn(
+
+megatron/core/extensions/transformer_engine_spec_provider.py:105
+  /planning-users/yangyeyuan/Megatron-LM/megatron/core/extensions/transformer_engine_spec_provider.py:105: UserWarning: Only transformer-engine>=1.7.0 supports MoE experts, but your version is 0.0.0. Use local linear implementation instead.
+    warnings.warn(
+
+tests/unit_tests/distributed/mfsdp_v2/test_overlap.py: 13 warnings
+tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py: 3 warnings
+  /planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+    return func(*args, **kwargs)
+
+tests/unit_tests/distributed/mfsdp_v2/test_overlap.py: 13 warnings
+tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py: 2 warnings
+  /planning-users/yangyeyuan/envs/mfsdp-dev/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+    return func(*args, **kwargs)
+
+tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[symmetric_memory]
+tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_local_accumulation_captures_full_iteration
+  sys:1: UserWarning: Full backward hook is firing when gradients are computed with respect to module outputs since no inputs require gradients. See https://docs.pytorch.org/docs/main/generated/torch.nn.Module.html#torch.nn.Module.register_full_backward_hook for more details.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+___ test_overlaps_communication_and_compute[separate_streams-default-zero1] ____
+------------------------------ Captured log setup ------------------------------
+INFO     tests.test_utils.python_scripts.download_unit_tests_dataset:download_unit_tests_dataset.py:90   Downloading datasets.zip...
+ERROR    tests.test_utils.python_scripts.download_unit_tests_dataset:download_unit_tests_dataset.py:100   Error downloading/extracting datasets.zip: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /NVIDIA/Megatron-LM/releases/download/v2.5/datasets.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7ff4e5f2d460>, 'Connection to github.com timed out. (connect timeout=60)'))
+____________________ test_captures_full_iteration[default] _____________________
+------------------------------ Captured log call -------------------------------
+INFO     test_cuda_graph:test_cuda_graph.py:140 CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+________________ test_captures_full_iteration[symmetric_memory] ________________
+------------------------------ Captured log call -------------------------------
+INFO     test_cuda_graph:test_cuda_graph.py:140 CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+============================= slowest 15 durations =============================
+60.88s setup    tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1]
+15.21s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1]
+13.33s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero1]
+13.10s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero3]
+12.91s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero2]
+12.35s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero3]
+11.82s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero2]
+11.66s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero1]
+10.93s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero3]
+10.85s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero3]
+10.79s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero2]
+10.42s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero2]
+10.34s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero1]
+9.78s call     tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_prefetch_size_zero_disables_allgather_overlap
+1.36s teardown tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1]
+=========================== short test summary info ============================
+PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero1]
+PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero2]
+PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-default-zero3]
+PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero1]
+PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero2]
+PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[separate_streams-symmetric_memory-zero3]
+PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero1]
+PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero2]
+PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-default-zero3]
+PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero1]
+PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero2]
+PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_overlaps_communication_and_compute[unified_stream-symmetric_memory-zero3]
+PASSED tests/unit_tests/distributed/mfsdp_v2/test_overlap.py::test_prefetch_size_zero_disables_allgather_overlap
+PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[default]
+PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_captures_full_iteration[symmetric_memory]
+PASSED tests/unit_tests/distributed/mfsdp_v2/test_cuda_graph.py::test_local_accumulation_captures_full_iteration
+16 passed, 42 warnings in 224.74s (0:03:44)

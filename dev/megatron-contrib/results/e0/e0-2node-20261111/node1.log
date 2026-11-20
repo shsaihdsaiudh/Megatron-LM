@@ -1,0 +1,30 @@
+[mi_image_guard] not torchrun worker (rank=1, world=2, local_rank=None, local_world=None)
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[mi_image_guard] will run (rank=10, world=16, local_rank=2, local_world=8)
+[mi_image_guard] will run (rank=9, world=16, local_rank=1, local_world=8)
+[mi_image_guard] will run (rank=8, world=16, local_rank=0, local_world=8)
+[mi_image_guard] check start (rank=9, world=16, master=<host>:29813, version=20261030093456_8dfde1cf)
+[mi_image_guard] check start (rank=8, world=16, master=<host>:29813, version=20261030093456_8dfde1cf)
+[mi_image_guard] check start (rank=10, world=16, master=<host>:29813, version=20261030093456_8dfde1cf)
+[mi_image_guard] will run (rank=11, world=16, local_rank=3, local_world=8)
+[mi_image_guard] check start (rank=11, world=16, master=<host>:29813, version=20261030093456_8dfde1cf)
+[mi_image_guard] will run (rank=12, world=16, local_rank=4, local_world=8)
+[mi_image_guard] will run (rank=13, world=16, local_rank=5, local_world=8)
+[mi_image_guard] check start (rank=12, world=16, master=<host>:29813, version=20261030093456_8dfde1cf)
+[mi_image_guard] check start (rank=13, world=16, master=<host>:29813, version=20261030093456_8dfde1cf)
+[mi_image_guard] will run (rank=14, world=16, local_rank=6, local_world=8)
+[mi_image_guard] will run (rank=15, world=16, local_rank=7, local_world=8)
+[mi_image_guard] check start (rank=14, world=16, master=<host>:29813, version=20261030093456_8dfde1cf)
+[mi_image_guard] check start (rank=15, world=16, master=<host>:29813, version=20261030093456_8dfde1cf)
+[mi_image_guard] reported version (rank=14): 20261030093456_8dfde1cf
+[mi_image_guard] reported version (rank=12): 20261030093456_8dfde1cf
+[mi_image_guard] reported version (rank=15): 20261030093456_8dfde1cf
+[mi_image_guard] reported version (rank=11): 20261030093456_8dfde1cf
+[mi_image_guard] reported version (rank=13): 20261030093456_8dfde1cf
+[mi_image_guard] reported version (rank=8): 20261030093456_8dfde1cf
+[mi_image_guard] reported version (rank=9): 20261030093456_8dfde1cf
+[mi_image_guard] reported version (rank=10): 20261030093456_8dfde1cf
+NCCL version 2.21.5+cuda12.4

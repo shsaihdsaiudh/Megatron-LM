@@ -1,0 +1,686 @@
+<host>:88:88 [2] NCCL INFO cudaDriverVersion 13000
+<host>:88:88 [2] NCCL INFO Bootstrap : Using eth0:<ip><0>
+<host>:88:88 [2] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+<host>:88:88 [2] NCCL INFO NET/Plugin: Using internal network plugin.
+<host>:88:165 [2] NCCL INFO NET/IB : No device found.
+<host>:88:165 [2] NCCL INFO NET/Socket : Using [0]eth0:<ip><0>
+<host>:88:165 [2] NCCL INFO Using non-device net plugin version 0
+<host>:88:165 [2] NCCL INFO Using network Socket
+<host>:88:165 [2] NCCL INFO ncclCommInitRank comm 0x563d1139eea0 rank 2 nranks 8 cudaDev 2 nvmlDev 2 busId 67020 commId 0x7bbd42eb0054bfe4 - Init START
+<host>:88:165 [2] NCCL INFO MNNVL busId 0x67020 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+<host>:88:165 [2] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'
+<host>:88:165 [2] NCCL INFO Setting affinity for GPU 2 to 03ff,ffffffff,fffffff0
+<host>:88:165 [2] NCCL INFO NVLS multicast support is available on dev 2
+<host>:88:165 [2] NCCL INFO comm 0x563d1139eea0 rank 2 nRanks 8 nNodes 1 localRanks 8 localRank 2 MNNVL 0
+<host>:88:165 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1 [2] 3/-1/-1->2->1 [3] 3/-1/-1->2->1 [4] 3/-1/-1->2->1 [5] 3/-1/-1->2->1 [6] 3/-1/-1->2->1 [7] 3/-1/-1->2->1 [8] 3/-1/-1->2->1 [9] 3/-1/-1->2->1 [10] 3/-1/-1->2->1 [11] 3/-1/-1->2->1 [12] 3/-1/-1->2->1 [13] 3/-1/-1->2->1 [14] 3/-1/-1->2->1 [15] 3/-1/-1->2->1 [16] 3/-1/-1->2->1 [17] 3/-1/-1->2->1 [18] 3/-1/-1->2->1 [19] 3/-1/-1->2->1 [20] 3/-1/-1->2->1 [21] 3/-1/-1->2->1 [22] 3/-1/-1->2->1 [23] 3/-1/-1->2->1
+<host>:88:165 [2] NCCL INFO P2P Chunksize set to 524288
+<host>:88:173 [2] NCCL INFO New proxy recv connection 0 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8004f40
+<host>:88:173 [2] NCCL INFO New proxy recv connection 1 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8004fb8
+<host>:88:173 [2] NCCL INFO New proxy recv connection 2 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005030
+<host>:88:173 [2] NCCL INFO New proxy recv connection 3 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80050a8
+<host>:88:173 [2] NCCL INFO New proxy recv connection 4 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005120
+<host>:88:173 [2] NCCL INFO New proxy recv connection 5 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005198
+<host>:88:173 [2] NCCL INFO New proxy recv connection 6 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005210
+<host>:88:173 [2] NCCL INFO New proxy recv connection 7 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005288
+<host>:88:173 [2] NCCL INFO New proxy recv connection 8 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005300
+<host>:88:173 [2] NCCL INFO New proxy recv connection 9 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005378
+<host>:88:173 [2] NCCL INFO New proxy recv connection 10 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80053f0
+<host>:88:173 [2] NCCL INFO New proxy recv connection 11 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005468
+<host>:88:173 [2] NCCL INFO New proxy recv connection 12 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80054e0
+<host>:88:173 [2] NCCL INFO New proxy recv connection 13 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005558
+<host>:88:173 [2] NCCL INFO New proxy recv connection 14 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80055d0
+<host>:88:173 [2] NCCL INFO New proxy recv connection 15 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005648
+<host>:88:173 [2] NCCL INFO New proxy recv connection 16 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80056c0
+<host>:88:173 [2] NCCL INFO New proxy recv connection 17 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005738
+<host>:88:173 [2] NCCL INFO New proxy recv connection 18 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80057b0
+<host>:88:173 [2] NCCL INFO New proxy recv connection 19 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005828
+<host>:88:173 [2] NCCL INFO New proxy recv connection 20 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80058a0
+<host>:88:173 [2] NCCL INFO New proxy recv connection 21 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005918
+<host>:88:173 [2] NCCL INFO New proxy recv connection 22 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005990
+<host>:88:173 [2] NCCL INFO New proxy recv connection 23 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005a08
+<host>:88:165 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 24 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005a80
+<host>:88:165 [2] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 25 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005af8
+<host>:88:165 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 26 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005b70
+<host>:88:165 [2] NCCL INFO Channel 03/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 27 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005be8
+<host>:88:165 [2] NCCL INFO Channel 04/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 28 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005c60
+<host>:88:165 [2] NCCL INFO Channel 05/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 29 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005cd8
+<host>:88:165 [2] NCCL INFO Channel 06/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 30 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005d50
+<host>:88:165 [2] NCCL INFO Channel 07/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 31 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005dc8
+<host>:88:165 [2] NCCL INFO Channel 08/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 32 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005e40
+<host>:88:165 [2] NCCL INFO Channel 09/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 33 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005eb8
+<host>:88:165 [2] NCCL INFO Channel 10/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 34 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005f30
+<host>:88:165 [2] NCCL INFO Channel 11/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 35 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8005fa8
+<host>:88:165 [2] NCCL INFO Channel 12/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 36 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006020
+<host>:88:165 [2] NCCL INFO Channel 13/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 37 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006098
+<host>:88:165 [2] NCCL INFO Channel 14/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 38 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006110
+<host>:88:165 [2] NCCL INFO Channel 15/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 39 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006188
+<host>:88:165 [2] NCCL INFO Channel 16/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 40 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006200
+<host>:88:165 [2] NCCL INFO Channel 17/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 41 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006278
+<host>:88:165 [2] NCCL INFO Channel 18/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 42 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80062f0
+<host>:88:165 [2] NCCL INFO Channel 19/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 43 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006368
+<host>:88:165 [2] NCCL INFO Channel 20/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 44 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80063e0
+<host>:88:165 [2] NCCL INFO Channel 21/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 45 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006458
+<host>:88:165 [2] NCCL INFO Channel 22/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 46 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80064d0
+<host>:88:165 [2] NCCL INFO Channel 23/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 47 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006548
+<host>:88:165 [2] NCCL INFO Connected all rings
+<host>:88:173 [2] NCCL INFO New proxy recv connection 48 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80065c0
+<host>:88:173 [2] NCCL INFO New proxy recv connection 49 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006638
+<host>:88:173 [2] NCCL INFO New proxy recv connection 50 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80066b0
+<host>:88:173 [2] NCCL INFO New proxy recv connection 51 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006728
+<host>:88:173 [2] NCCL INFO New proxy recv connection 52 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80067a0
+<host>:88:173 [2] NCCL INFO New proxy recv connection 53 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006818
+<host>:88:173 [2] NCCL INFO New proxy recv connection 54 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006890
+<host>:88:173 [2] NCCL INFO New proxy recv connection 55 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006908
+<host>:88:173 [2] NCCL INFO New proxy recv connection 56 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006980
+<host>:88:173 [2] NCCL INFO New proxy recv connection 57 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80069f8
+<host>:88:173 [2] NCCL INFO New proxy recv connection 58 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006a70
+<host>:88:173 [2] NCCL INFO New proxy recv connection 59 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006ae8
+<host>:88:173 [2] NCCL INFO New proxy recv connection 60 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006b60
+<host>:88:173 [2] NCCL INFO New proxy recv connection 61 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006bd8
+<host>:88:173 [2] NCCL INFO New proxy recv connection 62 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006c50
+<host>:88:173 [2] NCCL INFO New proxy recv connection 63 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006cc8
+<host>:88:173 [2] NCCL INFO New proxy recv connection 64 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006d40
+<host>:88:173 [2] NCCL INFO New proxy recv connection 65 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006db8
+<host>:88:173 [2] NCCL INFO New proxy recv connection 66 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006e30
+<host>:88:173 [2] NCCL INFO New proxy recv connection 67 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006ea8
+<host>:88:173 [2] NCCL INFO New proxy recv connection 68 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006f20
+<host>:88:173 [2] NCCL INFO New proxy recv connection 69 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8006f98
+<host>:88:173 [2] NCCL INFO New proxy recv connection 70 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8007010
+<host>:88:173 [2] NCCL INFO New proxy recv connection 71 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8007088
+<host>:88:165 [2] NCCL INFO Channel 00/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 72 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8007100
+<host>:88:165 [2] NCCL INFO Channel 01/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 73 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8007178
+<host>:88:165 [2] NCCL INFO Channel 02/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 74 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80071f0
+<host>:88:165 [2] NCCL INFO Channel 03/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 75 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8007268
+<host>:88:165 [2] NCCL INFO Channel 04/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 76 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80072e0
+<host>:88:165 [2] NCCL INFO Channel 05/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 77 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8007358
+<host>:88:165 [2] NCCL INFO Channel 06/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 78 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80073d0
+<host>:88:165 [2] NCCL INFO Channel 07/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 79 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8007448
+<host>:88:165 [2] NCCL INFO Channel 08/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 80 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80074c0
+<host>:88:165 [2] NCCL INFO Channel 09/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 81 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8007538
+<host>:88:165 [2] NCCL INFO Channel 10/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 82 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80075b0
+<host>:88:165 [2] NCCL INFO Channel 11/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 83 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8007628
+<host>:88:165 [2] NCCL INFO Channel 12/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 84 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80076a0
+<host>:88:165 [2] NCCL INFO Channel 13/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 85 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8007718
+<host>:88:165 [2] NCCL INFO Channel 14/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 86 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8007790
+<host>:88:165 [2] NCCL INFO Channel 15/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 87 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8007808
+<host>:88:165 [2] NCCL INFO Channel 16/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 88 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8007880
+<host>:88:165 [2] NCCL INFO Channel 17/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 89 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80078f8
+<host>:88:165 [2] NCCL INFO Channel 18/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 90 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8007970
+<host>:88:165 [2] NCCL INFO Channel 19/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 91 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb80079e8
+<host>:88:165 [2] NCCL INFO Channel 20/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 92 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8007a60
+<host>:88:165 [2] NCCL INFO Channel 21/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 93 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8007ad8
+<host>:88:165 [2] NCCL INFO Channel 22/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 94 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8007b50
+<host>:88:165 [2] NCCL INFO Channel 23/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:173 [2] NCCL INFO New proxy send connection 95 from local rank 2, transport 0
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8007bc8
+<host>:88:165 [2] NCCL INFO Connected all trees
+<host>:88:165 [2] NCCL INFO NVLS comm 0x563d1139eea0 headRank 2 nHeads 8 buffSize 1048576 memSize 2097152 nvlsPerRankSize 150994944 nvlsTotalSize 1207959552
+<host>:88:165 [2] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+<host>:88:165 [2] NCCL INFO 24 coll channels, 24 collnet channels, 16 nvls channels, 32 p2p channels, 32 p2p channels per peer
+<host>:88:173 [2] NCCL INFO New proxy send connection 96 from local rank 2, transport 2
+<host>:88:165 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3bb8007c40
+<host>:88:165 [2] NCCL INFO ncclCommInitRank comm 0x563d1139eea0 rank 2 nranks 8 cudaDev 2 nvmlDev 2 busId 67020 commId 0x7bbd42eb0054bfe4 - Init COMPLETE
+<host>:88:88 [2] NCCL INFO NCCL version 2.21.5+cuda12.4
+<host>:88:198 [2] NCCL INFO Using non-device net plugin version 0
+<host>:88:198 [2] NCCL INFO Using network Socket
+<host>:88:198 [2] NCCL INFO ncclCommInitRank comm 0x563d11b8a9d0 rank 0 nranks 2 cudaDev 2 nvmlDev 2 busId 67020 commId 0x5a84975a8a9e1020 - Init START
+<host>:88:198 [2] NCCL INFO MNNVL busId 0x67020 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+<host>:88:198 [2] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'
+<host>:88:198 [2] NCCL INFO Setting affinity for GPU 2 to 03ff,ffffffff,fffffff0
+<host>:88:198 [2] NCCL INFO comm 0x563d11b8a9d0 rank 0 nRanks 2 nNodes 1 localRanks 2 localRank 0 MNNVL 0
+<host>:88:198 [2] NCCL INFO Channel 00/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 01/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 02/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 03/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 04/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 05/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 06/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 07/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 08/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 09/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 10/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 11/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 12/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 13/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 14/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 15/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 16/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 17/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 18/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 19/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 20/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 21/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 22/24 :    0   1
+<host>:88:198 [2] NCCL INFO Channel 23/24 :    0   1
+<host>:88:198 [2] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 1/-1/-1->0->-1 [3] 1/-1/-1->0->-1 [4] 1/-1/-1->0->-1 [5] 1/-1/-1->0->-1 [6] -1/-1/-1->0->1 [7] -1/-1/-1->0->1 [8] -1/-1/-1->0->1 [9] -1/-1/-1->0->1 [10] -1/-1/-1->0->1 [11] -1/-1/-1->0->1 [12] 1/-1/-1->0->-1 [13] 1/-1/-1->0->-1 [14] 1/-1/-1->0->-1 [15] 1/-1/-1->0->-1 [16] 1/-1/-1->0->-1 [17] 1/-1/-1->0->-1 [18] -1/-1/-1->0->1 [19] -1/-1/-1->0->1 [20] -1/-1/-1->0->1 [21] -1/-1/-1->0->1 [22] -1/-1/-1->0->1 [23] -1/-1/-1->0->1
+<host>:88:198 [2] NCCL INFO P2P Chunksize set to 524288
+<host>:88:204 [2] NCCL INFO New proxy recv connection 0 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a9650
+<host>:88:204 [2] NCCL INFO New proxy recv connection 1 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a96c8
+<host>:88:204 [2] NCCL INFO New proxy recv connection 2 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a9740
+<host>:88:204 [2] NCCL INFO New proxy recv connection 3 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a97b8
+<host>:88:204 [2] NCCL INFO New proxy recv connection 4 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a9830
+<host>:88:204 [2] NCCL INFO New proxy recv connection 5 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a98a8
+<host>:88:204 [2] NCCL INFO New proxy recv connection 6 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a9920
+<host>:88:204 [2] NCCL INFO New proxy recv connection 7 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a9998
+<host>:88:204 [2] NCCL INFO New proxy recv connection 8 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a9a10
+<host>:88:204 [2] NCCL INFO New proxy recv connection 9 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a9a88
+<host>:88:204 [2] NCCL INFO New proxy recv connection 10 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a9b00
+<host>:88:204 [2] NCCL INFO New proxy recv connection 11 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a9b78
+<host>:88:204 [2] NCCL INFO New proxy recv connection 12 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a9bf0
+<host>:88:204 [2] NCCL INFO New proxy recv connection 13 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a9c68
+<host>:88:204 [2] NCCL INFO New proxy recv connection 14 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a9ce0
+<host>:88:204 [2] NCCL INFO New proxy recv connection 15 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a9d58
+<host>:88:204 [2] NCCL INFO New proxy recv connection 16 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a9dd0
+<host>:88:204 [2] NCCL INFO New proxy recv connection 17 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a9e48
+<host>:88:204 [2] NCCL INFO New proxy recv connection 18 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a9ec0
+<host>:88:204 [2] NCCL INFO New proxy recv connection 19 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a9f38
+<host>:88:204 [2] NCCL INFO New proxy recv connection 20 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22a9fb0
+<host>:88:204 [2] NCCL INFO New proxy recv connection 21 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa028
+<host>:88:204 [2] NCCL INFO New proxy recv connection 22 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa0a0
+<host>:88:204 [2] NCCL INFO New proxy recv connection 23 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa118
+<host>:88:198 [2] NCCL INFO Channel 00/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 24 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa190
+<host>:88:198 [2] NCCL INFO Channel 01/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 25 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa208
+<host>:88:198 [2] NCCL INFO Channel 02/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 26 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa280
+<host>:88:198 [2] NCCL INFO Channel 03/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 27 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa2f8
+<host>:88:198 [2] NCCL INFO Channel 04/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 28 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa370
+<host>:88:198 [2] NCCL INFO Channel 05/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 29 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa3e8
+<host>:88:198 [2] NCCL INFO Channel 06/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 30 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa460
+<host>:88:198 [2] NCCL INFO Channel 07/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 31 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa4d8
+<host>:88:198 [2] NCCL INFO Channel 08/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 32 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa550
+<host>:88:198 [2] NCCL INFO Channel 09/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 33 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa5c8
+<host>:88:198 [2] NCCL INFO Channel 10/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 34 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa640
+<host>:88:198 [2] NCCL INFO Channel 11/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 35 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa6b8
+<host>:88:198 [2] NCCL INFO Channel 12/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 36 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa730
+<host>:88:198 [2] NCCL INFO Channel 13/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 37 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa7a8
+<host>:88:198 [2] NCCL INFO Channel 14/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 38 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa820
+<host>:88:198 [2] NCCL INFO Channel 15/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 39 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa898
+<host>:88:198 [2] NCCL INFO Channel 16/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 40 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa910
+<host>:88:198 [2] NCCL INFO Channel 17/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 41 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aa988
+<host>:88:198 [2] NCCL INFO Channel 18/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 42 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aaa00
+<host>:88:198 [2] NCCL INFO Channel 19/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 43 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aaa78
+<host>:88:198 [2] NCCL INFO Channel 20/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 44 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aaaf0
+<host>:88:198 [2] NCCL INFO Channel 21/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 45 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aab68
+<host>:88:198 [2] NCCL INFO Channel 22/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 46 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aabe0
+<host>:88:198 [2] NCCL INFO Channel 23/0 : 0[2] -> 1[6] via P2P/CUMEM
+<host>:88:204 [2] NCCL INFO New proxy send connection 47 from local rank 0, transport 0
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aac58
+<host>:88:198 [2] NCCL INFO Connected all rings
+<host>:88:198 [2] NCCL INFO Connected all trees
+<host>:88:198 [2] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+<host>:88:198 [2] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+<host>:88:204 [2] NCCL INFO New proxy send connection 48 from local rank 0, transport 2
+<host>:88:198 [2] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f3bc22aacd0
+<host>:88:198 [2] NCCL INFO ncclCommInitRank comm 0x563d11b8a9d0 rank 0 nranks 2 cudaDev 2 nvmlDev 2 busId 67020 commId 0x5a84975a8a9e1020 - Init COMPLETE
+<host>:88:236 [2] NCCL INFO Using non-device net plugin version 0
+<host>:88:236 [2] NCCL INFO Using network Socket
+<host>:88:236 [2] NCCL INFO ncclCommInitRank comm 0x563d11bc0430 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 67020 commId 0x93798ebd61164b2d - Init START
+<host>:88:236 [2] NCCL INFO MNNVL busId 0x67020 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+<host>:88:236 [2] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'
+<host>:88:236 [2] NCCL INFO Setting affinity for GPU 2 to 03ff,ffffffff,fffffff0
+<host>:88:236 [2] NCCL INFO NVLS multicast support is available on dev 2
+<host>:88:236 [2] NCCL INFO comm 0x563d11bc0430 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
+<host>:88:236 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1 [2] 3/-1/-1->2->1 [3] 3/-1/-1->2->1 [4] 3/-1/-1->2->1 [5] 3/-1/-1->2->1 [6] 3/-1/-1->2->1 [7] 3/-1/-1->2->1 [8] 3/-1/-1->2->1 [9] 3/-1/-1->2->1 [10] 3/-1/-1->2->1 [11] 3/-1/-1->2->1 [12] 3/-1/-1->2->1 [13] 3/-1/-1->2->1 [14] 3/-1/-1->2->1 [15] 3/-1/-1->2->1 [16] 3/-1/-1->2->1 [17] 3/-1/-1->2->1 [18] 3/-1/-1->2->1 [19] 3/-1/-1->2->1 [20] 3/-1/-1->2->1 [21] 3/-1/-1->2->1 [22] 3/-1/-1->2->1 [23] 3/-1/-1->2->1
+<host>:88:236 [2] NCCL INFO P2P Chunksize set to 524288
+<host>:88:238 [2] NCCL INFO New proxy recv connection 0 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84004f40
+<host>:88:238 [2] NCCL INFO New proxy recv connection 1 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84004fb8
+<host>:88:238 [2] NCCL INFO New proxy recv connection 2 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005030
+<host>:88:238 [2] NCCL INFO New proxy recv connection 3 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840050a8
+<host>:88:238 [2] NCCL INFO New proxy recv connection 4 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005120
+<host>:88:238 [2] NCCL INFO New proxy recv connection 5 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005198
+<host>:88:238 [2] NCCL INFO New proxy recv connection 6 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005210
+<host>:88:238 [2] NCCL INFO New proxy recv connection 7 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005288
+<host>:88:238 [2] NCCL INFO New proxy recv connection 8 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005300
+<host>:88:238 [2] NCCL INFO New proxy recv connection 9 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005378
+<host>:88:238 [2] NCCL INFO New proxy recv connection 10 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840053f0
+<host>:88:238 [2] NCCL INFO New proxy recv connection 11 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005468
+<host>:88:238 [2] NCCL INFO New proxy recv connection 12 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840054e0
+<host>:88:238 [2] NCCL INFO New proxy recv connection 13 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005558
+<host>:88:238 [2] NCCL INFO New proxy recv connection 14 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840055d0
+<host>:88:238 [2] NCCL INFO New proxy recv connection 15 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005648
+<host>:88:238 [2] NCCL INFO New proxy recv connection 16 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840056c0
+<host>:88:238 [2] NCCL INFO New proxy recv connection 17 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005738
+<host>:88:238 [2] NCCL INFO New proxy recv connection 18 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840057b0
+<host>:88:238 [2] NCCL INFO New proxy recv connection 19 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005828
+<host>:88:238 [2] NCCL INFO New proxy recv connection 20 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840058a0
+<host>:88:238 [2] NCCL INFO New proxy recv connection 21 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005918
+<host>:88:238 [2] NCCL INFO New proxy recv connection 22 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005990
+<host>:88:238 [2] NCCL INFO New proxy recv connection 23 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005a08
+<host>:88:236 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 24 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005a80
+<host>:88:236 [2] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 25 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005af8
+<host>:88:236 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 26 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005b70
+<host>:88:236 [2] NCCL INFO Channel 03/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 27 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005be8
+<host>:88:236 [2] NCCL INFO Channel 04/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 28 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005c60
+<host>:88:236 [2] NCCL INFO Channel 05/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 29 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005cd8
+<host>:88:236 [2] NCCL INFO Channel 06/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 30 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005d50
+<host>:88:236 [2] NCCL INFO Channel 07/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 31 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005dc8
+<host>:88:236 [2] NCCL INFO Channel 08/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 32 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005e40
+<host>:88:236 [2] NCCL INFO Channel 09/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 33 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005eb8
+<host>:88:236 [2] NCCL INFO Channel 10/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 34 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005f30
+<host>:88:236 [2] NCCL INFO Channel 11/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 35 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84005fa8
+<host>:88:236 [2] NCCL INFO Channel 12/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 36 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006020
+<host>:88:236 [2] NCCL INFO Channel 13/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 37 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006098
+<host>:88:236 [2] NCCL INFO Channel 14/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 38 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006110
+<host>:88:236 [2] NCCL INFO Channel 15/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 39 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006188
+<host>:88:236 [2] NCCL INFO Channel 16/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 40 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006200
+<host>:88:236 [2] NCCL INFO Channel 17/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 41 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006278
+<host>:88:236 [2] NCCL INFO Channel 18/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 42 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840062f0
+<host>:88:236 [2] NCCL INFO Channel 19/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 43 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006368
+<host>:88:236 [2] NCCL INFO Channel 20/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 44 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840063e0
+<host>:88:236 [2] NCCL INFO Channel 21/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 45 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006458
+<host>:88:236 [2] NCCL INFO Channel 22/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 46 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840064d0
+<host>:88:236 [2] NCCL INFO Channel 23/0 : 2[2] -> 3[3] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 47 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006548
+<host>:88:236 [2] NCCL INFO Connected all rings
+<host>:88:238 [2] NCCL INFO New proxy recv connection 48 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840065c0
+<host>:88:238 [2] NCCL INFO New proxy recv connection 49 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006638
+<host>:88:238 [2] NCCL INFO New proxy recv connection 50 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840066b0
+<host>:88:238 [2] NCCL INFO New proxy recv connection 51 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006728
+<host>:88:238 [2] NCCL INFO New proxy recv connection 52 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840067a0
+<host>:88:238 [2] NCCL INFO New proxy recv connection 53 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006818
+<host>:88:238 [2] NCCL INFO New proxy recv connection 54 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006890
+<host>:88:238 [2] NCCL INFO New proxy recv connection 55 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006908
+<host>:88:238 [2] NCCL INFO New proxy recv connection 56 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006980
+<host>:88:238 [2] NCCL INFO New proxy recv connection 57 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840069f8
+<host>:88:238 [2] NCCL INFO New proxy recv connection 58 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006a70
+<host>:88:238 [2] NCCL INFO New proxy recv connection 59 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006ae8
+<host>:88:238 [2] NCCL INFO New proxy recv connection 60 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006b60
+<host>:88:238 [2] NCCL INFO New proxy recv connection 61 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006bd8
+<host>:88:238 [2] NCCL INFO New proxy recv connection 62 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006c50
+<host>:88:238 [2] NCCL INFO New proxy recv connection 63 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006cc8
+<host>:88:238 [2] NCCL INFO New proxy recv connection 64 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006d40
+<host>:88:238 [2] NCCL INFO New proxy recv connection 65 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006db8
+<host>:88:238 [2] NCCL INFO New proxy recv connection 66 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006e30
+<host>:88:238 [2] NCCL INFO New proxy recv connection 67 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006ea8
+<host>:88:238 [2] NCCL INFO New proxy recv connection 68 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006f20
+<host>:88:238 [2] NCCL INFO New proxy recv connection 69 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84006f98
+<host>:88:238 [2] NCCL INFO New proxy recv connection 70 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84007010
+<host>:88:238 [2] NCCL INFO New proxy recv connection 71 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84007088
+<host>:88:236 [2] NCCL INFO Channel 00/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 72 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84007100
+<host>:88:236 [2] NCCL INFO Channel 01/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 73 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84007178
+<host>:88:236 [2] NCCL INFO Channel 02/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 74 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840071f0
+<host>:88:236 [2] NCCL INFO Channel 03/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 75 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84007268
+<host>:88:236 [2] NCCL INFO Channel 04/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 76 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840072e0
+<host>:88:236 [2] NCCL INFO Channel 05/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 77 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84007358
+<host>:88:236 [2] NCCL INFO Channel 06/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 78 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840073d0
+<host>:88:236 [2] NCCL INFO Channel 07/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 79 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84007448
+<host>:88:236 [2] NCCL INFO Channel 08/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 80 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840074c0
+<host>:88:236 [2] NCCL INFO Channel 09/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 81 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84007538
+<host>:88:236 [2] NCCL INFO Channel 10/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 82 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840075b0
+<host>:88:236 [2] NCCL INFO Channel 11/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 83 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84007628
+<host>:88:236 [2] NCCL INFO Channel 12/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 84 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840076a0
+<host>:88:236 [2] NCCL INFO Channel 13/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 85 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84007718
+<host>:88:236 [2] NCCL INFO Channel 14/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 86 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84007790
+<host>:88:236 [2] NCCL INFO Channel 15/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 87 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84007808
+<host>:88:236 [2] NCCL INFO Channel 16/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 88 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84007880
+<host>:88:236 [2] NCCL INFO Channel 17/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 89 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840078f8
+<host>:88:236 [2] NCCL INFO Channel 18/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 90 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84007970
+<host>:88:236 [2] NCCL INFO Channel 19/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 91 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b840079e8
+<host>:88:236 [2] NCCL INFO Channel 20/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 92 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84007a60
+<host>:88:236 [2] NCCL INFO Channel 21/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 93 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84007ad8
+<host>:88:236 [2] NCCL INFO Channel 22/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 94 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84007b50
+<host>:88:236 [2] NCCL INFO Channel 23/0 : 2[2] -> 1[1] via P2P/CUMEM
+<host>:88:238 [2] NCCL INFO New proxy send connection 95 from local rank 2, transport 0
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84007bc8
+<host>:88:236 [2] NCCL INFO Connected all trees
+<host>:88:236 [2] NCCL INFO NVLS comm 0x563d11bc0430 headRank 2 nHeads 4 buffSize 1048576 memSize 2097152 nvlsPerRankSize 150994944 nvlsTotalSize 603979776
+<host>:88:236 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+<host>:88:236 [2] NCCL INFO 24 coll channels, 24 collnet channels, 16 nvls channels, 32 p2p channels, 32 p2p channels per peer
+<host>:88:238 [2] NCCL INFO New proxy send connection 96 from local rank 2, transport 2
+<host>:88:236 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f3b84007c40
+<host>:88:236 [2] NCCL INFO ncclCommInitRank comm 0x563d11bc0430 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 67020 commId 0x93798ebd61164b2d - Init COMPLETE
+<host>:88:88 [2] NCCL INFO comm 0x563d11bc0430 rank 2 nranks 4 cudaDev 2 busId 67020 - Destroy COMPLETE
+<host>:88:88 [2] NCCL INFO comm 0x563d11b8a9d0 rank 0 nranks 2 cudaDev 2 busId 67020 - Destroy COMPLETE
+<host>:88:88 [2] NCCL INFO comm 0x563d1139eea0 rank 2 nranks 8 cudaDev 2 busId 67020 - Destroy COMPLETE

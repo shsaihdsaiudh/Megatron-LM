@@ -1,0 +1,17 @@
+diff -ru /planning-users/yangyeyuan/megatron-contrib/snapshots/p1-20261112/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/context.py /planning-users/yangyeyuan/megatron-contrib/snapshots/f3-reuse-outer-rs-20261112/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/context.py
+--- /planning-users/yangyeyuan/megatron-contrib/snapshots/p1-20261112/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/context.py	2026-11-12 17:12:57.000000002 +0800
++++ /planning-users/yangyeyuan/megatron-contrib/snapshots/f3-reuse-outer-rs-20261112/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/context.py	2026-11-13 12:57:30.000000004 +0800
+@@ -131,8 +131,12 @@
+             if overlap_outer_communication
+             else self.inner_reduction_stream
+         )
++        # DIAGNOSTIC F3 (#6714 E2-diag2): reuse the DP-outer reduction stream instead
++        # of creating a new one. Outer reductions finish before the optimizer step
++        # (finalize waits on this stream), and outer all-gathers fork from the
++        # all-gather stream, so the two uses never overlap.
+         self.outer_allgather_stream = (
+-            torch.cuda.Stream(device) if overlap_outer_communication else self.allgather_stream
++            self.outer_reduction_stream if overlap_outer_communication else self.allgather_stream
+         )
+         self.outer_allgather_fork_generation = 0
+ 

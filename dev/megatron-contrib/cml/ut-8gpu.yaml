@@ -1,0 +1,49 @@
+jobName: 261110-mfsdp-ut-8gpu-yangyeyuan
+description: '#6714 env check: MFSDP v2 test_overlap + test_cuda_graph on 8 GPUs with uv venv (py3.12, torch 2.14.1+cu130)'
+accessType: PRIVATE
+imageConfig:
+    imageUrl: <redacted-image>
+    imageCommand: bash /planning-users/yangyeyuan/megatron-contrib/cml/unittest_entry.sh
+modelUri: ""
+juiceFsMountConfigs:
+    - volume: <redacted>
+      juiceFsCluster: <redacted>
+      subPath: /
+      mountPath: /planning-users
+      readOnly: false
+envConfigs:
+    - key: RUN_NAME
+      value: ut-8gpu-20261111
+    - key: GPUS_PER_NODE
+      value: "8"
+queueId: "<redacted>"
+priority: 5
+preemptible: false
+framework: pytorch
+resourceConfigs:
+    - nodeRole: worker
+      nodeNumber: 1
+      perNodeResourceSpec:
+        resourcePriority: GUARANTEED
+        resourceName: <redacted>
+        resourceNumber: 8
+      elastic: false
+      preemptible: false
+enableTensorboard: false
+enableMetrics: false
+retryConfig:
+    enableRetry: false
+    maxRetryTimes: 0
+    policySets: []
+rdma: false
+diagOptions:
+    - name: HangDetection
+      enable: false
+    - name: SanityCheck
+      enable: false
+      config:
+        preSanityCheck: false
+        postSanityCheck: false
+alertConfig:
+    enableAlert: false
+    alertItems: []

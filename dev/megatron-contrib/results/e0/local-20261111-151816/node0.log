@@ -1,0 +1,50 @@
+[mi_image_guard] not torchrun worker (rank=1, world=2, local_rank=None, local_world=None)
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[mi_image_guard] will run (rank=1, world=8, local_rank=1, local_world=8)
+[mi_image_guard] will run (rank=0, world=8, local_rank=0, local_world=8)
+[mi_image_guard] check start (rank=1, world=8, master=127.0.0.1:27862, version=20261030093456_8dfde1cf)
+[mi_image_guard] check start (rank=0, world=8, master=127.0.0.1:27862, version=20261030093456_8dfde1cf)
+[mi_image_guard] will run (rank=2, world=8, local_rank=2, local_world=8)
+[mi_image_guard] check start (rank=2, world=8, master=127.0.0.1:27862, version=20261030093456_8dfde1cf)
+[mi_image_guard] will run (rank=3, world=8, local_rank=3, local_world=8)
+[mi_image_guard] check start (rank=3, world=8, master=127.0.0.1:27862, version=20261030093456_8dfde1cf)
+[mi_image_guard] will run (rank=4, world=8, local_rank=4, local_world=8)
+[mi_image_guard] check start (rank=4, world=8, master=127.0.0.1:27862, version=20261030093456_8dfde1cf)
+[mi_image_guard] will run (rank=5, world=8, local_rank=5, local_world=8)
+[mi_image_guard] check start (rank=5, world=8, master=127.0.0.1:27862, version=20261030093456_8dfde1cf)
+[mi_image_guard] will run (rank=6, world=8, local_rank=6, local_world=8)
+[mi_image_guard] check start (rank=6, world=8, master=127.0.0.1:27862, version=20261030093456_8dfde1cf)
+[mi_image_guard] will run (rank=7, world=8, local_rank=7, local_world=8)
+[mi_image_guard] check start (rank=7, world=8, master=127.0.0.1:27862, version=20261030093456_8dfde1cf)
+[mi_image_guard] reported version (rank=6): 20261030093456_8dfde1cf
+[mi_image_guard] reported version (rank=0): 20261030093456_8dfde1cf
+[mi_image_guard] reported version (rank=2): 20261030093456_8dfde1cf
+[mi_image_guard] reported version (rank=7): 20261030093456_8dfde1cf
+[mi_image_guard] reported version (rank=5): 20261030093456_8dfde1cf
+[mi_image_guard] reported version (rank=4): 20261030093456_8dfde1cf
+[mi_image_guard] reported version (rank=1): 20261030093456_8dfde1cf
+[mi_image_guard] reported version (rank=3): 20261030093456_8dfde1cf
+[mi_image_guard] version[0]=20261030093456_8dfde1cf
+[mi_image_guard] version[1]=20261030093456_8dfde1cf
+[mi_image_guard] version[2]=20261030093456_8dfde1cf
+[mi_image_guard] version[3]=20261030093456_8dfde1cf
+[mi_image_guard] version[4]=20261030093456_8dfde1cf
+[mi_image_guard] version[5]=20261030093456_8dfde1cf
+[mi_image_guard] version[6]=20261030093456_8dfde1cf
+[mi_image_guard] version[7]=20261030093456_8dfde1cf
+[mi_image_guard] image consistent across 8 ranks: 20261030093456_8dfde1cf
+NCCL version 2.21.5+cuda12.4
+[e0] env: {"torch": "2.6.0+cu126", "cuda": "12.6", "nccl": "2.21.5", "gpu": "NVIDIA H20", "world_size": 8, "mesh": [2, 4], "dtype": "bf16", "CUDA_DEVICE_MAX_CONNECTIONS": null}
+[e0] outer_cross_node=False inner_intra_node=True outer_groups=[[0, 4], [1, 5], [2, 6], [3, 7]]
+NCCL version 2.21.5+cuda12.4
+NCCL version 2.21.5+cuda12.4
+NCCL version 2.21.5+cuda12.4
+NCCL version 2.21.5+cuda12.4
+hidden  blockMB    O ms    I ms  serial  concur     max   eff  O GB/s  I GB/s
+  2048     64.0   0.052   0.191   0.249   0.227   0.191  0.33   160.0   263.1
+  4096    256.0   0.153   0.662   0.815   0.764   0.662  0.33   219.4   304.0
+  8192   1024.0   0.496   2.520   2.994   2.909   2.520  0.22   270.5   319.5
+[e0] wrote /planning-users/yangyeyuan/megatron-contrib/results/e0/local-20261111-151816/e0_results.json

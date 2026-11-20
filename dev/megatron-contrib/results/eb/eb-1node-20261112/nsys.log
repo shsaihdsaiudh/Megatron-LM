@@ -1,0 +1,29 @@
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[rank7]:[W1112 11:13:41.511536408 Context.cpp:720] Warning: Setting the SM carveout for matmuls is a temporary experimental mitigation for performance issues, while more robust solutions are developed. It may be removed at any moment without notice. (function operator())
+[rank5]:[W1112 11:13:41.511536478 Context.cpp:720] Warning: Setting the SM carveout for matmuls is a temporary experimental mitigation for performance issues, while more robust solutions are developed. It may be removed at any moment without notice. (function operator())
+[rank3]:[W1112 11:13:41.513219147 Context.cpp:720] Warning: Setting the SM carveout for matmuls is a temporary experimental mitigation for performance issues, while more robust solutions are developed. It may be removed at any moment without notice. (function operator())
+[rank6]:[W1112 11:13:41.513381487 Context.cpp:720] Warning: Setting the SM carveout for matmuls is a temporary experimental mitigation for performance issues, while more robust solutions are developed. It may be removed at any moment without notice. (function operator())
+[rank4]:[W1112 11:13:41.513393944 Context.cpp:720] Warning: Setting the SM carveout for matmuls is a temporary experimental mitigation for performance issues, while more robust solutions are developed. It may be removed at any moment without notice. (function operator())
+[eb] world=8 d=4096 L=16 tag=nsys NCCL_MAX_CTAS=default CUDA_DEVICE_MAX_CONNECTIONS=None stream priority range=(0, -3)
+[rank1]:[W1112 11:13:41.514106565 Context.cpp:720] Warning: Setting the SM carveout for matmuls is a temporary experimental mitigation for performance issues, while more robust solutions are developed. It may be removed at any moment without notice. (function operator())
+[rank2]:[W1112 11:13:41.514275048 Context.cpp:720] Warning: Setting the SM carveout for matmuls is a temporary experimental mitigation for performance issues, while more robust solutions are developed. It may be removed at any moment without notice. (function operator())
+[rank0]:[W1112 11:13:43.976325147 Context.cpp:720] Warning: Setting the SM carveout for matmuls is a temporary experimental mitigation for performance issues, while more robust solutions are developed. It may be removed at any moment without notice. (function operator())
+[eb] independent T= 1024 carveout= 0 prio=normal ag_alone=0.738 ag_delay med=1.061 p90=1.302 gemm_chain=32.81 chain=42.09 overhead=9.35
+[eb] fsdp_like   T= 1024 carveout= 0 prio=normal ag_alone=0.738 ag_delay med=1.078 p90=1.290 gemm_chain=32.81 chain=42.41 overhead=9.68
+[eb] independent T= 1024 carveout= 0 prio=high   ag_alone=0.742 ag_delay med=1.070 p90=1.319 gemm_chain=32.87 chain=42.11 overhead=9.61
+[eb] fsdp_like   T= 1024 carveout= 0 prio=high   ag_alone=0.742 ag_delay med=1.043 p90=1.280 gemm_chain=32.87 chain=42.19 overhead=9.61
+[eb] independent T= 1024 carveout=16 prio=normal ag_alone=0.741 ag_delay med=1.324 p90=1.808 gemm_chain=42.97 chain=54.55 overhead=11.66
+[eb] fsdp_like   T= 1024 carveout=16 prio=normal ag_alone=0.741 ag_delay med=1.456 p90=1.878 gemm_chain=42.97 chain=54.82 overhead=12.03
+[eb] independent T= 1024 carveout=16 prio=high   ag_alone=0.735 ag_delay med=1.474 p90=1.894 gemm_chain=42.99 chain=55.06 overhead=12.38
+[eb] fsdp_like   T= 1024 carveout=16 prio=high   ag_alone=0.735 ag_delay med=1.448 p90=1.977 gemm_chain=42.99 chain=55.78 overhead=13.12
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/tmp/nsys-report-13e5.qdstrm'
+[1/1] [0%                          ] eb_T1024.rank0.nsys-repProcessing events...
+[1/1] [0%                          ] eb_T1024.rank0.nsys-rep[1/1] [0%                          ] eb_T1024.rank0.nsys-rep[1/1] [=17%                        ] eb_T1024.rank0.nsys-rep[1/1] [10%                         ] eb_T1024.rank0.nsys-rep[1/1] [7%                          ] eb_T1024.rank0.nsys-rep[1/1] [5%                          ] eb_T1024.rank0.nsys-rep[1/1] [=15%                        ] eb_T1024.rank0.nsys-rep[1/1] [====25%                     ] eb_T1024.rank0.nsys-rep[1/1] [======35%                   ] eb_T1024.rank0.nsys-rep[1/1] [=========46%                ] eb_T1024.rank0.nsys-rep[1/1] [===========50%              ] eb_T1024.rank0.nsys-rep[1/1] [===========53%              ] eb_T1024.rank0.nsys-rep[1/1] [============55%             ] eb_T1024.rank0.nsys-rep[1/1] [========================100%] eb_T1024.rank0.nsys-rep[1/1] [========================100%] eb_T1024.rank0.nsys-rep
+[eb] wrote /planning-users/yangyeyuan/megatron-contrib/results/eb/eb-1node-20261112/eb_nsys.json
+Generated:
+	/planning-users/yangyeyuan/megatron-contrib/results/eb/eb-1node-20261112/nsys/eb_T1024.rank0.nsys-rep

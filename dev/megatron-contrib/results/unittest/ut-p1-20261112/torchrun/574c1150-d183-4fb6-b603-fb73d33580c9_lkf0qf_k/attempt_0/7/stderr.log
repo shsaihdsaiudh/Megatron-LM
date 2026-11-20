@@ -1,0 +1,30 @@
+INFO:tests.test_utils.python_scripts.download_unit_tests_dataset:  Downloading datasets.zip...
+ERROR:tests.test_utils.python_scripts.download_unit_tests_dataset:  Error downloading/extracting datasets.zip: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /NVIDIA/Megatron-LM/releases/download/v2.5/datasets.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7f9e9436fec0>, 'Connection to github.com timed out. (connect timeout=60)'))
+INFO:test_cuda_graph:CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+INFO:test_cuda_graph:CUDA graph replay losses: [0.00010848803503904492, 0.00010848786041606218, 0.00010848769306903705, 0.00010848752572201192, 0.0001084873583749868]
+USDT:2026-11-12 13:18:05 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-12 13:18:06 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-12 13:18:16 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-12 13:18:17 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-12 13:18:28 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-12 13:18:29 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-12 13:18:41 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-12 13:18:41 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-12 13:18:54 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-12 13:18:55 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-12 13:19:07 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-12 13:19:07 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-12 13:19:18 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-12 13:19:19 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-12 13:19:29 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-12 13:19:30 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-12 13:19:40 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-12 13:19:41 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-12 13:19:53 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-12 13:19:54 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-12 13:20:06 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-12 13:20:06 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-12 13:20:18 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-12 13:20:18 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-12 13:20:28 173:173 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-12 13:20:28 173:173 SyncActivityProfilerHandler.cpp:46] profiler_stop

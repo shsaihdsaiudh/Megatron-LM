@@ -1,0 +1,53 @@
+jobName: 261110-mfsdp-e0-1node-yangyeyuan
+description: '#6714 gather side E0 control: mesh (2,4) on one node, both axes on NVLink'
+accessType: PRIVATE
+imageConfig:
+    imageUrl: <redacted-image>
+    imageCommand: bash /planning-users/yangyeyuan/megatron-contrib/cml/e0_entry.sh
+modelUri: ""
+juiceFsMountConfigs:
+    - volume: <redacted>
+      juiceFsCluster: <redacted>
+      subPath: /
+      mountPath: /planning-users
+      readOnly: false
+envConfigs:
+    - key: RUN_NAME
+      value: e0-1node-20261111
+    - key: EXPECT_NODES
+      value: "1"
+    - key: MESH_OUTER
+      value: "2"
+    - key: GPUS_PER_NODE
+      value: "8"
+queueId: "<redacted>"
+priority: 5
+preemptible: false
+framework: pytorch
+resourceConfigs:
+    - nodeRole: worker
+      nodeNumber: 1
+      perNodeResourceSpec:
+        resourcePriority: GUARANTEED
+        resourceName: <redacted>
+        resourceNumber: 8
+      elastic: false
+      preemptible: false
+enableTensorboard: false
+enableMetrics: false
+retryConfig:
+    enableRetry: false
+    maxRetryTimes: 0
+    policySets: []
+rdma: false
+diagOptions:
+    - name: HangDetection
+      enable: false
+    - name: SanityCheck
+      enable: false
+      config:
+        preSanityCheck: false
+        postSanityCheck: false
+alertConfig:
+    enableAlert: false
+    alertItems: []

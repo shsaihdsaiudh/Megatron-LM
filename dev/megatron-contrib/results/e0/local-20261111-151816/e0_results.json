@@ -1,0 +1,125 @@
+{
+  "args": {
+    "mesh_outer": 2,
+    "hidden": [
+      2048,
+      4096,
+      8192
+    ],
+    "ffn_mult": 4,
+    "dtype": "bf16",
+    "warmup": 5,
+    "iters": 20,
+    "repeats": 5,
+    "out_dir": "/planning-users/yangyeyuan/megatron-contrib/results/e0/local-20261111-151816"
+  },
+  "env": {
+    "torch": "2.6.0+cu126",
+    "cuda": "12.6",
+    "nccl": "2.21.5",
+    "gpu": "NVIDIA H20",
+    "world_size": 8,
+    "mesh": [
+      2,
+      4
+    ],
+    "dtype": "bf16",
+    "CUDA_DEVICE_MAX_CONNECTIONS": null
+  },
+  "topology": {
+    "hosts": [
+      "<redacted-host>",
+      "<redacted-host>",
+      "<redacted-host>",
+      "<redacted-host>",
+      "<redacted-host>",
+      "<redacted-host>",
+      "<redacted-host>",
+      "<redacted-host>"
+    ],
+    "outer_groups": [
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        7
+      ]
+    ],
+    "inner_groups": [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        5,
+        6,
+        7
+      ]
+    ],
+    "outer_cross_node": false,
+    "inner_intra_node": true
+  },
+  "results": [
+    {
+      "hidden": 2048,
+      "block_numel": 33554432,
+      "block_mb": 64.0,
+      "outer_out_mb": 16.0,
+      "inner_out_mb": 64.0,
+      "outer_ms": 0.05243999883532524,
+      "inner_ms": 0.19132480025291443,
+      "serial_ms": 0.24870240688323975,
+      "concurrent_ms": 0.22660478949546814,
+      "max_ms": 0.19132480025291443,
+      "sum_ms": 0.24376479908823967,
+      "overlap_efficiency": 0.32723131147768075,
+      "outer_busbw_gbps": 159.9658311652968,
+      "inner_busbw_gbps": 263.0691260801842
+    },
+    {
+      "hidden": 4096,
+      "block_numel": 134217728,
+      "block_mb": 256.0,
+      "outer_out_mb": 64.0,
+      "inner_out_mb": 256.0,
+      "outer_ms": 0.15293119847774506,
+      "inner_ms": 0.6621888279914856,
+      "serial_ms": 0.8145279884338379,
+      "concurrent_ms": 0.7644304037094116,
+      "max_ms": 0.6621888279914856,
+      "sum_ms": 0.8151200264692307,
+      "overlap_efficiency": 0.33145377309781243,
+      "outer_busbw_gbps": 219.40867745754917,
+      "inner_busbw_gbps": 304.0319973543689
+    },
+    {
+      "hidden": 8192,
+      "block_numel": 536870912,
+      "block_mb": 1024.0,
+      "outer_out_mb": 256.0,
+      "inner_out_mb": 1024.0,
+      "outer_ms": 0.4961376190185547,
+      "inner_ms": 2.5203185081481934,
+      "serial_ms": 2.994433641433716,
+      "concurrent_ms": 2.9088287353515625,
+      "max_ms": 2.5203185081481934,
+      "sum_ms": 3.016456127166748,
+      "overlap_efficiency": 0.21693052026188014,
+      "outer_busbw_gbps": 270.5251987654266,
+      "inner_busbw_gbps": 319.52563352466893
+    }
+  ]
+}

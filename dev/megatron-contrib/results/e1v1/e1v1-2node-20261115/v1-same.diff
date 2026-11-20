@@ -1,0 +1,16 @@
+diff -ru /planning-users/yangyeyuan/megatron-contrib/snapshots/main-d2b0e35cc/megatron/core/distributed/fsdp/src/megatron_fsdp/param_and_grad_buffer.py /planning-users/yangyeyuan/megatron-contrib/snapshots/v1-outer-on-ag-d2b0e35cc/megatron/core/distributed/fsdp/src/megatron_fsdp/param_and_grad_buffer.py
+--- /planning-users/yangyeyuan/megatron-contrib/snapshots/main-d2b0e35cc/megatron/core/distributed/fsdp/src/megatron_fsdp/param_and_grad_buffer.py	2026-11-12 17:12:56.000000002 +0800
++++ /planning-users/yangyeyuan/megatron-contrib/snapshots/v1-outer-on-ag-d2b0e35cc/megatron/core/distributed/fsdp/src/megatron_fsdp/param_and_grad_buffer.py	2026-11-15 12:50:13.000000004 +0800
+@@ -4594,7 +4594,11 @@
+         ):
+             # If there are multiple FSDP groups and full sharding, we need to
+             # all-gather parameters across groups.
+-            self.outer_fsdp_group_param_gather_stream = torch.cuda.Stream()
++            # DIAGNOSTIC (#6714 E1v1, not for upstream): run the DP-outer all-gather on
++            # the DP-inner param-gather stream, as MFSDP v2 does by default.
++            self.outer_fsdp_group_param_gather_stream = (
++                self.ag_stream if self.ag_stream is not None else torch.cuda.Stream()
++            )
+ 
+     def get_bucket_key(self, bucket_id, bwd):
+         """Get the key for the bucket."""

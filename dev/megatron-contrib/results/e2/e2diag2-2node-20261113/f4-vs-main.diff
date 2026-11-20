@@ -1,0 +1,38 @@
+diff -ru /planning-users/yangyeyuan/megatron-contrib/snapshots/main-d2b0e35cc/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/context.py /planning-users/yangyeyuan/megatron-contrib/snapshots/f4-main-touchstream-d2b0e35cc/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/context.py
+--- /planning-users/yangyeyuan/megatron-contrib/snapshots/main-d2b0e35cc/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/context.py	2026-11-12 17:12:56.000000002 +0800
++++ /planning-users/yangyeyuan/megatron-contrib/snapshots/f4-main-touchstream-d2b0e35cc/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/context.py	2026-11-13 12:57:28.000000002 +0800
+@@ -125,6 +125,11 @@
+             if overlap_outer_communication
+             else self.inner_reduction_stream
+         )
++        # DIAGNOSTIC (#6714 E2-diag, not for upstream): create one extra, never-used
++        # stream at the point where P1 creates outer_allgather_stream.
++        self._diag_unused_stream = (
++            torch.cuda.Stream(device) if overlap_outer_communication else None
++        )
+ 
+     @property
+     def is_finalized(self) -> bool:
+diff -ru /planning-users/yangyeyuan/megatron-contrib/snapshots/main-d2b0e35cc/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/module.py /planning-users/yangyeyuan/megatron-contrib/snapshots/f4-main-touchstream-d2b0e35cc/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/module.py
+--- /planning-users/yangyeyuan/megatron-contrib/snapshots/main-d2b0e35cc/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/module.py	2026-11-12 17:12:56.000000002 +0800
++++ /planning-users/yangyeyuan/megatron-contrib/snapshots/f4-main-touchstream-d2b0e35cc/megatron/core/distributed/fsdp/src/megatron_fsdp/experimental/module.py	2026-11-13 12:57:34.000000004 +0800
+@@ -356,6 +356,19 @@
+         # weights serve both phases already.
+         if phase is Phase.BACKWARD and self._schedule_policy.unshard_all_planes_in_backward:
+             phase = None
++        # DIAGNOSTIC F4 (#6714 E2-diag2): when weights are stale (first microbatch
++        # after a step), mimic P1's cross-stream pattern with a trivial kernel on an
++        # extra stream instead of moving the DP-outer all-gather.
++        context = self.context
++        diag = getattr(context, "_diag_unused_stream", None)
++        if diag is not None and any(g._model_weight_is_stale for g in self._parameter_groups):
++            scratch = getattr(context, "_diag_scratch", None)
++            if scratch is None:
++                scratch = context._diag_scratch = torch.zeros(1, device=diag.device)
++            diag.wait_stream(context.allgather_stream)
++            with torch.cuda.stream(diag):
++                scratch.add_(1)
++            context.allgather_stream.wait_stream(diag)
+         with torch.cuda.stream(self.context.allgather_stream):
+             for group in self._parameter_groups:
+                 group.unshard_parameters(phase)

@@ -1,0 +1,24 @@
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[e1] world=16 mesh=(2,8) d=8192 layers=16 block=1024MB bf16 total=16.0GB overlap_outer_communication=False CUDA_DEVICE_MAX_CONNECTIONS=None
+[e1] train  T=  128 GA=1 fwd_mb0=  96.96                                  step=  227.35 opt=  5.26 mem= 10.3GB finite=True (4s)
+[e1] train  T=  128 GA=4 fwd_mb0=  97.73 E=  43.52 fwd_rest=  54.23 step=  691.98 opt=  5.26 mem= 10.3GB finite=True (8s)
+[e1] train  T=  256 GA=1 fwd_mb0= 105.74                                  step=  255.63 opt=  5.26 mem= 10.6GB finite=True (3s)
+[e1] train  T=  256 GA=4 fwd_mb0= 106.00 E=  43.64 fwd_rest=  62.43 step=  800.66 opt=  5.26 mem= 10.6GB finite=True (9s)
+[e1] train  T=  512 GA=1 fwd_mb0= 122.43                                  step=  336.32 opt=  5.26 mem= 11.1GB finite=True (4s)
+[e1] train  T=  512 GA=4 fwd_mb0= 122.70 E=  35.47 fwd_rest=  87.61 step= 1139.51 opt=  5.26 mem= 11.2GB finite=True (13s)
+[e1] train  T= 1024 GA=1 fwd_mb0= 181.31                                  step=  527.04 opt=  5.26 mem= 12.2GB finite=True (6s)
+[e1] train  T= 1024 GA=4 fwd_mb0= 181.33 E=  33.94 fwd_rest= 147.45 step= 1823.56 opt=  5.26 mem= 12.3GB finite=True (20s)
+[e1] train  T= 2048 GA=1 fwd_mb0= 309.26                                  step=  912.60 opt=  5.26 mem= 14.4GB finite=True (10s)
+[e1] train  T= 2048 GA=4 fwd_mb0= 308.61 E=  35.31 fwd_rest= 274.64 step= 3352.76 opt=  5.26 mem= 14.5GB finite=True (37s)
+[e1] train  T= 4096 GA=1 fwd_mb0= 558.21                                  step= 1678.22 opt=  5.26 mem= 18.7GB finite=True (18s)
+[e1] train  T= 4096 GA=4 fwd_mb0= 559.02 E=  28.76 fwd_rest= 530.94 step= 6452.14 opt=  5.26 mem= 18.9GB finite=True (71s)
+[e1] nostep T=  128 GA=4 fwd_mb0=  55.29 E=   1.12 fwd_rest=  54.23 step=  643.86 opt=  0.00 mem= 10.3GB finite=True (7s)
+[e1] nostep T=  256 GA=4 fwd_mb0=  64.45 E=   2.06 fwd_rest=  62.39 step=  752.83 opt=  0.00 mem= 10.6GB finite=True (8s)
+[e1] nostep T=  512 GA=4 fwd_mb0=  89.60 E=   2.11 fwd_rest=  87.85 step= 1112.02 opt=  0.00 mem= 11.2GB finite=True (12s)
+[e1] nostep T= 1024 GA=4 fwd_mb0= 150.28 E=   2.84 fwd_rest= 147.43 step= 1786.91 opt=  0.00 mem= 12.3GB finite=True (20s)
+[e1] nostep T= 2048 GA=4 fwd_mb0= 277.98 E=   3.51 fwd_rest= 274.62 step= 3315.61 opt=  0.00 mem= 14.5GB finite=True (36s)
+[e1] nostep T= 4096 GA=4 fwd_mb0= 536.84 E=   6.26 fwd_rest= 530.86 step= 6407.05 opt=  0.00 mem= 18.9GB finite=True (71s)
+[e1] wrote /planning-users/yangyeyuan/megatron-contrib/results/e2/e2p1-2node-20261112/off/e1_d8192_L16.json
